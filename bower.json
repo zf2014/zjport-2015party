@@ -1,9 +1,12 @@
 {
-	"name": "package",
-	"version": "0.0.0",
-	"dependencies": {
-		"require-css": "~0.1.8",
-		"nib": "~1.1.0"
-	}
+  "name": "package",
+  "version": "0.0.0",
+  "dependencies": {
+    "require-css": "~0.1.8",
+    "nib": "~1.1.0",
+    "gsap": "~1.18.2",
+    "jquery": "~1.7.2",
+    "blueimp-load-image": "~2.1.0",
+    "underscore": "~1.8.3"
+  }
 }
-
