@@ -1,0 +1,171 @@
+$r       = 300px
+$n       = 32
+$c       = 12
+$quarter = 32/4
+$d       = 50px
+
+$degVal = 360/($n)
+
+$deg     = unit($degVal, 'deg')
+
+$t       = 12s
+$cLen    = 2*PI*$r
+
+.sphere-container
+	position: absolute;
+	width: 100%
+	height 100%
+	left 0
+	top 0
+	perspective: 800;
+	perspective-origin(50%)
+
+	/.sphere-qrCodeScan
+		position: absolute;
+		left 150px
+		top 210px
+		/.qrCodeScan-img
+			width 208px
+			height 208px
+		/.qrCodeScan-txt
+			font-size: 22px
+			font-weight: 700
+			color #fff
+			text-align: center;
+			margin-top: 20px
+
+	/.sphere-newcomer
+		position: absolute;
+		opacity 0
+		width: 100px
+		height 100px
+		right -(@width/2)
+		bottom -(@height/2)
+		// border: 1px solid rgba(math(0, 'random')*255,math(0,'random')*255,math(0, 'random')*255, .8)
+		background-position: 0 0
+		background-color: transparent
+		background-repeat: no-repeat
+		background-size: cover
+		transform: scale(0)
+		// margin-left: -(@width/2)
+		// margin-top: -(@height/2)
+
+	/.sphere-list
+		transform-style: preserve-3d;
+		position: absolute;
+		left 50%
+		top 50%
+		width: $r*2
+		height: $r*2
+		margin-left: -(@width/2)
+		margin-top: -(@height/2)
+		transform(translateX(140px))
+		// animation: spin $t linear infinite
+		// > .ring
+		// 	transform-style: preserve-3d;
+		// 	position: absolute;
+		// 	left 0
+		// 	top 0
+		// 	width: 100%
+		// 	height 100%
+		// 	border-radius: 50%
+		> .pic
+			// opacity: 0
+			position: absolute;
+			left 50%
+			top 50%
+			width: $d
+			height $d
+			margin-left: -(@width/2)
+			margin-top: -(@height/2)
+			background-position: 0 0
+			background-color: transparent
+			background-repeat: no-repeat
+			background-size: cover
+			// border: 1px solid #000
+			// backface-visibility hidden
+			for $j in (0..$n*$c)
+				$remainder = $j%$c
+				$nth = math($j/$c, 'floor')
+				$q = math($nth/$quarter, 'floor')
+
+				&:nth-child({$tt = $j + 1})
+					border: 1px solid rgba(math(0, 'random')*255,math(0,'random')*255,math(0, 'random')*255, .22)
+						
+					$degree = 180*$remainder/$c
+					$angleVal = $degVal*0.5 + $nth*$degVal
+					$angle = unit($angleVal, 'deg')
+					
+					if $nth == 7 || $nth == 8 || $nth == 23 || $nth == 24
+						transform: rotateY(unit($degree, 'deg')) translateZ($r*cos($angle)) translateY($r*sin($angle)) rotateY(unit( ($angleVal > 90 && $angleVal < 270) ? 180:0 , 'deg'))
+						width: $d*0.08
+						height: $d*0.08
+					else if $nth == 6 || $nth == 9 || $nth == 22 || $nth == 25
+						transform: rotateY(unit($degree, 'deg')) translateZ($r*cos($angle)) translateY($r*sin($angle)) rotateY(unit( ($angleVal > 90 && $angleVal < 270) ? 180:0 , 'deg'))
+						width: $d*0.3
+						height: $d*0.3
+					else
+						if $q%2 == 0
+							width: $d*max((1 - ($nth/$quarter - $q)**2), 0.5)
+							height: $d*max((1 - ($nth/$quarter - $q)**2), 0.5)
+							transform: rotateY(unit($degree, 'deg')) translateZ($r*cos($angle)) translateY($r*sin($angle)) rotateY(unit( ($angleVal > 90 && $angleVal < 270) ? 180:0 , 'deg'))
+						else
+							width: $d*max(1-(1-($nth/$quarter - $q))**2, 0.5)
+							height: $d*max(1-(1-($nth/$quarter - $q))**2, 0.5)
+							transform: rotateY(unit($degree, 'deg')) translateZ($r*cos($angle)) translateY($r*sin($angle)) rotateY(unit( ($angleVal > 90 && $angleVal < 270) ? 180:0 , 'deg'))
+
+
+
+
+					// if $nth == 8 || $nth == 7 || $nth == 23 || $nth == 24
+					// 	display: none 
+
+			&.no-border
+				border: none
+
+			> .pic-front
+				position: absolute;
+				left 0
+				top 0
+				z-index: 2
+				width 100%
+				height 100%
+				background-position: 0 0
+				background-color: transparent
+				background-repeat: no-repeat
+				background-size: cover
+				backface-visibility hidden
+				// display none
+			> .pic-back
+				position: absolute;
+				left 0
+				top 0
+				z-index: 1
+				width 100%
+				height 100%
+				background-position: 0 0
+				background-color: transparent
+				background-repeat: no-repeat
+				background-size: cover
+				backface-visibility hidden
+				transform rotateY(180deg)
+				// display none
+
+@keyframes spin
+	0%
+		transform: rotateY(0deg)
+	100%
+		transform: rotateY(360deg)
+		
+/*
+					8   7
+
+
+            15					0
+            		  o
+            16					31
+            		
+
+            		23 24
+
+*/

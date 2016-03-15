@@ -1,0 +1,39 @@
+include ../variable/global.jade
+- var cssRoot  = rootDir + '/css'
+- var jsRoot   = rootDir + '/scripts'
+- var imgRoot  = rootDir + '/images'
+- var htmlRoot = rootDir + '/view'
+
+- var musicRoot = rootDir + '/music'
+
+//- - var navIndex = 0
+
+doctype html
+html
+	head
+		meta(charset = 'utf-8')
+		//- meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		block head-title
+			title 网站标题
+		link(rel = 'shortcut icon', type = 'image/x-icon', href = '#{rootDir}/favicon.ico')
+		block head-theme
+			link(rel = 'stylesheet' href = '#{cssRoot}/animation.css')
+			//- // build:css css/base.css
+			//- link(rel = 'stylesheet' href = '#{bowerComponentsDir}/normalize.css/normalize.css')
+			//- link(rel = 'stylesheet' href = '#{cssRoot}/reset.css')
+			//- link(rel = 'stylesheet' href = '#{cssRoot}/common.css')
+			//- // endbuild
+		//- include ../public/config/config.jade
+		
+		//- block requirejs-config
+		//- 	script(src = '#{jsRoot}/lib/requirejs-config/outer.js')
+		//- block requirejs-script
+		//- 	script(src = '#{jsRoot}/lib/requirejs/require.js')
+	body
+		#main.J-main
+			block main-content
+	block floor-script
+		script(src = '#{jsRoot}/lib/jquery/jquery.js')
+		script(src = '#{jsRoot}/lib/underscore/underscore-min.js')
+		//- script(src = 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.1/TweenMax.min.js')
+		script(src = '#{jsRoot}/lib/gsap/src/minified/TweenMax.min.js')

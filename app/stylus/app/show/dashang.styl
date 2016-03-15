@@ -1,0 +1,82 @@
+.ds-total
+	width: 1080px
+	.num
+		height 138px
+		line-height: @height
+		margin-top: 72px
+		padding-left: 321px
+		// letter-spacing: 14px
+		.txt
+			position: relative;
+			float: left
+			width 79px
+			@extend $font2
+			font-size: 120px
+			color #fff
+			text-align: center
+			margin-right: 4px
+			&:before
+				content: '';
+				position: absolute;
+				left 0
+				top 64px
+				width 100%
+				height 2px
+				background-color: #0b57ab
+			&:nth-child(2)
+				margin-right: 0
+			&:nth-child(3)
+				width 38px
+				margin-right: 0
+				&:before
+					display: none
+			
+
+	.name
+		text-align: center;
+		margin-top: 15px
+		.txt
+			@extend $font1
+			font-size: 70px
+			color #6dd5fc
+
+.ds-coin
+	height 1px
+	margin-left: 490px
+	margin-top: 20px
+	> span
+		position: absolute;
+		width 74px
+		height 51px
+		background: url(../images/all/ds-coin.png) 0 0 no-repeat
+		opacity: 0
+
+.ds-record
+	position: absolute;
+	top 10px
+	right 0
+	padding 10px
+	.wrap
+		width: 355px
+		height 698px
+		background: url(../images/all/ds-r-bg.png) 0 0 no-repeat
+		overflow: hidden
+		/.record-item
+			position: relative;
+			top -32px
+			width 354px
+			height 187px
+			background: url(../images/all/ds-r-item-bg.png) 0 0 no-repeat
+			margin-bottom: -79px
+			overflow hidden
+			/.record-cont
+				padding-left 40px
+				line-height 210px
+				color #fff
+				.nickname
+					font-size: 36px
+				.coin
+					margin-left: 10px
+					font-size: 28px
+					em
+						font-style: normal

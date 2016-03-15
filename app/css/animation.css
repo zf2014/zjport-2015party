@@ -1,0 +1,3133 @@
+/**
+ * 文件: .css 
+ * 公司: 浙江电子口岸
+ * 作者: qzzf1987@gmail.com
+ * 时间: 2016-01-27 18:44:37
+ */
+/* normalize.css v3.0.2 | MIT License | git.io/normalize */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background-color: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-size: 62.5%;
+  font-family: arial, "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+form {
+  margin: 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+}
+a {
+  color: #012fdd;
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover {
+  color: #ff6567;
+  text-decoration: underline;
+}
+:-ms-input-placeholder {
+  color: #ccc;
+}
+:-moz-placeholder,
+::-moz-placeholder {
+  color: #ccc;
+}
+::-webkit-input-placeholder {
+  color: #ccc;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#main {
+  height: 728px;
+  width: 1352px;
+  margin: 0 auto;
+  position: relative;
+  background: url("../images/all/bg.jpg") 50% 50% no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+.sphere-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  -webkit-perspective: 800;
+  perspective: 800;
+  -webkit-perspective-origin: 50%;
+  perspective-origin: 50%;
+}
+.sphere-qrCodeScan {
+  position: absolute;
+  left: 150px;
+  top: 210px;
+}
+.qrCodeScan-img {
+  width: 208px;
+  height: 208px;
+}
+.qrCodeScan-txt {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+}
+.sphere-newcomer {
+  position: absolute;
+  opacity: 0;
+  width: 100px;
+  height: 100px;
+  right: -50px;
+  bottom: -50px;
+  background-position: 0 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+.sphere-list {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 600px;
+  height: 600px;
+  margin-left: -300px;
+  margin-top: -300px;
+  -webkit-transform: translateX(140px);
+  transform: translateX(140px);
+}
+.sphere-list > .pic {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  margin-left: -25px;
+  margin-top: -25px;
+  background-position: 0 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.sphere-list > .pic:nth-child(1) {
+  border: 1px solid rgba(140,189,206,0.22);
+  width: 50px;
+  height: 50px;
+  -webkit-transform: rotateY(0deg) translateZ(298.5554181px) translateY(29.405142px) rotateY(0deg);
+  transform: rotateY(0deg) translateZ(298.5554181px) translateY(29.405142px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(2) {
+  border: 1px solid rgba(255,63,126,0.22);
+  width: 50px;
+  height: 50px;
+  -webkit-transform: rotateY(15deg) translateZ(298.5554181px) translateY(29.405142px) rotateY(0deg);
+  transform: rotateY(15deg) translateZ(298.5554181px) translateY(29.405142px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(3) {
+  border: 1px solid rgba(181,152,10,0.22);
+  width: 50px;
+  height: 50px;
+  -webkit-transform: rotateY(30deg) translateZ(298.5554181px) translateY(29.405142px) rotateY(0deg);
+  transform: rotateY(30deg) translateZ(298.5554181px) translateY(29.405142px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(4) {
+  border: 1px solid rgba(196,44,170,0.22);
+  width: 50px;
+  height: 50px;
+  -webkit-transform: rotateY(45deg) translateZ(298.5554181px) translateY(29.405142px) rotateY(0deg);
+  transform: rotateY(45deg) translateZ(298.5554181px) translateY(29.405142px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(5) {
+  border: 1px solid rgba(98,60,8,0.22);
+  width: 50px;
+  height: 50px;
+  -webkit-transform: rotateY(60deg) translateZ(298.5554181px) translateY(29.405142px) rotateY(0deg);
+  transform: rotateY(60deg) translateZ(298.5554181px) translateY(29.405142px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(6) {
+  border: 1px solid rgba(136,96,152,0.22);
+  width: 50px;
+  height: 50px;
+  -webkit-transform: rotateY(75deg) translateZ(298.5554181px) translateY(29.405142px) rotateY(0deg);
+  transform: rotateY(75deg) translateZ(298.5554181px) translateY(29.405142px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(7) {
+  border: 1px solid rgba(35,2,198,0.22);
+  width: 50px;
+  height: 50px;
+  -webkit-transform: rotateY(90deg) translateZ(298.5554181px) translateY(29.405142px) rotateY(0deg);
+  transform: rotateY(90deg) translateZ(298.5554181px) translateY(29.405142px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(8) {
+  border: 1px solid rgba(123,130,99,0.22);
+  width: 50px;
+  height: 50px;
+  -webkit-transform: rotateY(105deg) translateZ(298.5554181px) translateY(29.405142px) rotateY(0deg);
+  transform: rotateY(105deg) translateZ(298.5554181px) translateY(29.405142px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(9) {
+  border: 1px solid rgba(68,199,28,0.22);
+  width: 50px;
+  height: 50px;
+  -webkit-transform: rotateY(120deg) translateZ(298.5554181px) translateY(29.405142px) rotateY(0deg);
+  transform: rotateY(120deg) translateZ(298.5554181px) translateY(29.405142px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(10) {
+  border: 1px solid rgba(24,23,108,0.22);
+  width: 50px;
+  height: 50px;
+  -webkit-transform: rotateY(135deg) translateZ(298.5554181px) translateY(29.405142px) rotateY(0deg);
+  transform: rotateY(135deg) translateZ(298.5554181px) translateY(29.405142px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(11) {
+  border: 1px solid rgba(0,194,59,0.22);
+  width: 50px;
+  height: 50px;
+  -webkit-transform: rotateY(150deg) translateZ(298.5554181px) translateY(29.405142px) rotateY(0deg);
+  transform: rotateY(150deg) translateZ(298.5554181px) translateY(29.405142px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(12) {
+  border: 1px solid rgba(129,17,179,0.22);
+  width: 50px;
+  height: 50px;
+  -webkit-transform: rotateY(165deg) translateZ(298.5554181px) translateY(29.405142px) rotateY(0deg);
+  transform: rotateY(165deg) translateZ(298.5554181px) translateY(29.405142px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(13) {
+  border: 1px solid rgba(91,242,22,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(0deg) translateZ(287.0821008px) translateY(87.0854031px) rotateY(0deg);
+  transform: rotateY(0deg) translateZ(287.0821008px) translateY(87.0854031px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(14) {
+  border: 1px solid rgba(76,204,194,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(15deg) translateZ(287.0821008px) translateY(87.0854031px) rotateY(0deg);
+  transform: rotateY(15deg) translateZ(287.0821008px) translateY(87.0854031px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(15) {
+  border: 1px solid rgba(241,220,76,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(30deg) translateZ(287.0821008px) translateY(87.0854031px) rotateY(0deg);
+  transform: rotateY(30deg) translateZ(287.0821008px) translateY(87.0854031px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(16) {
+  border: 1px solid rgba(148,59,97,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(45deg) translateZ(287.0821008px) translateY(87.0854031px) rotateY(0deg);
+  transform: rotateY(45deg) translateZ(287.0821008px) translateY(87.0854031px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(17) {
+  border: 1px solid rgba(177,171,192,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(60deg) translateZ(287.0821008px) translateY(87.0854031px) rotateY(0deg);
+  transform: rotateY(60deg) translateZ(287.0821008px) translateY(87.0854031px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(18) {
+  border: 1px solid rgba(112,13,105,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(75deg) translateZ(287.0821008px) translateY(87.0854031px) rotateY(0deg);
+  transform: rotateY(75deg) translateZ(287.0821008px) translateY(87.0854031px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(19) {
+  border: 1px solid rgba(76,109,7,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(90deg) translateZ(287.0821008px) translateY(87.0854031px) rotateY(0deg);
+  transform: rotateY(90deg) translateZ(287.0821008px) translateY(87.0854031px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(20) {
+  border: 1px solid rgba(115,204,187,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(105deg) translateZ(287.0821008px) translateY(87.0854031px) rotateY(0deg);
+  transform: rotateY(105deg) translateZ(287.0821008px) translateY(87.0854031px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(21) {
+  border: 1px solid rgba(93,239,213,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(120deg) translateZ(287.0821008px) translateY(87.0854031px) rotateY(0deg);
+  transform: rotateY(120deg) translateZ(287.0821008px) translateY(87.0854031px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(22) {
+  border: 1px solid rgba(241,251,228,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(135deg) translateZ(287.0821008px) translateY(87.0854031px) rotateY(0deg);
+  transform: rotateY(135deg) translateZ(287.0821008px) translateY(87.0854031px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(23) {
+  border: 1px solid rgba(170,139,123,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(150deg) translateZ(287.0821008px) translateY(87.0854031px) rotateY(0deg);
+  transform: rotateY(150deg) translateZ(287.0821008px) translateY(87.0854031px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(24) {
+  border: 1px solid rgba(3,175,2,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(165deg) translateZ(287.0821008px) translateY(87.0854031px) rotateY(0deg);
+  transform: rotateY(165deg) translateZ(287.0821008px) translateY(87.0854031px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(25) {
+  border: 1px solid rgba(170,141,121,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(0deg) translateZ(264.5763792px) translateY(141.4190211px) rotateY(0deg);
+  transform: rotateY(0deg) translateZ(264.5763792px) translateY(141.4190211px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(26) {
+  border: 1px solid rgba(26,18,126,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(15deg) translateZ(264.5763792px) translateY(141.4190211px) rotateY(0deg);
+  transform: rotateY(15deg) translateZ(264.5763792px) translateY(141.4190211px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(27) {
+  border: 1px solid rgba(229,88,200,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(30deg) translateZ(264.5763792px) translateY(141.4190211px) rotateY(0deg);
+  transform: rotateY(30deg) translateZ(264.5763792px) translateY(141.4190211px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(28) {
+  border: 1px solid rgba(141,23,149,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(45deg) translateZ(264.5763792px) translateY(141.4190211px) rotateY(0deg);
+  transform: rotateY(45deg) translateZ(264.5763792px) translateY(141.4190211px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(29) {
+  border: 1px solid rgba(90,124,52,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(60deg) translateZ(264.5763792px) translateY(141.4190211px) rotateY(0deg);
+  transform: rotateY(60deg) translateZ(264.5763792px) translateY(141.4190211px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(30) {
+  border: 1px solid rgba(251,29,88,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(75deg) translateZ(264.5763792px) translateY(141.4190211px) rotateY(0deg);
+  transform: rotateY(75deg) translateZ(264.5763792px) translateY(141.4190211px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(31) {
+  border: 1px solid rgba(231,13,217,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(90deg) translateZ(264.5763792px) translateY(141.4190211px) rotateY(0deg);
+  transform: rotateY(90deg) translateZ(264.5763792px) translateY(141.4190211px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(32) {
+  border: 1px solid rgba(129,173,140,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(105deg) translateZ(264.5763792px) translateY(141.4190211px) rotateY(0deg);
+  transform: rotateY(105deg) translateZ(264.5763792px) translateY(141.4190211px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(33) {
+  border: 1px solid rgba(144,232,164,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(120deg) translateZ(264.5763792px) translateY(141.4190211px) rotateY(0deg);
+  transform: rotateY(120deg) translateZ(264.5763792px) translateY(141.4190211px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(34) {
+  border: 1px solid rgba(178,230,1,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(135deg) translateZ(264.5763792px) translateY(141.4190211px) rotateY(0deg);
+  transform: rotateY(135deg) translateZ(264.5763792px) translateY(141.4190211px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(35) {
+  border: 1px solid rgba(104,30,19,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(150deg) translateZ(264.5763792px) translateY(141.4190211px) rotateY(0deg);
+  transform: rotateY(150deg) translateZ(264.5763792px) translateY(141.4190211px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(36) {
+  border: 1px solid rgba(150,236,15,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(165deg) translateZ(264.5763792px) translateY(141.4190211px) rotateY(0deg);
+  transform: rotateY(165deg) translateZ(264.5763792px) translateY(141.4190211px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(37) {
+  border: 1px solid rgba(124,211,125,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(0deg) translateZ(231.90313590000002px) translateY(190.31798519999998px) rotateY(0deg);
+  transform: rotateY(0deg) translateZ(231.90313590000002px) translateY(190.31798519999998px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(38) {
+  border: 1px solid rgba(159,43,173,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(15deg) translateZ(231.90313590000002px) translateY(190.31798519999998px) rotateY(0deg);
+  transform: rotateY(15deg) translateZ(231.90313590000002px) translateY(190.31798519999998px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(39) {
+  border: 1px solid rgba(132,166,3,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(30deg) translateZ(231.90313590000002px) translateY(190.31798519999998px) rotateY(0deg);
+  transform: rotateY(30deg) translateZ(231.90313590000002px) translateY(190.31798519999998px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(40) {
+  border: 1px solid rgba(165,155,170,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(45deg) translateZ(231.90313590000002px) translateY(190.31798519999998px) rotateY(0deg);
+  transform: rotateY(45deg) translateZ(231.90313590000002px) translateY(190.31798519999998px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(41) {
+  border: 1px solid rgba(61,1,90,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(60deg) translateZ(231.90313590000002px) translateY(190.31798519999998px) rotateY(0deg);
+  transform: rotateY(60deg) translateZ(231.90313590000002px) translateY(190.31798519999998px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(42) {
+  border: 1px solid rgba(62,211,214,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(75deg) translateZ(231.90313590000002px) translateY(190.31798519999998px) rotateY(0deg);
+  transform: rotateY(75deg) translateZ(231.90313590000002px) translateY(190.31798519999998px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(43) {
+  border: 1px solid rgba(164,200,236,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(90deg) translateZ(231.90313590000002px) translateY(190.31798519999998px) rotateY(0deg);
+  transform: rotateY(90deg) translateZ(231.90313590000002px) translateY(190.31798519999998px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(44) {
+  border: 1px solid rgba(136,64,139,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(105deg) translateZ(231.90313590000002px) translateY(190.31798519999998px) rotateY(0deg);
+  transform: rotateY(105deg) translateZ(231.90313590000002px) translateY(190.31798519999998px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(45) {
+  border: 1px solid rgba(215,9,204,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(120deg) translateZ(231.90313590000002px) translateY(190.31798519999998px) rotateY(0deg);
+  transform: rotateY(120deg) translateZ(231.90313590000002px) translateY(190.31798519999998px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(46) {
+  border: 1px solid rgba(16,86,192,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(135deg) translateZ(231.90313590000002px) translateY(190.31798519999998px) rotateY(0deg);
+  transform: rotateY(135deg) translateZ(231.90313590000002px) translateY(190.31798519999998px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(47) {
+  border: 1px solid rgba(3,95,176,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(150deg) translateZ(231.90313590000002px) translateY(190.31798519999998px) rotateY(0deg);
+  transform: rotateY(150deg) translateZ(231.90313590000002px) translateY(190.31798519999998px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(48) {
+  border: 1px solid rgba(225,152,116,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(165deg) translateZ(231.90313590000002px) translateY(190.31798519999998px) rotateY(0deg);
+  transform: rotateY(165deg) translateZ(231.90313590000002px) translateY(190.31798519999998px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(49) {
+  border: 1px solid rgba(251,29,35,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(0deg) translateZ(190.31798519999998px) translateY(231.90313590000002px) rotateY(0deg);
+  transform: rotateY(0deg) translateZ(190.31798519999998px) translateY(231.90313590000002px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(50) {
+  border: 1px solid rgba(211,54,250,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(15deg) translateZ(190.31798519999998px) translateY(231.90313590000002px) rotateY(0deg);
+  transform: rotateY(15deg) translateZ(190.31798519999998px) translateY(231.90313590000002px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(51) {
+  border: 1px solid rgba(39,238,197,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(30deg) translateZ(190.31798519999998px) translateY(231.90313590000002px) rotateY(0deg);
+  transform: rotateY(30deg) translateZ(190.31798519999998px) translateY(231.90313590000002px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(52) {
+  border: 1px solid rgba(108,46,185,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(45deg) translateZ(190.31798519999998px) translateY(231.90313590000002px) rotateY(0deg);
+  transform: rotateY(45deg) translateZ(190.31798519999998px) translateY(231.90313590000002px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(53) {
+  border: 1px solid rgba(199,209,70,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(60deg) translateZ(190.31798519999998px) translateY(231.90313590000002px) rotateY(0deg);
+  transform: rotateY(60deg) translateZ(190.31798519999998px) translateY(231.90313590000002px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(54) {
+  border: 1px solid rgba(120,194,130,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(75deg) translateZ(190.31798519999998px) translateY(231.90313590000002px) rotateY(0deg);
+  transform: rotateY(75deg) translateZ(190.31798519999998px) translateY(231.90313590000002px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(55) {
+  border: 1px solid rgba(141,182,105,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(90deg) translateZ(190.31798519999998px) translateY(231.90313590000002px) rotateY(0deg);
+  transform: rotateY(90deg) translateZ(190.31798519999998px) translateY(231.90313590000002px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(56) {
+  border: 1px solid rgba(86,97,142,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(105deg) translateZ(190.31798519999998px) translateY(231.90313590000002px) rotateY(0deg);
+  transform: rotateY(105deg) translateZ(190.31798519999998px) translateY(231.90313590000002px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(57) {
+  border: 1px solid rgba(124,144,165,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(120deg) translateZ(190.31798519999998px) translateY(231.90313590000002px) rotateY(0deg);
+  transform: rotateY(120deg) translateZ(190.31798519999998px) translateY(231.90313590000002px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(58) {
+  border: 1px solid rgba(46,198,154,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(135deg) translateZ(190.31798519999998px) translateY(231.90313590000002px) rotateY(0deg);
+  transform: rotateY(135deg) translateZ(190.31798519999998px) translateY(231.90313590000002px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(59) {
+  border: 1px solid rgba(202,140,171,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(150deg) translateZ(190.31798519999998px) translateY(231.90313590000002px) rotateY(0deg);
+  transform: rotateY(150deg) translateZ(190.31798519999998px) translateY(231.90313590000002px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(60) {
+  border: 1px solid rgba(231,74,27,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(165deg) translateZ(190.31798519999998px) translateY(231.90313590000002px) rotateY(0deg);
+  transform: rotateY(165deg) translateZ(190.31798519999998px) translateY(231.90313590000002px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(61) {
+  border: 1px solid rgba(171,114,61,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(0deg) translateZ(141.4190211px) translateY(264.5763792px) rotateY(0deg);
+  transform: rotateY(0deg) translateZ(141.4190211px) translateY(264.5763792px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(62) {
+  border: 1px solid rgba(131,165,175,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(15deg) translateZ(141.4190211px) translateY(264.5763792px) rotateY(0deg);
+  transform: rotateY(15deg) translateZ(141.4190211px) translateY(264.5763792px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(63) {
+  border: 1px solid rgba(188,184,230,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(30deg) translateZ(141.4190211px) translateY(264.5763792px) rotateY(0deg);
+  transform: rotateY(30deg) translateZ(141.4190211px) translateY(264.5763792px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(64) {
+  border: 1px solid rgba(99,30,110,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(45deg) translateZ(141.4190211px) translateY(264.5763792px) rotateY(0deg);
+  transform: rotateY(45deg) translateZ(141.4190211px) translateY(264.5763792px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(65) {
+  border: 1px solid rgba(249,240,200,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(60deg) translateZ(141.4190211px) translateY(264.5763792px) rotateY(0deg);
+  transform: rotateY(60deg) translateZ(141.4190211px) translateY(264.5763792px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(66) {
+  border: 1px solid rgba(211,91,24,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(75deg) translateZ(141.4190211px) translateY(264.5763792px) rotateY(0deg);
+  transform: rotateY(75deg) translateZ(141.4190211px) translateY(264.5763792px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(67) {
+  border: 1px solid rgba(163,233,29,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(90deg) translateZ(141.4190211px) translateY(264.5763792px) rotateY(0deg);
+  transform: rotateY(90deg) translateZ(141.4190211px) translateY(264.5763792px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(68) {
+  border: 1px solid rgba(190,38,27,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(105deg) translateZ(141.4190211px) translateY(264.5763792px) rotateY(0deg);
+  transform: rotateY(105deg) translateZ(141.4190211px) translateY(264.5763792px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(69) {
+  border: 1px solid rgba(15,14,11,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(120deg) translateZ(141.4190211px) translateY(264.5763792px) rotateY(0deg);
+  transform: rotateY(120deg) translateZ(141.4190211px) translateY(264.5763792px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(70) {
+  border: 1px solid rgba(240,4,227,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(135deg) translateZ(141.4190211px) translateY(264.5763792px) rotateY(0deg);
+  transform: rotateY(135deg) translateZ(141.4190211px) translateY(264.5763792px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(71) {
+  border: 1px solid rgba(150,127,31,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(150deg) translateZ(141.4190211px) translateY(264.5763792px) rotateY(0deg);
+  transform: rotateY(150deg) translateZ(141.4190211px) translateY(264.5763792px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(72) {
+  border: 1px solid rgba(242,164,139,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(165deg) translateZ(141.4190211px) translateY(264.5763792px) rotateY(0deg);
+  transform: rotateY(165deg) translateZ(141.4190211px) translateY(264.5763792px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(73) {
+  border: 1px solid rgba(34,52,191,0.22);
+  -webkit-transform: rotateY(0deg) translateZ(87.0854031px) translateY(287.0821008px) rotateY(0deg);
+  transform: rotateY(0deg) translateZ(87.0854031px) translateY(287.0821008px) rotateY(0deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(74) {
+  border: 1px solid rgba(84,9,206,0.22);
+  -webkit-transform: rotateY(15deg) translateZ(87.0854031px) translateY(287.0821008px) rotateY(0deg);
+  transform: rotateY(15deg) translateZ(87.0854031px) translateY(287.0821008px) rotateY(0deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(75) {
+  border: 1px solid rgba(103,66,133,0.22);
+  -webkit-transform: rotateY(30deg) translateZ(87.0854031px) translateY(287.0821008px) rotateY(0deg);
+  transform: rotateY(30deg) translateZ(87.0854031px) translateY(287.0821008px) rotateY(0deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(76) {
+  border: 1px solid rgba(72,116,116,0.22);
+  -webkit-transform: rotateY(45deg) translateZ(87.0854031px) translateY(287.0821008px) rotateY(0deg);
+  transform: rotateY(45deg) translateZ(87.0854031px) translateY(287.0821008px) rotateY(0deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(77) {
+  border: 1px solid rgba(3,17,98,0.22);
+  -webkit-transform: rotateY(60deg) translateZ(87.0854031px) translateY(287.0821008px) rotateY(0deg);
+  transform: rotateY(60deg) translateZ(87.0854031px) translateY(287.0821008px) rotateY(0deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(78) {
+  border: 1px solid rgba(214,35,6,0.22);
+  -webkit-transform: rotateY(75deg) translateZ(87.0854031px) translateY(287.0821008px) rotateY(0deg);
+  transform: rotateY(75deg) translateZ(87.0854031px) translateY(287.0821008px) rotateY(0deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(79) {
+  border: 1px solid rgba(150,240,127,0.22);
+  -webkit-transform: rotateY(90deg) translateZ(87.0854031px) translateY(287.0821008px) rotateY(0deg);
+  transform: rotateY(90deg) translateZ(87.0854031px) translateY(287.0821008px) rotateY(0deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(80) {
+  border: 1px solid rgba(53,235,242,0.22);
+  -webkit-transform: rotateY(105deg) translateZ(87.0854031px) translateY(287.0821008px) rotateY(0deg);
+  transform: rotateY(105deg) translateZ(87.0854031px) translateY(287.0821008px) rotateY(0deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(81) {
+  border: 1px solid rgba(149,228,243,0.22);
+  -webkit-transform: rotateY(120deg) translateZ(87.0854031px) translateY(287.0821008px) rotateY(0deg);
+  transform: rotateY(120deg) translateZ(87.0854031px) translateY(287.0821008px) rotateY(0deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(82) {
+  border: 1px solid rgba(40,112,26,0.22);
+  -webkit-transform: rotateY(135deg) translateZ(87.0854031px) translateY(287.0821008px) rotateY(0deg);
+  transform: rotateY(135deg) translateZ(87.0854031px) translateY(287.0821008px) rotateY(0deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(83) {
+  border: 1px solid rgba(20,235,83,0.22);
+  -webkit-transform: rotateY(150deg) translateZ(87.0854031px) translateY(287.0821008px) rotateY(0deg);
+  transform: rotateY(150deg) translateZ(87.0854031px) translateY(287.0821008px) rotateY(0deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(84) {
+  border: 1px solid rgba(37,161,141,0.22);
+  -webkit-transform: rotateY(165deg) translateZ(87.0854031px) translateY(287.0821008px) rotateY(0deg);
+  transform: rotateY(165deg) translateZ(87.0854031px) translateY(287.0821008px) rotateY(0deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(85) {
+  border: 1px solid rgba(102,172,45,0.22);
+  -webkit-transform: rotateY(0deg) translateZ(29.405142px) translateY(298.5554181px) rotateY(0deg);
+  transform: rotateY(0deg) translateZ(29.405142px) translateY(298.5554181px) rotateY(0deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(86) {
+  border: 1px solid rgba(1,201,59,0.22);
+  -webkit-transform: rotateY(15deg) translateZ(29.405142px) translateY(298.5554181px) rotateY(0deg);
+  transform: rotateY(15deg) translateZ(29.405142px) translateY(298.5554181px) rotateY(0deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(87) {
+  border: 1px solid rgba(80,175,230,0.22);
+  -webkit-transform: rotateY(30deg) translateZ(29.405142px) translateY(298.5554181px) rotateY(0deg);
+  transform: rotateY(30deg) translateZ(29.405142px) translateY(298.5554181px) rotateY(0deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(88) {
+  border: 1px solid rgba(218,36,55,0.22);
+  -webkit-transform: rotateY(45deg) translateZ(29.405142px) translateY(298.5554181px) rotateY(0deg);
+  transform: rotateY(45deg) translateZ(29.405142px) translateY(298.5554181px) rotateY(0deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(89) {
+  border: 1px solid rgba(45,27,171,0.22);
+  -webkit-transform: rotateY(60deg) translateZ(29.405142px) translateY(298.5554181px) rotateY(0deg);
+  transform: rotateY(60deg) translateZ(29.405142px) translateY(298.5554181px) rotateY(0deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(90) {
+  border: 1px solid rgba(244,26,82,0.22);
+  -webkit-transform: rotateY(75deg) translateZ(29.405142px) translateY(298.5554181px) rotateY(0deg);
+  transform: rotateY(75deg) translateZ(29.405142px) translateY(298.5554181px) rotateY(0deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(91) {
+  border: 1px solid rgba(16,152,123,0.22);
+  -webkit-transform: rotateY(90deg) translateZ(29.405142px) translateY(298.5554181px) rotateY(0deg);
+  transform: rotateY(90deg) translateZ(29.405142px) translateY(298.5554181px) rotateY(0deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(92) {
+  border: 1px solid rgba(86,201,118,0.22);
+  -webkit-transform: rotateY(105deg) translateZ(29.405142px) translateY(298.5554181px) rotateY(0deg);
+  transform: rotateY(105deg) translateZ(29.405142px) translateY(298.5554181px) rotateY(0deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(93) {
+  border: 1px solid rgba(33,1,98,0.22);
+  -webkit-transform: rotateY(120deg) translateZ(29.405142px) translateY(298.5554181px) rotateY(0deg);
+  transform: rotateY(120deg) translateZ(29.405142px) translateY(298.5554181px) rotateY(0deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(94) {
+  border: 1px solid rgba(209,191,223,0.22);
+  -webkit-transform: rotateY(135deg) translateZ(29.405142px) translateY(298.5554181px) rotateY(0deg);
+  transform: rotateY(135deg) translateZ(29.405142px) translateY(298.5554181px) rotateY(0deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(95) {
+  border: 1px solid rgba(21,123,197,0.22);
+  -webkit-transform: rotateY(150deg) translateZ(29.405142px) translateY(298.5554181px) rotateY(0deg);
+  transform: rotateY(150deg) translateZ(29.405142px) translateY(298.5554181px) rotateY(0deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(96) {
+  border: 1px solid rgba(246,80,121,0.22);
+  -webkit-transform: rotateY(165deg) translateZ(29.405142px) translateY(298.5554181px) rotateY(0deg);
+  transform: rotateY(165deg) translateZ(29.405142px) translateY(298.5554181px) rotateY(0deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(97) {
+  border: 1px solid rgba(160,252,224,0.22);
+  -webkit-transform: rotateY(0deg) translateZ(-29.405142px) translateY(298.5554181px) rotateY(180deg);
+  transform: rotateY(0deg) translateZ(-29.405142px) translateY(298.5554181px) rotateY(180deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(98) {
+  border: 1px solid rgba(111,67,154,0.22);
+  -webkit-transform: rotateY(15deg) translateZ(-29.405142px) translateY(298.5554181px) rotateY(180deg);
+  transform: rotateY(15deg) translateZ(-29.405142px) translateY(298.5554181px) rotateY(180deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(99) {
+  border: 1px solid rgba(168,71,68,0.22);
+  -webkit-transform: rotateY(30deg) translateZ(-29.405142px) translateY(298.5554181px) rotateY(180deg);
+  transform: rotateY(30deg) translateZ(-29.405142px) translateY(298.5554181px) rotateY(180deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(100) {
+  border: 1px solid rgba(75,51,239,0.22);
+  -webkit-transform: rotateY(45deg) translateZ(-29.405142px) translateY(298.5554181px) rotateY(180deg);
+  transform: rotateY(45deg) translateZ(-29.405142px) translateY(298.5554181px) rotateY(180deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(101) {
+  border: 1px solid rgba(208,159,120,0.22);
+  -webkit-transform: rotateY(60deg) translateZ(-29.405142px) translateY(298.5554181px) rotateY(180deg);
+  transform: rotateY(60deg) translateZ(-29.405142px) translateY(298.5554181px) rotateY(180deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(102) {
+  border: 1px solid rgba(39,244,76,0.22);
+  -webkit-transform: rotateY(75deg) translateZ(-29.405142px) translateY(298.5554181px) rotateY(180deg);
+  transform: rotateY(75deg) translateZ(-29.405142px) translateY(298.5554181px) rotateY(180deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(103) {
+  border: 1px solid rgba(63,241,2,0.22);
+  -webkit-transform: rotateY(90deg) translateZ(-29.405142px) translateY(298.5554181px) rotateY(180deg);
+  transform: rotateY(90deg) translateZ(-29.405142px) translateY(298.5554181px) rotateY(180deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(104) {
+  border: 1px solid rgba(152,99,220,0.22);
+  -webkit-transform: rotateY(105deg) translateZ(-29.405142px) translateY(298.5554181px) rotateY(180deg);
+  transform: rotateY(105deg) translateZ(-29.405142px) translateY(298.5554181px) rotateY(180deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(105) {
+  border: 1px solid rgba(163,159,93,0.22);
+  -webkit-transform: rotateY(120deg) translateZ(-29.405142px) translateY(298.5554181px) rotateY(180deg);
+  transform: rotateY(120deg) translateZ(-29.405142px) translateY(298.5554181px) rotateY(180deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(106) {
+  border: 1px solid rgba(35,116,29,0.22);
+  -webkit-transform: rotateY(135deg) translateZ(-29.405142px) translateY(298.5554181px) rotateY(180deg);
+  transform: rotateY(135deg) translateZ(-29.405142px) translateY(298.5554181px) rotateY(180deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(107) {
+  border: 1px solid rgba(218,173,137,0.22);
+  -webkit-transform: rotateY(150deg) translateZ(-29.405142px) translateY(298.5554181px) rotateY(180deg);
+  transform: rotateY(150deg) translateZ(-29.405142px) translateY(298.5554181px) rotateY(180deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(108) {
+  border: 1px solid rgba(163,58,71,0.22);
+  -webkit-transform: rotateY(165deg) translateZ(-29.405142px) translateY(298.5554181px) rotateY(180deg);
+  transform: rotateY(165deg) translateZ(-29.405142px) translateY(298.5554181px) rotateY(180deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(109) {
+  border: 1px solid rgba(131,130,202,0.22);
+  -webkit-transform: rotateY(0deg) translateZ(-87.0854031px) translateY(287.0821008px) rotateY(180deg);
+  transform: rotateY(0deg) translateZ(-87.0854031px) translateY(287.0821008px) rotateY(180deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(110) {
+  border: 1px solid rgba(234,111,136,0.22);
+  -webkit-transform: rotateY(15deg) translateZ(-87.0854031px) translateY(287.0821008px) rotateY(180deg);
+  transform: rotateY(15deg) translateZ(-87.0854031px) translateY(287.0821008px) rotateY(180deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(111) {
+  border: 1px solid rgba(114,86,198,0.22);
+  -webkit-transform: rotateY(30deg) translateZ(-87.0854031px) translateY(287.0821008px) rotateY(180deg);
+  transform: rotateY(30deg) translateZ(-87.0854031px) translateY(287.0821008px) rotateY(180deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(112) {
+  border: 1px solid rgba(33,68,155,0.22);
+  -webkit-transform: rotateY(45deg) translateZ(-87.0854031px) translateY(287.0821008px) rotateY(180deg);
+  transform: rotateY(45deg) translateZ(-87.0854031px) translateY(287.0821008px) rotateY(180deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(113) {
+  border: 1px solid rgba(242,189,78,0.22);
+  -webkit-transform: rotateY(60deg) translateZ(-87.0854031px) translateY(287.0821008px) rotateY(180deg);
+  transform: rotateY(60deg) translateZ(-87.0854031px) translateY(287.0821008px) rotateY(180deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(114) {
+  border: 1px solid rgba(113,67,162,0.22);
+  -webkit-transform: rotateY(75deg) translateZ(-87.0854031px) translateY(287.0821008px) rotateY(180deg);
+  transform: rotateY(75deg) translateZ(-87.0854031px) translateY(287.0821008px) rotateY(180deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(115) {
+  border: 1px solid rgba(40,31,78,0.22);
+  -webkit-transform: rotateY(90deg) translateZ(-87.0854031px) translateY(287.0821008px) rotateY(180deg);
+  transform: rotateY(90deg) translateZ(-87.0854031px) translateY(287.0821008px) rotateY(180deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(116) {
+  border: 1px solid rgba(133,11,73,0.22);
+  -webkit-transform: rotateY(105deg) translateZ(-87.0854031px) translateY(287.0821008px) rotateY(180deg);
+  transform: rotateY(105deg) translateZ(-87.0854031px) translateY(287.0821008px) rotateY(180deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(117) {
+  border: 1px solid rgba(236,75,39,0.22);
+  -webkit-transform: rotateY(120deg) translateZ(-87.0854031px) translateY(287.0821008px) rotateY(180deg);
+  transform: rotateY(120deg) translateZ(-87.0854031px) translateY(287.0821008px) rotateY(180deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(118) {
+  border: 1px solid rgba(187,191,89,0.22);
+  -webkit-transform: rotateY(135deg) translateZ(-87.0854031px) translateY(287.0821008px) rotateY(180deg);
+  transform: rotateY(135deg) translateZ(-87.0854031px) translateY(287.0821008px) rotateY(180deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(119) {
+  border: 1px solid rgba(19,135,128,0.22);
+  -webkit-transform: rotateY(150deg) translateZ(-87.0854031px) translateY(287.0821008px) rotateY(180deg);
+  transform: rotateY(150deg) translateZ(-87.0854031px) translateY(287.0821008px) rotateY(180deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(120) {
+  border: 1px solid rgba(124,242,54,0.22);
+  -webkit-transform: rotateY(165deg) translateZ(-87.0854031px) translateY(287.0821008px) rotateY(180deg);
+  transform: rotateY(165deg) translateZ(-87.0854031px) translateY(287.0821008px) rotateY(180deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(121) {
+  border: 1px solid rgba(216,229,202,0.22);
+  width: 25px;
+  height: 25px;
+  -webkit-transform: rotateY(0deg) translateZ(-141.4190211px) translateY(264.5763792px) rotateY(180deg);
+  transform: rotateY(0deg) translateZ(-141.4190211px) translateY(264.5763792px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(122) {
+  border: 1px solid rgba(120,40,90,0.22);
+  width: 25px;
+  height: 25px;
+  -webkit-transform: rotateY(15deg) translateZ(-141.4190211px) translateY(264.5763792px) rotateY(180deg);
+  transform: rotateY(15deg) translateZ(-141.4190211px) translateY(264.5763792px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(123) {
+  border: 1px solid rgba(142,207,154,0.22);
+  width: 25px;
+  height: 25px;
+  -webkit-transform: rotateY(30deg) translateZ(-141.4190211px) translateY(264.5763792px) rotateY(180deg);
+  transform: rotateY(30deg) translateZ(-141.4190211px) translateY(264.5763792px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(124) {
+  border: 1px solid rgba(156,123,114,0.22);
+  width: 25px;
+  height: 25px;
+  -webkit-transform: rotateY(45deg) translateZ(-141.4190211px) translateY(264.5763792px) rotateY(180deg);
+  transform: rotateY(45deg) translateZ(-141.4190211px) translateY(264.5763792px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(125) {
+  border: 1px solid rgba(175,40,218,0.22);
+  width: 25px;
+  height: 25px;
+  -webkit-transform: rotateY(60deg) translateZ(-141.4190211px) translateY(264.5763792px) rotateY(180deg);
+  transform: rotateY(60deg) translateZ(-141.4190211px) translateY(264.5763792px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(126) {
+  border: 1px solid rgba(255,116,151,0.22);
+  width: 25px;
+  height: 25px;
+  -webkit-transform: rotateY(75deg) translateZ(-141.4190211px) translateY(264.5763792px) rotateY(180deg);
+  transform: rotateY(75deg) translateZ(-141.4190211px) translateY(264.5763792px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(127) {
+  border: 1px solid rgba(92,225,18,0.22);
+  width: 25px;
+  height: 25px;
+  -webkit-transform: rotateY(90deg) translateZ(-141.4190211px) translateY(264.5763792px) rotateY(180deg);
+  transform: rotateY(90deg) translateZ(-141.4190211px) translateY(264.5763792px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(128) {
+  border: 1px solid rgba(136,16,12,0.22);
+  width: 25px;
+  height: 25px;
+  -webkit-transform: rotateY(105deg) translateZ(-141.4190211px) translateY(264.5763792px) rotateY(180deg);
+  transform: rotateY(105deg) translateZ(-141.4190211px) translateY(264.5763792px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(129) {
+  border: 1px solid rgba(111,139,83,0.22);
+  width: 25px;
+  height: 25px;
+  -webkit-transform: rotateY(120deg) translateZ(-141.4190211px) translateY(264.5763792px) rotateY(180deg);
+  transform: rotateY(120deg) translateZ(-141.4190211px) translateY(264.5763792px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(130) {
+  border: 1px solid rgba(30,150,229,0.22);
+  width: 25px;
+  height: 25px;
+  -webkit-transform: rotateY(135deg) translateZ(-141.4190211px) translateY(264.5763792px) rotateY(180deg);
+  transform: rotateY(135deg) translateZ(-141.4190211px) translateY(264.5763792px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(131) {
+  border: 1px solid rgba(214,190,39,0.22);
+  width: 25px;
+  height: 25px;
+  -webkit-transform: rotateY(150deg) translateZ(-141.4190211px) translateY(264.5763792px) rotateY(180deg);
+  transform: rotateY(150deg) translateZ(-141.4190211px) translateY(264.5763792px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(132) {
+  border: 1px solid rgba(38,4,148,0.22);
+  width: 25px;
+  height: 25px;
+  -webkit-transform: rotateY(165deg) translateZ(-141.4190211px) translateY(264.5763792px) rotateY(180deg);
+  transform: rotateY(165deg) translateZ(-141.4190211px) translateY(264.5763792px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(133) {
+  border: 1px solid rgba(202,204,101,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(0deg) translateZ(-190.31798519999998px) translateY(231.90313590000002px) rotateY(180deg);
+  transform: rotateY(0deg) translateZ(-190.31798519999998px) translateY(231.90313590000002px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(134) {
+  border: 1px solid rgba(185,107,189,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(15deg) translateZ(-190.31798519999998px) translateY(231.90313590000002px) rotateY(180deg);
+  transform: rotateY(15deg) translateZ(-190.31798519999998px) translateY(231.90313590000002px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(135) {
+  border: 1px solid rgba(248,36,2,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(30deg) translateZ(-190.31798519999998px) translateY(231.90313590000002px) rotateY(180deg);
+  transform: rotateY(30deg) translateZ(-190.31798519999998px) translateY(231.90313590000002px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(136) {
+  border: 1px solid rgba(7,229,160,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(45deg) translateZ(-190.31798519999998px) translateY(231.90313590000002px) rotateY(180deg);
+  transform: rotateY(45deg) translateZ(-190.31798519999998px) translateY(231.90313590000002px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(137) {
+  border: 1px solid rgba(45,118,102,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(60deg) translateZ(-190.31798519999998px) translateY(231.90313590000002px) rotateY(180deg);
+  transform: rotateY(60deg) translateZ(-190.31798519999998px) translateY(231.90313590000002px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(138) {
+  border: 1px solid rgba(125,45,136,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(75deg) translateZ(-190.31798519999998px) translateY(231.90313590000002px) rotateY(180deg);
+  transform: rotateY(75deg) translateZ(-190.31798519999998px) translateY(231.90313590000002px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(139) {
+  border: 1px solid rgba(27,110,245,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(90deg) translateZ(-190.31798519999998px) translateY(231.90313590000002px) rotateY(180deg);
+  transform: rotateY(90deg) translateZ(-190.31798519999998px) translateY(231.90313590000002px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(140) {
+  border: 1px solid rgba(11,235,108,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(105deg) translateZ(-190.31798519999998px) translateY(231.90313590000002px) rotateY(180deg);
+  transform: rotateY(105deg) translateZ(-190.31798519999998px) translateY(231.90313590000002px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(141) {
+  border: 1px solid rgba(126,76,243,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(120deg) translateZ(-190.31798519999998px) translateY(231.90313590000002px) rotateY(180deg);
+  transform: rotateY(120deg) translateZ(-190.31798519999998px) translateY(231.90313590000002px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(142) {
+  border: 1px solid rgba(9,80,195,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(135deg) translateZ(-190.31798519999998px) translateY(231.90313590000002px) rotateY(180deg);
+  transform: rotateY(135deg) translateZ(-190.31798519999998px) translateY(231.90313590000002px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(143) {
+  border: 1px solid rgba(140,21,146,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(150deg) translateZ(-190.31798519999998px) translateY(231.90313590000002px) rotateY(180deg);
+  transform: rotateY(150deg) translateZ(-190.31798519999998px) translateY(231.90313590000002px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(144) {
+  border: 1px solid rgba(124,140,51,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(165deg) translateZ(-190.31798519999998px) translateY(231.90313590000002px) rotateY(180deg);
+  transform: rotateY(165deg) translateZ(-190.31798519999998px) translateY(231.90313590000002px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(145) {
+  border: 1px solid rgba(105,32,162,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(0deg) translateZ(-231.90313590000002px) translateY(190.31798519999998px) rotateY(180deg);
+  transform: rotateY(0deg) translateZ(-231.90313590000002px) translateY(190.31798519999998px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(146) {
+  border: 1px solid rgba(138,51,106,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(15deg) translateZ(-231.90313590000002px) translateY(190.31798519999998px) rotateY(180deg);
+  transform: rotateY(15deg) translateZ(-231.90313590000002px) translateY(190.31798519999998px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(147) {
+  border: 1px solid rgba(231,238,64,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(30deg) translateZ(-231.90313590000002px) translateY(190.31798519999998px) rotateY(180deg);
+  transform: rotateY(30deg) translateZ(-231.90313590000002px) translateY(190.31798519999998px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(148) {
+  border: 1px solid rgba(14,181,235,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(45deg) translateZ(-231.90313590000002px) translateY(190.31798519999998px) rotateY(180deg);
+  transform: rotateY(45deg) translateZ(-231.90313590000002px) translateY(190.31798519999998px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(149) {
+  border: 1px solid rgba(57,165,181,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(60deg) translateZ(-231.90313590000002px) translateY(190.31798519999998px) rotateY(180deg);
+  transform: rotateY(60deg) translateZ(-231.90313590000002px) translateY(190.31798519999998px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(150) {
+  border: 1px solid rgba(246,53,69,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(75deg) translateZ(-231.90313590000002px) translateY(190.31798519999998px) rotateY(180deg);
+  transform: rotateY(75deg) translateZ(-231.90313590000002px) translateY(190.31798519999998px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(151) {
+  border: 1px solid rgba(49,38,205,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(90deg) translateZ(-231.90313590000002px) translateY(190.31798519999998px) rotateY(180deg);
+  transform: rotateY(90deg) translateZ(-231.90313590000002px) translateY(190.31798519999998px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(152) {
+  border: 1px solid rgba(204,185,48,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(105deg) translateZ(-231.90313590000002px) translateY(190.31798519999998px) rotateY(180deg);
+  transform: rotateY(105deg) translateZ(-231.90313590000002px) translateY(190.31798519999998px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(153) {
+  border: 1px solid rgba(5,179,186,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(120deg) translateZ(-231.90313590000002px) translateY(190.31798519999998px) rotateY(180deg);
+  transform: rotateY(120deg) translateZ(-231.90313590000002px) translateY(190.31798519999998px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(154) {
+  border: 1px solid rgba(182,201,24,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(135deg) translateZ(-231.90313590000002px) translateY(190.31798519999998px) rotateY(180deg);
+  transform: rotateY(135deg) translateZ(-231.90313590000002px) translateY(190.31798519999998px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(155) {
+  border: 1px solid rgba(156,65,152,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(150deg) translateZ(-231.90313590000002px) translateY(190.31798519999998px) rotateY(180deg);
+  transform: rotateY(150deg) translateZ(-231.90313590000002px) translateY(190.31798519999998px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(156) {
+  border: 1px solid rgba(214,108,176,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(165deg) translateZ(-231.90313590000002px) translateY(190.31798519999998px) rotateY(180deg);
+  transform: rotateY(165deg) translateZ(-231.90313590000002px) translateY(190.31798519999998px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(157) {
+  border: 1px solid rgba(255,102,7,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(0deg) translateZ(-264.5763792px) translateY(141.4190211px) rotateY(180deg);
+  transform: rotateY(0deg) translateZ(-264.5763792px) translateY(141.4190211px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(158) {
+  border: 1px solid rgba(217,81,204,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(15deg) translateZ(-264.5763792px) translateY(141.4190211px) rotateY(180deg);
+  transform: rotateY(15deg) translateZ(-264.5763792px) translateY(141.4190211px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(159) {
+  border: 1px solid rgba(59,173,141,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(30deg) translateZ(-264.5763792px) translateY(141.4190211px) rotateY(180deg);
+  transform: rotateY(30deg) translateZ(-264.5763792px) translateY(141.4190211px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(160) {
+  border: 1px solid rgba(101,28,117,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(45deg) translateZ(-264.5763792px) translateY(141.4190211px) rotateY(180deg);
+  transform: rotateY(45deg) translateZ(-264.5763792px) translateY(141.4190211px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(161) {
+  border: 1px solid rgba(131,32,105,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(60deg) translateZ(-264.5763792px) translateY(141.4190211px) rotateY(180deg);
+  transform: rotateY(60deg) translateZ(-264.5763792px) translateY(141.4190211px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(162) {
+  border: 1px solid rgba(122,160,53,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(75deg) translateZ(-264.5763792px) translateY(141.4190211px) rotateY(180deg);
+  transform: rotateY(75deg) translateZ(-264.5763792px) translateY(141.4190211px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(163) {
+  border: 1px solid rgba(33,201,137,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(90deg) translateZ(-264.5763792px) translateY(141.4190211px) rotateY(180deg);
+  transform: rotateY(90deg) translateZ(-264.5763792px) translateY(141.4190211px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(164) {
+  border: 1px solid rgba(166,58,108,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(105deg) translateZ(-264.5763792px) translateY(141.4190211px) rotateY(180deg);
+  transform: rotateY(105deg) translateZ(-264.5763792px) translateY(141.4190211px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(165) {
+  border: 1px solid rgba(143,199,48,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(120deg) translateZ(-264.5763792px) translateY(141.4190211px) rotateY(180deg);
+  transform: rotateY(120deg) translateZ(-264.5763792px) translateY(141.4190211px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(166) {
+  border: 1px solid rgba(216,201,254,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(135deg) translateZ(-264.5763792px) translateY(141.4190211px) rotateY(180deg);
+  transform: rotateY(135deg) translateZ(-264.5763792px) translateY(141.4190211px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(167) {
+  border: 1px solid rgba(180,242,8,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(150deg) translateZ(-264.5763792px) translateY(141.4190211px) rotateY(180deg);
+  transform: rotateY(150deg) translateZ(-264.5763792px) translateY(141.4190211px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(168) {
+  border: 1px solid rgba(86,129,193,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(165deg) translateZ(-264.5763792px) translateY(141.4190211px) rotateY(180deg);
+  transform: rotateY(165deg) translateZ(-264.5763792px) translateY(141.4190211px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(169) {
+  border: 1px solid rgba(225,93,87,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(0deg) translateZ(-287.0821008px) translateY(87.0854031px) rotateY(180deg);
+  transform: rotateY(0deg) translateZ(-287.0821008px) translateY(87.0854031px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(170) {
+  border: 1px solid rgba(49,215,92,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(15deg) translateZ(-287.0821008px) translateY(87.0854031px) rotateY(180deg);
+  transform: rotateY(15deg) translateZ(-287.0821008px) translateY(87.0854031px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(171) {
+  border: 1px solid rgba(100,127,141,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(30deg) translateZ(-287.0821008px) translateY(87.0854031px) rotateY(180deg);
+  transform: rotateY(30deg) translateZ(-287.0821008px) translateY(87.0854031px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(172) {
+  border: 1px solid rgba(173,89,27,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(45deg) translateZ(-287.0821008px) translateY(87.0854031px) rotateY(180deg);
+  transform: rotateY(45deg) translateZ(-287.0821008px) translateY(87.0854031px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(173) {
+  border: 1px solid rgba(196,198,7,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(60deg) translateZ(-287.0821008px) translateY(87.0854031px) rotateY(180deg);
+  transform: rotateY(60deg) translateZ(-287.0821008px) translateY(87.0854031px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(174) {
+  border: 1px solid rgba(92,219,2,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(75deg) translateZ(-287.0821008px) translateY(87.0854031px) rotateY(180deg);
+  transform: rotateY(75deg) translateZ(-287.0821008px) translateY(87.0854031px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(175) {
+  border: 1px solid rgba(103,93,248,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(90deg) translateZ(-287.0821008px) translateY(87.0854031px) rotateY(180deg);
+  transform: rotateY(90deg) translateZ(-287.0821008px) translateY(87.0854031px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(176) {
+  border: 1px solid rgba(51,134,151,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(105deg) translateZ(-287.0821008px) translateY(87.0854031px) rotateY(180deg);
+  transform: rotateY(105deg) translateZ(-287.0821008px) translateY(87.0854031px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(177) {
+  border: 1px solid rgba(99,55,116,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(120deg) translateZ(-287.0821008px) translateY(87.0854031px) rotateY(180deg);
+  transform: rotateY(120deg) translateZ(-287.0821008px) translateY(87.0854031px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(178) {
+  border: 1px solid rgba(19,45,165,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(135deg) translateZ(-287.0821008px) translateY(87.0854031px) rotateY(180deg);
+  transform: rotateY(135deg) translateZ(-287.0821008px) translateY(87.0854031px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(179) {
+  border: 1px solid rgba(212,217,23,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(150deg) translateZ(-287.0821008px) translateY(87.0854031px) rotateY(180deg);
+  transform: rotateY(150deg) translateZ(-287.0821008px) translateY(87.0854031px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(180) {
+  border: 1px solid rgba(190,143,229,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(165deg) translateZ(-287.0821008px) translateY(87.0854031px) rotateY(180deg);
+  transform: rotateY(165deg) translateZ(-287.0821008px) translateY(87.0854031px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(181) {
+  border: 1px solid rgba(111,90,10,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(0deg) translateZ(-298.5554181px) translateY(29.405142px) rotateY(180deg);
+  transform: rotateY(0deg) translateZ(-298.5554181px) translateY(29.405142px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(182) {
+  border: 1px solid rgba(231,80,223,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(15deg) translateZ(-298.5554181px) translateY(29.405142px) rotateY(180deg);
+  transform: rotateY(15deg) translateZ(-298.5554181px) translateY(29.405142px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(183) {
+  border: 1px solid rgba(232,199,124,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(30deg) translateZ(-298.5554181px) translateY(29.405142px) rotateY(180deg);
+  transform: rotateY(30deg) translateZ(-298.5554181px) translateY(29.405142px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(184) {
+  border: 1px solid rgba(7,74,205,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(45deg) translateZ(-298.5554181px) translateY(29.405142px) rotateY(180deg);
+  transform: rotateY(45deg) translateZ(-298.5554181px) translateY(29.405142px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(185) {
+  border: 1px solid rgba(113,5,80,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(60deg) translateZ(-298.5554181px) translateY(29.405142px) rotateY(180deg);
+  transform: rotateY(60deg) translateZ(-298.5554181px) translateY(29.405142px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(186) {
+  border: 1px solid rgba(165,81,181,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(75deg) translateZ(-298.5554181px) translateY(29.405142px) rotateY(180deg);
+  transform: rotateY(75deg) translateZ(-298.5554181px) translateY(29.405142px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(187) {
+  border: 1px solid rgba(252,24,133,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(90deg) translateZ(-298.5554181px) translateY(29.405142px) rotateY(180deg);
+  transform: rotateY(90deg) translateZ(-298.5554181px) translateY(29.405142px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(188) {
+  border: 1px solid rgba(149,224,151,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(105deg) translateZ(-298.5554181px) translateY(29.405142px) rotateY(180deg);
+  transform: rotateY(105deg) translateZ(-298.5554181px) translateY(29.405142px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(189) {
+  border: 1px solid rgba(116,160,169,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(120deg) translateZ(-298.5554181px) translateY(29.405142px) rotateY(180deg);
+  transform: rotateY(120deg) translateZ(-298.5554181px) translateY(29.405142px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(190) {
+  border: 1px solid rgba(95,169,155,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(135deg) translateZ(-298.5554181px) translateY(29.405142px) rotateY(180deg);
+  transform: rotateY(135deg) translateZ(-298.5554181px) translateY(29.405142px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(191) {
+  border: 1px solid rgba(191,96,128,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(150deg) translateZ(-298.5554181px) translateY(29.405142px) rotateY(180deg);
+  transform: rotateY(150deg) translateZ(-298.5554181px) translateY(29.405142px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(192) {
+  border: 1px solid rgba(123,128,127,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(165deg) translateZ(-298.5554181px) translateY(29.405142px) rotateY(180deg);
+  transform: rotateY(165deg) translateZ(-298.5554181px) translateY(29.405142px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(193) {
+  border: 1px solid rgba(19,174,33,0.22);
+  width: 50px;
+  height: 50px;
+  -webkit-transform: rotateY(0deg) translateZ(-298.5554181px) translateY(-29.405142px) rotateY(180deg);
+  transform: rotateY(0deg) translateZ(-298.5554181px) translateY(-29.405142px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(194) {
+  border: 1px solid rgba(11,113,170,0.22);
+  width: 50px;
+  height: 50px;
+  -webkit-transform: rotateY(15deg) translateZ(-298.5554181px) translateY(-29.405142px) rotateY(180deg);
+  transform: rotateY(15deg) translateZ(-298.5554181px) translateY(-29.405142px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(195) {
+  border: 1px solid rgba(235,236,34,0.22);
+  width: 50px;
+  height: 50px;
+  -webkit-transform: rotateY(30deg) translateZ(-298.5554181px) translateY(-29.405142px) rotateY(180deg);
+  transform: rotateY(30deg) translateZ(-298.5554181px) translateY(-29.405142px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(196) {
+  border: 1px solid rgba(227,22,9,0.22);
+  width: 50px;
+  height: 50px;
+  -webkit-transform: rotateY(45deg) translateZ(-298.5554181px) translateY(-29.405142px) rotateY(180deg);
+  transform: rotateY(45deg) translateZ(-298.5554181px) translateY(-29.405142px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(197) {
+  border: 1px solid rgba(96,27,44,0.22);
+  width: 50px;
+  height: 50px;
+  -webkit-transform: rotateY(60deg) translateZ(-298.5554181px) translateY(-29.405142px) rotateY(180deg);
+  transform: rotateY(60deg) translateZ(-298.5554181px) translateY(-29.405142px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(198) {
+  border: 1px solid rgba(79,36,129,0.22);
+  width: 50px;
+  height: 50px;
+  -webkit-transform: rotateY(75deg) translateZ(-298.5554181px) translateY(-29.405142px) rotateY(180deg);
+  transform: rotateY(75deg) translateZ(-298.5554181px) translateY(-29.405142px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(199) {
+  border: 1px solid rgba(15,125,35,0.22);
+  width: 50px;
+  height: 50px;
+  -webkit-transform: rotateY(90deg) translateZ(-298.5554181px) translateY(-29.405142px) rotateY(180deg);
+  transform: rotateY(90deg) translateZ(-298.5554181px) translateY(-29.405142px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(200) {
+  border: 1px solid rgba(32,26,5,0.22);
+  width: 50px;
+  height: 50px;
+  -webkit-transform: rotateY(105deg) translateZ(-298.5554181px) translateY(-29.405142px) rotateY(180deg);
+  transform: rotateY(105deg) translateZ(-298.5554181px) translateY(-29.405142px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(201) {
+  border: 1px solid rgba(130,138,205,0.22);
+  width: 50px;
+  height: 50px;
+  -webkit-transform: rotateY(120deg) translateZ(-298.5554181px) translateY(-29.405142px) rotateY(180deg);
+  transform: rotateY(120deg) translateZ(-298.5554181px) translateY(-29.405142px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(202) {
+  border: 1px solid rgba(20,35,33,0.22);
+  width: 50px;
+  height: 50px;
+  -webkit-transform: rotateY(135deg) translateZ(-298.5554181px) translateY(-29.405142px) rotateY(180deg);
+  transform: rotateY(135deg) translateZ(-298.5554181px) translateY(-29.405142px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(203) {
+  border: 1px solid rgba(169,240,2,0.22);
+  width: 50px;
+  height: 50px;
+  -webkit-transform: rotateY(150deg) translateZ(-298.5554181px) translateY(-29.405142px) rotateY(180deg);
+  transform: rotateY(150deg) translateZ(-298.5554181px) translateY(-29.405142px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(204) {
+  border: 1px solid rgba(14,177,152,0.22);
+  width: 50px;
+  height: 50px;
+  -webkit-transform: rotateY(165deg) translateZ(-298.5554181px) translateY(-29.405142px) rotateY(180deg);
+  transform: rotateY(165deg) translateZ(-298.5554181px) translateY(-29.405142px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(205) {
+  border: 1px solid rgba(51,246,5,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(0deg) translateZ(-287.0821008px) translateY(-87.0854031px) rotateY(180deg);
+  transform: rotateY(0deg) translateZ(-287.0821008px) translateY(-87.0854031px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(206) {
+  border: 1px solid rgba(45,34,22,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(15deg) translateZ(-287.0821008px) translateY(-87.0854031px) rotateY(180deg);
+  transform: rotateY(15deg) translateZ(-287.0821008px) translateY(-87.0854031px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(207) {
+  border: 1px solid rgba(170,61,30,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(30deg) translateZ(-287.0821008px) translateY(-87.0854031px) rotateY(180deg);
+  transform: rotateY(30deg) translateZ(-287.0821008px) translateY(-87.0854031px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(208) {
+  border: 1px solid rgba(197,61,197,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(45deg) translateZ(-287.0821008px) translateY(-87.0854031px) rotateY(180deg);
+  transform: rotateY(45deg) translateZ(-287.0821008px) translateY(-87.0854031px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(209) {
+  border: 1px solid rgba(95,135,30,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(60deg) translateZ(-287.0821008px) translateY(-87.0854031px) rotateY(180deg);
+  transform: rotateY(60deg) translateZ(-287.0821008px) translateY(-87.0854031px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(210) {
+  border: 1px solid rgba(225,80,7,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(75deg) translateZ(-287.0821008px) translateY(-87.0854031px) rotateY(180deg);
+  transform: rotateY(75deg) translateZ(-287.0821008px) translateY(-87.0854031px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(211) {
+  border: 1px solid rgba(144,174,151,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(90deg) translateZ(-287.0821008px) translateY(-87.0854031px) rotateY(180deg);
+  transform: rotateY(90deg) translateZ(-287.0821008px) translateY(-87.0854031px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(212) {
+  border: 1px solid rgba(147,201,93,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(105deg) translateZ(-287.0821008px) translateY(-87.0854031px) rotateY(180deg);
+  transform: rotateY(105deg) translateZ(-287.0821008px) translateY(-87.0854031px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(213) {
+  border: 1px solid rgba(172,37,57,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(120deg) translateZ(-287.0821008px) translateY(-87.0854031px) rotateY(180deg);
+  transform: rotateY(120deg) translateZ(-287.0821008px) translateY(-87.0854031px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(214) {
+  border: 1px solid rgba(114,165,232,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(135deg) translateZ(-287.0821008px) translateY(-87.0854031px) rotateY(180deg);
+  transform: rotateY(135deg) translateZ(-287.0821008px) translateY(-87.0854031px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(215) {
+  border: 1px solid rgba(124,180,27,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(150deg) translateZ(-287.0821008px) translateY(-87.0854031px) rotateY(180deg);
+  transform: rotateY(150deg) translateZ(-287.0821008px) translateY(-87.0854031px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(216) {
+  border: 1px solid rgba(83,179,88,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(165deg) translateZ(-287.0821008px) translateY(-87.0854031px) rotateY(180deg);
+  transform: rotateY(165deg) translateZ(-287.0821008px) translateY(-87.0854031px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(217) {
+  border: 1px solid rgba(90,156,60,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(0deg) translateZ(-264.5763792px) translateY(-141.4190211px) rotateY(180deg);
+  transform: rotateY(0deg) translateZ(-264.5763792px) translateY(-141.4190211px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(218) {
+  border: 1px solid rgba(9,30,113,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(15deg) translateZ(-264.5763792px) translateY(-141.4190211px) rotateY(180deg);
+  transform: rotateY(15deg) translateZ(-264.5763792px) translateY(-141.4190211px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(219) {
+  border: 1px solid rgba(47,96,147,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(30deg) translateZ(-264.5763792px) translateY(-141.4190211px) rotateY(180deg);
+  transform: rotateY(30deg) translateZ(-264.5763792px) translateY(-141.4190211px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(220) {
+  border: 1px solid rgba(81,241,60,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(45deg) translateZ(-264.5763792px) translateY(-141.4190211px) rotateY(180deg);
+  transform: rotateY(45deg) translateZ(-264.5763792px) translateY(-141.4190211px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(221) {
+  border: 1px solid rgba(228,5,209,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(60deg) translateZ(-264.5763792px) translateY(-141.4190211px) rotateY(180deg);
+  transform: rotateY(60deg) translateZ(-264.5763792px) translateY(-141.4190211px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(222) {
+  border: 1px solid rgba(201,91,67,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(75deg) translateZ(-264.5763792px) translateY(-141.4190211px) rotateY(180deg);
+  transform: rotateY(75deg) translateZ(-264.5763792px) translateY(-141.4190211px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(223) {
+  border: 1px solid rgba(179,195,81,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(90deg) translateZ(-264.5763792px) translateY(-141.4190211px) rotateY(180deg);
+  transform: rotateY(90deg) translateZ(-264.5763792px) translateY(-141.4190211px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(224) {
+  border: 1px solid rgba(68,138,60,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(105deg) translateZ(-264.5763792px) translateY(-141.4190211px) rotateY(180deg);
+  transform: rotateY(105deg) translateZ(-264.5763792px) translateY(-141.4190211px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(225) {
+  border: 1px solid rgba(109,159,247,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(120deg) translateZ(-264.5763792px) translateY(-141.4190211px) rotateY(180deg);
+  transform: rotateY(120deg) translateZ(-264.5763792px) translateY(-141.4190211px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(226) {
+  border: 1px solid rgba(146,4,64,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(135deg) translateZ(-264.5763792px) translateY(-141.4190211px) rotateY(180deg);
+  transform: rotateY(135deg) translateZ(-264.5763792px) translateY(-141.4190211px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(227) {
+  border: 1px solid rgba(235,104,121,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(150deg) translateZ(-264.5763792px) translateY(-141.4190211px) rotateY(180deg);
+  transform: rotateY(150deg) translateZ(-264.5763792px) translateY(-141.4190211px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(228) {
+  border: 1px solid rgba(89,35,64,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(165deg) translateZ(-264.5763792px) translateY(-141.4190211px) rotateY(180deg);
+  transform: rotateY(165deg) translateZ(-264.5763792px) translateY(-141.4190211px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(229) {
+  border: 1px solid rgba(61,53,36,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(0deg) translateZ(-231.90313590000002px) translateY(-190.31798519999998px) rotateY(180deg);
+  transform: rotateY(0deg) translateZ(-231.90313590000002px) translateY(-190.31798519999998px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(230) {
+  border: 1px solid rgba(1,57,186,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(15deg) translateZ(-231.90313590000002px) translateY(-190.31798519999998px) rotateY(180deg);
+  transform: rotateY(15deg) translateZ(-231.90313590000002px) translateY(-190.31798519999998px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(231) {
+  border: 1px solid rgba(57,40,173,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(30deg) translateZ(-231.90313590000002px) translateY(-190.31798519999998px) rotateY(180deg);
+  transform: rotateY(30deg) translateZ(-231.90313590000002px) translateY(-190.31798519999998px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(232) {
+  border: 1px solid rgba(149,187,15,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(45deg) translateZ(-231.90313590000002px) translateY(-190.31798519999998px) rotateY(180deg);
+  transform: rotateY(45deg) translateZ(-231.90313590000002px) translateY(-190.31798519999998px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(233) {
+  border: 1px solid rgba(212,98,228,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(60deg) translateZ(-231.90313590000002px) translateY(-190.31798519999998px) rotateY(180deg);
+  transform: rotateY(60deg) translateZ(-231.90313590000002px) translateY(-190.31798519999998px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(234) {
+  border: 1px solid rgba(78,25,127,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(75deg) translateZ(-231.90313590000002px) translateY(-190.31798519999998px) rotateY(180deg);
+  transform: rotateY(75deg) translateZ(-231.90313590000002px) translateY(-190.31798519999998px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(235) {
+  border: 1px solid rgba(108,205,93,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(90deg) translateZ(-231.90313590000002px) translateY(-190.31798519999998px) rotateY(180deg);
+  transform: rotateY(90deg) translateZ(-231.90313590000002px) translateY(-190.31798519999998px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(236) {
+  border: 1px solid rgba(149,244,244,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(105deg) translateZ(-231.90313590000002px) translateY(-190.31798519999998px) rotateY(180deg);
+  transform: rotateY(105deg) translateZ(-231.90313590000002px) translateY(-190.31798519999998px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(237) {
+  border: 1px solid rgba(132,47,229,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(120deg) translateZ(-231.90313590000002px) translateY(-190.31798519999998px) rotateY(180deg);
+  transform: rotateY(120deg) translateZ(-231.90313590000002px) translateY(-190.31798519999998px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(238) {
+  border: 1px solid rgba(44,1,250,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(135deg) translateZ(-231.90313590000002px) translateY(-190.31798519999998px) rotateY(180deg);
+  transform: rotateY(135deg) translateZ(-231.90313590000002px) translateY(-190.31798519999998px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(239) {
+  border: 1px solid rgba(19,115,153,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(150deg) translateZ(-231.90313590000002px) translateY(-190.31798519999998px) rotateY(180deg);
+  transform: rotateY(150deg) translateZ(-231.90313590000002px) translateY(-190.31798519999998px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(240) {
+  border: 1px solid rgba(109,41,111,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(165deg) translateZ(-231.90313590000002px) translateY(-190.31798519999998px) rotateY(180deg);
+  transform: rotateY(165deg) translateZ(-231.90313590000002px) translateY(-190.31798519999998px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(241) {
+  border: 1px solid rgba(101,197,44,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(0deg) translateZ(-190.31798519999998px) translateY(-231.90313590000002px) rotateY(180deg);
+  transform: rotateY(0deg) translateZ(-190.31798519999998px) translateY(-231.90313590000002px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(242) {
+  border: 1px solid rgba(233,111,8,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(15deg) translateZ(-190.31798519999998px) translateY(-231.90313590000002px) rotateY(180deg);
+  transform: rotateY(15deg) translateZ(-190.31798519999998px) translateY(-231.90313590000002px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(243) {
+  border: 1px solid rgba(190,126,190,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(30deg) translateZ(-190.31798519999998px) translateY(-231.90313590000002px) rotateY(180deg);
+  transform: rotateY(30deg) translateZ(-190.31798519999998px) translateY(-231.90313590000002px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(244) {
+  border: 1px solid rgba(102,99,90,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(45deg) translateZ(-190.31798519999998px) translateY(-231.90313590000002px) rotateY(180deg);
+  transform: rotateY(45deg) translateZ(-190.31798519999998px) translateY(-231.90313590000002px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(245) {
+  border: 1px solid rgba(187,154,249,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(60deg) translateZ(-190.31798519999998px) translateY(-231.90313590000002px) rotateY(180deg);
+  transform: rotateY(60deg) translateZ(-190.31798519999998px) translateY(-231.90313590000002px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(246) {
+  border: 1px solid rgba(2,176,74,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(75deg) translateZ(-190.31798519999998px) translateY(-231.90313590000002px) rotateY(180deg);
+  transform: rotateY(75deg) translateZ(-190.31798519999998px) translateY(-231.90313590000002px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(247) {
+  border: 1px solid rgba(36,123,203,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(90deg) translateZ(-190.31798519999998px) translateY(-231.90313590000002px) rotateY(180deg);
+  transform: rotateY(90deg) translateZ(-190.31798519999998px) translateY(-231.90313590000002px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(248) {
+  border: 1px solid rgba(254,233,61,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(105deg) translateZ(-190.31798519999998px) translateY(-231.90313590000002px) rotateY(180deg);
+  transform: rotateY(105deg) translateZ(-190.31798519999998px) translateY(-231.90313590000002px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(249) {
+  border: 1px solid rgba(46,115,104,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(120deg) translateZ(-190.31798519999998px) translateY(-231.90313590000002px) rotateY(180deg);
+  transform: rotateY(120deg) translateZ(-190.31798519999998px) translateY(-231.90313590000002px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(250) {
+  border: 1px solid rgba(84,130,7,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(135deg) translateZ(-190.31798519999998px) translateY(-231.90313590000002px) rotateY(180deg);
+  transform: rotateY(135deg) translateZ(-190.31798519999998px) translateY(-231.90313590000002px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(251) {
+  border: 1px solid rgba(167,67,91,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(150deg) translateZ(-190.31798519999998px) translateY(-231.90313590000002px) rotateY(180deg);
+  transform: rotateY(150deg) translateZ(-190.31798519999998px) translateY(-231.90313590000002px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(252) {
+  border: 1px solid rgba(69,117,237,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(165deg) translateZ(-190.31798519999998px) translateY(-231.90313590000002px) rotateY(180deg);
+  transform: rotateY(165deg) translateZ(-190.31798519999998px) translateY(-231.90313590000002px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(253) {
+  border: 1px solid rgba(10,153,194,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(0deg) translateZ(-141.4190211px) translateY(-264.5763792px) rotateY(180deg);
+  transform: rotateY(0deg) translateZ(-141.4190211px) translateY(-264.5763792px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(254) {
+  border: 1px solid rgba(169,124,248,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(15deg) translateZ(-141.4190211px) translateY(-264.5763792px) rotateY(180deg);
+  transform: rotateY(15deg) translateZ(-141.4190211px) translateY(-264.5763792px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(255) {
+  border: 1px solid rgba(100,150,120,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(30deg) translateZ(-141.4190211px) translateY(-264.5763792px) rotateY(180deg);
+  transform: rotateY(30deg) translateZ(-141.4190211px) translateY(-264.5763792px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(256) {
+  border: 1px solid rgba(54,37,65,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(45deg) translateZ(-141.4190211px) translateY(-264.5763792px) rotateY(180deg);
+  transform: rotateY(45deg) translateZ(-141.4190211px) translateY(-264.5763792px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(257) {
+  border: 1px solid rgba(178,232,52,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(60deg) translateZ(-141.4190211px) translateY(-264.5763792px) rotateY(180deg);
+  transform: rotateY(60deg) translateZ(-141.4190211px) translateY(-264.5763792px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(258) {
+  border: 1px solid rgba(43,214,219,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(75deg) translateZ(-141.4190211px) translateY(-264.5763792px) rotateY(180deg);
+  transform: rotateY(75deg) translateZ(-141.4190211px) translateY(-264.5763792px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(259) {
+  border: 1px solid rgba(204,22,138,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(90deg) translateZ(-141.4190211px) translateY(-264.5763792px) rotateY(180deg);
+  transform: rotateY(90deg) translateZ(-141.4190211px) translateY(-264.5763792px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(260) {
+  border: 1px solid rgba(222,124,248,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(105deg) translateZ(-141.4190211px) translateY(-264.5763792px) rotateY(180deg);
+  transform: rotateY(105deg) translateZ(-141.4190211px) translateY(-264.5763792px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(261) {
+  border: 1px solid rgba(186,227,218,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(120deg) translateZ(-141.4190211px) translateY(-264.5763792px) rotateY(180deg);
+  transform: rotateY(120deg) translateZ(-141.4190211px) translateY(-264.5763792px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(262) {
+  border: 1px solid rgba(220,74,3,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(135deg) translateZ(-141.4190211px) translateY(-264.5763792px) rotateY(180deg);
+  transform: rotateY(135deg) translateZ(-141.4190211px) translateY(-264.5763792px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(263) {
+  border: 1px solid rgba(30,149,139,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(150deg) translateZ(-141.4190211px) translateY(-264.5763792px) rotateY(180deg);
+  transform: rotateY(150deg) translateZ(-141.4190211px) translateY(-264.5763792px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(264) {
+  border: 1px solid rgba(229,217,71,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(165deg) translateZ(-141.4190211px) translateY(-264.5763792px) rotateY(180deg);
+  transform: rotateY(165deg) translateZ(-141.4190211px) translateY(-264.5763792px) rotateY(180deg);
+}
+.sphere-list > .pic:nth-child(265) {
+  border: 1px solid rgba(132,102,135,0.22);
+  -webkit-transform: rotateY(0deg) translateZ(-87.0854031px) translateY(-287.0821008px) rotateY(180deg);
+  transform: rotateY(0deg) translateZ(-87.0854031px) translateY(-287.0821008px) rotateY(180deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(266) {
+  border: 1px solid rgba(137,61,158,0.22);
+  -webkit-transform: rotateY(15deg) translateZ(-87.0854031px) translateY(-287.0821008px) rotateY(180deg);
+  transform: rotateY(15deg) translateZ(-87.0854031px) translateY(-287.0821008px) rotateY(180deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(267) {
+  border: 1px solid rgba(175,89,39,0.22);
+  -webkit-transform: rotateY(30deg) translateZ(-87.0854031px) translateY(-287.0821008px) rotateY(180deg);
+  transform: rotateY(30deg) translateZ(-87.0854031px) translateY(-287.0821008px) rotateY(180deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(268) {
+  border: 1px solid rgba(155,95,14,0.22);
+  -webkit-transform: rotateY(45deg) translateZ(-87.0854031px) translateY(-287.0821008px) rotateY(180deg);
+  transform: rotateY(45deg) translateZ(-87.0854031px) translateY(-287.0821008px) rotateY(180deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(269) {
+  border: 1px solid rgba(241,89,209,0.22);
+  -webkit-transform: rotateY(60deg) translateZ(-87.0854031px) translateY(-287.0821008px) rotateY(180deg);
+  transform: rotateY(60deg) translateZ(-87.0854031px) translateY(-287.0821008px) rotateY(180deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(270) {
+  border: 1px solid rgba(244,81,155,0.22);
+  -webkit-transform: rotateY(75deg) translateZ(-87.0854031px) translateY(-287.0821008px) rotateY(180deg);
+  transform: rotateY(75deg) translateZ(-87.0854031px) translateY(-287.0821008px) rotateY(180deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(271) {
+  border: 1px solid rgba(125,204,176,0.22);
+  -webkit-transform: rotateY(90deg) translateZ(-87.0854031px) translateY(-287.0821008px) rotateY(180deg);
+  transform: rotateY(90deg) translateZ(-87.0854031px) translateY(-287.0821008px) rotateY(180deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(272) {
+  border: 1px solid rgba(105,136,239,0.22);
+  -webkit-transform: rotateY(105deg) translateZ(-87.0854031px) translateY(-287.0821008px) rotateY(180deg);
+  transform: rotateY(105deg) translateZ(-87.0854031px) translateY(-287.0821008px) rotateY(180deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(273) {
+  border: 1px solid rgba(208,186,154,0.22);
+  -webkit-transform: rotateY(120deg) translateZ(-87.0854031px) translateY(-287.0821008px) rotateY(180deg);
+  transform: rotateY(120deg) translateZ(-87.0854031px) translateY(-287.0821008px) rotateY(180deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(274) {
+  border: 1px solid rgba(17,108,68,0.22);
+  -webkit-transform: rotateY(135deg) translateZ(-87.0854031px) translateY(-287.0821008px) rotateY(180deg);
+  transform: rotateY(135deg) translateZ(-87.0854031px) translateY(-287.0821008px) rotateY(180deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(275) {
+  border: 1px solid rgba(199,159,162,0.22);
+  -webkit-transform: rotateY(150deg) translateZ(-87.0854031px) translateY(-287.0821008px) rotateY(180deg);
+  transform: rotateY(150deg) translateZ(-87.0854031px) translateY(-287.0821008px) rotateY(180deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(276) {
+  border: 1px solid rgba(80,151,155,0.22);
+  -webkit-transform: rotateY(165deg) translateZ(-87.0854031px) translateY(-287.0821008px) rotateY(180deg);
+  transform: rotateY(165deg) translateZ(-87.0854031px) translateY(-287.0821008px) rotateY(180deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(277) {
+  border: 1px solid rgba(252,35,176,0.22);
+  -webkit-transform: rotateY(0deg) translateZ(-29.405142px) translateY(-298.5554181px) rotateY(180deg);
+  transform: rotateY(0deg) translateZ(-29.405142px) translateY(-298.5554181px) rotateY(180deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(278) {
+  border: 1px solid rgba(246,24,1,0.22);
+  -webkit-transform: rotateY(15deg) translateZ(-29.405142px) translateY(-298.5554181px) rotateY(180deg);
+  transform: rotateY(15deg) translateZ(-29.405142px) translateY(-298.5554181px) rotateY(180deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(279) {
+  border: 1px solid rgba(25,181,249,0.22);
+  -webkit-transform: rotateY(30deg) translateZ(-29.405142px) translateY(-298.5554181px) rotateY(180deg);
+  transform: rotateY(30deg) translateZ(-29.405142px) translateY(-298.5554181px) rotateY(180deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(280) {
+  border: 1px solid rgba(187,231,159,0.22);
+  -webkit-transform: rotateY(45deg) translateZ(-29.405142px) translateY(-298.5554181px) rotateY(180deg);
+  transform: rotateY(45deg) translateZ(-29.405142px) translateY(-298.5554181px) rotateY(180deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(281) {
+  border: 1px solid rgba(185,243,95,0.22);
+  -webkit-transform: rotateY(60deg) translateZ(-29.405142px) translateY(-298.5554181px) rotateY(180deg);
+  transform: rotateY(60deg) translateZ(-29.405142px) translateY(-298.5554181px) rotateY(180deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(282) {
+  border: 1px solid rgba(62,32,71,0.22);
+  -webkit-transform: rotateY(75deg) translateZ(-29.405142px) translateY(-298.5554181px) rotateY(180deg);
+  transform: rotateY(75deg) translateZ(-29.405142px) translateY(-298.5554181px) rotateY(180deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(283) {
+  border: 1px solid rgba(242,59,167,0.22);
+  -webkit-transform: rotateY(90deg) translateZ(-29.405142px) translateY(-298.5554181px) rotateY(180deg);
+  transform: rotateY(90deg) translateZ(-29.405142px) translateY(-298.5554181px) rotateY(180deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(284) {
+  border: 1px solid rgba(178,61,188,0.22);
+  -webkit-transform: rotateY(105deg) translateZ(-29.405142px) translateY(-298.5554181px) rotateY(180deg);
+  transform: rotateY(105deg) translateZ(-29.405142px) translateY(-298.5554181px) rotateY(180deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(285) {
+  border: 1px solid rgba(37,121,159,0.22);
+  -webkit-transform: rotateY(120deg) translateZ(-29.405142px) translateY(-298.5554181px) rotateY(180deg);
+  transform: rotateY(120deg) translateZ(-29.405142px) translateY(-298.5554181px) rotateY(180deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(286) {
+  border: 1px solid rgba(101,209,208,0.22);
+  -webkit-transform: rotateY(135deg) translateZ(-29.405142px) translateY(-298.5554181px) rotateY(180deg);
+  transform: rotateY(135deg) translateZ(-29.405142px) translateY(-298.5554181px) rotateY(180deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(287) {
+  border: 1px solid rgba(77,161,212,0.22);
+  -webkit-transform: rotateY(150deg) translateZ(-29.405142px) translateY(-298.5554181px) rotateY(180deg);
+  transform: rotateY(150deg) translateZ(-29.405142px) translateY(-298.5554181px) rotateY(180deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(288) {
+  border: 1px solid rgba(153,254,7,0.22);
+  -webkit-transform: rotateY(165deg) translateZ(-29.405142px) translateY(-298.5554181px) rotateY(180deg);
+  transform: rotateY(165deg) translateZ(-29.405142px) translateY(-298.5554181px) rotateY(180deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(289) {
+  border: 1px solid rgba(131,89,42,0.22);
+  -webkit-transform: rotateY(0deg) translateZ(29.405142px) translateY(-298.5554181px) rotateY(0deg);
+  transform: rotateY(0deg) translateZ(29.405142px) translateY(-298.5554181px) rotateY(0deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(290) {
+  border: 1px solid rgba(178,167,81,0.22);
+  -webkit-transform: rotateY(15deg) translateZ(29.405142px) translateY(-298.5554181px) rotateY(0deg);
+  transform: rotateY(15deg) translateZ(29.405142px) translateY(-298.5554181px) rotateY(0deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(291) {
+  border: 1px solid rgba(148,139,37,0.22);
+  -webkit-transform: rotateY(30deg) translateZ(29.405142px) translateY(-298.5554181px) rotateY(0deg);
+  transform: rotateY(30deg) translateZ(29.405142px) translateY(-298.5554181px) rotateY(0deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(292) {
+  border: 1px solid rgba(137,236,90,0.22);
+  -webkit-transform: rotateY(45deg) translateZ(29.405142px) translateY(-298.5554181px) rotateY(0deg);
+  transform: rotateY(45deg) translateZ(29.405142px) translateY(-298.5554181px) rotateY(0deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(293) {
+  border: 1px solid rgba(105,76,117,0.22);
+  -webkit-transform: rotateY(60deg) translateZ(29.405142px) translateY(-298.5554181px) rotateY(0deg);
+  transform: rotateY(60deg) translateZ(29.405142px) translateY(-298.5554181px) rotateY(0deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(294) {
+  border: 1px solid rgba(10,131,54,0.22);
+  -webkit-transform: rotateY(75deg) translateZ(29.405142px) translateY(-298.5554181px) rotateY(0deg);
+  transform: rotateY(75deg) translateZ(29.405142px) translateY(-298.5554181px) rotateY(0deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(295) {
+  border: 1px solid rgba(104,31,58,0.22);
+  -webkit-transform: rotateY(90deg) translateZ(29.405142px) translateY(-298.5554181px) rotateY(0deg);
+  transform: rotateY(90deg) translateZ(29.405142px) translateY(-298.5554181px) rotateY(0deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(296) {
+  border: 1px solid rgba(241,14,152,0.22);
+  -webkit-transform: rotateY(105deg) translateZ(29.405142px) translateY(-298.5554181px) rotateY(0deg);
+  transform: rotateY(105deg) translateZ(29.405142px) translateY(-298.5554181px) rotateY(0deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(297) {
+  border: 1px solid rgba(57,205,41,0.22);
+  -webkit-transform: rotateY(120deg) translateZ(29.405142px) translateY(-298.5554181px) rotateY(0deg);
+  transform: rotateY(120deg) translateZ(29.405142px) translateY(-298.5554181px) rotateY(0deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(298) {
+  border: 1px solid rgba(233,138,241,0.22);
+  -webkit-transform: rotateY(135deg) translateZ(29.405142px) translateY(-298.5554181px) rotateY(0deg);
+  transform: rotateY(135deg) translateZ(29.405142px) translateY(-298.5554181px) rotateY(0deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(299) {
+  border: 1px solid rgba(198,45,105,0.22);
+  -webkit-transform: rotateY(150deg) translateZ(29.405142px) translateY(-298.5554181px) rotateY(0deg);
+  transform: rotateY(150deg) translateZ(29.405142px) translateY(-298.5554181px) rotateY(0deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(300) {
+  border: 1px solid rgba(73,57,114,0.22);
+  -webkit-transform: rotateY(165deg) translateZ(29.405142px) translateY(-298.5554181px) rotateY(0deg);
+  transform: rotateY(165deg) translateZ(29.405142px) translateY(-298.5554181px) rotateY(0deg);
+  width: 4px;
+  height: 4px;
+}
+.sphere-list > .pic:nth-child(301) {
+  border: 1px solid rgba(81,216,126,0.22);
+  -webkit-transform: rotateY(0deg) translateZ(87.0854031px) translateY(-287.0821008px) rotateY(0deg);
+  transform: rotateY(0deg) translateZ(87.0854031px) translateY(-287.0821008px) rotateY(0deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(302) {
+  border: 1px solid rgba(215,252,81,0.22);
+  -webkit-transform: rotateY(15deg) translateZ(87.0854031px) translateY(-287.0821008px) rotateY(0deg);
+  transform: rotateY(15deg) translateZ(87.0854031px) translateY(-287.0821008px) rotateY(0deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(303) {
+  border: 1px solid rgba(175,64,98,0.22);
+  -webkit-transform: rotateY(30deg) translateZ(87.0854031px) translateY(-287.0821008px) rotateY(0deg);
+  transform: rotateY(30deg) translateZ(87.0854031px) translateY(-287.0821008px) rotateY(0deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(304) {
+  border: 1px solid rgba(126,174,34,0.22);
+  -webkit-transform: rotateY(45deg) translateZ(87.0854031px) translateY(-287.0821008px) rotateY(0deg);
+  transform: rotateY(45deg) translateZ(87.0854031px) translateY(-287.0821008px) rotateY(0deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(305) {
+  border: 1px solid rgba(109,29,94,0.22);
+  -webkit-transform: rotateY(60deg) translateZ(87.0854031px) translateY(-287.0821008px) rotateY(0deg);
+  transform: rotateY(60deg) translateZ(87.0854031px) translateY(-287.0821008px) rotateY(0deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(306) {
+  border: 1px solid rgba(216,177,66,0.22);
+  -webkit-transform: rotateY(75deg) translateZ(87.0854031px) translateY(-287.0821008px) rotateY(0deg);
+  transform: rotateY(75deg) translateZ(87.0854031px) translateY(-287.0821008px) rotateY(0deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(307) {
+  border: 1px solid rgba(124,48,2,0.22);
+  -webkit-transform: rotateY(90deg) translateZ(87.0854031px) translateY(-287.0821008px) rotateY(0deg);
+  transform: rotateY(90deg) translateZ(87.0854031px) translateY(-287.0821008px) rotateY(0deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(308) {
+  border: 1px solid rgba(201,19,253,0.22);
+  -webkit-transform: rotateY(105deg) translateZ(87.0854031px) translateY(-287.0821008px) rotateY(0deg);
+  transform: rotateY(105deg) translateZ(87.0854031px) translateY(-287.0821008px) rotateY(0deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(309) {
+  border: 1px solid rgba(61,45,52,0.22);
+  -webkit-transform: rotateY(120deg) translateZ(87.0854031px) translateY(-287.0821008px) rotateY(0deg);
+  transform: rotateY(120deg) translateZ(87.0854031px) translateY(-287.0821008px) rotateY(0deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(310) {
+  border: 1px solid rgba(226,95,228,0.22);
+  -webkit-transform: rotateY(135deg) translateZ(87.0854031px) translateY(-287.0821008px) rotateY(0deg);
+  transform: rotateY(135deg) translateZ(87.0854031px) translateY(-287.0821008px) rotateY(0deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(311) {
+  border: 1px solid rgba(229,82,34,0.22);
+  -webkit-transform: rotateY(150deg) translateZ(87.0854031px) translateY(-287.0821008px) rotateY(0deg);
+  transform: rotateY(150deg) translateZ(87.0854031px) translateY(-287.0821008px) rotateY(0deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(312) {
+  border: 1px solid rgba(185,179,47,0.22);
+  -webkit-transform: rotateY(165deg) translateZ(87.0854031px) translateY(-287.0821008px) rotateY(0deg);
+  transform: rotateY(165deg) translateZ(87.0854031px) translateY(-287.0821008px) rotateY(0deg);
+  width: 15px;
+  height: 15px;
+}
+.sphere-list > .pic:nth-child(313) {
+  border: 1px solid rgba(133,93,195,0.22);
+  width: 25px;
+  height: 25px;
+  -webkit-transform: rotateY(0deg) translateZ(141.4190211px) translateY(-264.5763792px) rotateY(0deg);
+  transform: rotateY(0deg) translateZ(141.4190211px) translateY(-264.5763792px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(314) {
+  border: 1px solid rgba(71,217,235,0.22);
+  width: 25px;
+  height: 25px;
+  -webkit-transform: rotateY(15deg) translateZ(141.4190211px) translateY(-264.5763792px) rotateY(0deg);
+  transform: rotateY(15deg) translateZ(141.4190211px) translateY(-264.5763792px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(315) {
+  border: 1px solid rgba(162,17,227,0.22);
+  width: 25px;
+  height: 25px;
+  -webkit-transform: rotateY(30deg) translateZ(141.4190211px) translateY(-264.5763792px) rotateY(0deg);
+  transform: rotateY(30deg) translateZ(141.4190211px) translateY(-264.5763792px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(316) {
+  border: 1px solid rgba(132,114,92,0.22);
+  width: 25px;
+  height: 25px;
+  -webkit-transform: rotateY(45deg) translateZ(141.4190211px) translateY(-264.5763792px) rotateY(0deg);
+  transform: rotateY(45deg) translateZ(141.4190211px) translateY(-264.5763792px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(317) {
+  border: 1px solid rgba(36,131,204,0.22);
+  width: 25px;
+  height: 25px;
+  -webkit-transform: rotateY(60deg) translateZ(141.4190211px) translateY(-264.5763792px) rotateY(0deg);
+  transform: rotateY(60deg) translateZ(141.4190211px) translateY(-264.5763792px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(318) {
+  border: 1px solid rgba(163,108,213,0.22);
+  width: 25px;
+  height: 25px;
+  -webkit-transform: rotateY(75deg) translateZ(141.4190211px) translateY(-264.5763792px) rotateY(0deg);
+  transform: rotateY(75deg) translateZ(141.4190211px) translateY(-264.5763792px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(319) {
+  border: 1px solid rgba(105,40,208,0.22);
+  width: 25px;
+  height: 25px;
+  -webkit-transform: rotateY(90deg) translateZ(141.4190211px) translateY(-264.5763792px) rotateY(0deg);
+  transform: rotateY(90deg) translateZ(141.4190211px) translateY(-264.5763792px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(320) {
+  border: 1px solid rgba(8,33,221,0.22);
+  width: 25px;
+  height: 25px;
+  -webkit-transform: rotateY(105deg) translateZ(141.4190211px) translateY(-264.5763792px) rotateY(0deg);
+  transform: rotateY(105deg) translateZ(141.4190211px) translateY(-264.5763792px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(321) {
+  border: 1px solid rgba(55,248,97,0.22);
+  width: 25px;
+  height: 25px;
+  -webkit-transform: rotateY(120deg) translateZ(141.4190211px) translateY(-264.5763792px) rotateY(0deg);
+  transform: rotateY(120deg) translateZ(141.4190211px) translateY(-264.5763792px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(322) {
+  border: 1px solid rgba(240,246,9,0.22);
+  width: 25px;
+  height: 25px;
+  -webkit-transform: rotateY(135deg) translateZ(141.4190211px) translateY(-264.5763792px) rotateY(0deg);
+  transform: rotateY(135deg) translateZ(141.4190211px) translateY(-264.5763792px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(323) {
+  border: 1px solid rgba(125,194,164,0.22);
+  width: 25px;
+  height: 25px;
+  -webkit-transform: rotateY(150deg) translateZ(141.4190211px) translateY(-264.5763792px) rotateY(0deg);
+  transform: rotateY(150deg) translateZ(141.4190211px) translateY(-264.5763792px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(324) {
+  border: 1px solid rgba(249,218,121,0.22);
+  width: 25px;
+  height: 25px;
+  -webkit-transform: rotateY(165deg) translateZ(141.4190211px) translateY(-264.5763792px) rotateY(0deg);
+  transform: rotateY(165deg) translateZ(141.4190211px) translateY(-264.5763792px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(325) {
+  border: 1px solid rgba(107,14,118,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(0deg) translateZ(190.31798519999998px) translateY(-231.90313590000002px) rotateY(0deg);
+  transform: rotateY(0deg) translateZ(190.31798519999998px) translateY(-231.90313590000002px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(326) {
+  border: 1px solid rgba(71,15,231,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(15deg) translateZ(190.31798519999998px) translateY(-231.90313590000002px) rotateY(0deg);
+  transform: rotateY(15deg) translateZ(190.31798519999998px) translateY(-231.90313590000002px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(327) {
+  border: 1px solid rgba(195,103,60,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(30deg) translateZ(190.31798519999998px) translateY(-231.90313590000002px) rotateY(0deg);
+  transform: rotateY(30deg) translateZ(190.31798519999998px) translateY(-231.90313590000002px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(328) {
+  border: 1px solid rgba(38,231,156,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(45deg) translateZ(190.31798519999998px) translateY(-231.90313590000002px) rotateY(0deg);
+  transform: rotateY(45deg) translateZ(190.31798519999998px) translateY(-231.90313590000002px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(329) {
+  border: 1px solid rgba(123,235,106,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(60deg) translateZ(190.31798519999998px) translateY(-231.90313590000002px) rotateY(0deg);
+  transform: rotateY(60deg) translateZ(190.31798519999998px) translateY(-231.90313590000002px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(330) {
+  border: 1px solid rgba(99,76,243,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(75deg) translateZ(190.31798519999998px) translateY(-231.90313590000002px) rotateY(0deg);
+  transform: rotateY(75deg) translateZ(190.31798519999998px) translateY(-231.90313590000002px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(331) {
+  border: 1px solid rgba(91,131,124,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(90deg) translateZ(190.31798519999998px) translateY(-231.90313590000002px) rotateY(0deg);
+  transform: rotateY(90deg) translateZ(190.31798519999998px) translateY(-231.90313590000002px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(332) {
+  border: 1px solid rgba(123,40,39,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(105deg) translateZ(190.31798519999998px) translateY(-231.90313590000002px) rotateY(0deg);
+  transform: rotateY(105deg) translateZ(190.31798519999998px) translateY(-231.90313590000002px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(333) {
+  border: 1px solid rgba(41,200,165,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(120deg) translateZ(190.31798519999998px) translateY(-231.90313590000002px) rotateY(0deg);
+  transform: rotateY(120deg) translateZ(190.31798519999998px) translateY(-231.90313590000002px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(334) {
+  border: 1px solid rgba(115,226,210,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(135deg) translateZ(190.31798519999998px) translateY(-231.90313590000002px) rotateY(0deg);
+  transform: rotateY(135deg) translateZ(190.31798519999998px) translateY(-231.90313590000002px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(335) {
+  border: 1px solid rgba(3,251,217,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(150deg) translateZ(190.31798519999998px) translateY(-231.90313590000002px) rotateY(0deg);
+  transform: rotateY(150deg) translateZ(190.31798519999998px) translateY(-231.90313590000002px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(336) {
+  border: 1px solid rgba(55,131,8,0.22);
+  width: 30.46875px;
+  height: 30.46875px;
+  -webkit-transform: rotateY(165deg) translateZ(190.31798519999998px) translateY(-231.90313590000002px) rotateY(0deg);
+  transform: rotateY(165deg) translateZ(190.31798519999998px) translateY(-231.90313590000002px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(337) {
+  border: 1px solid rgba(23,202,130,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(0deg) translateZ(231.90313590000002px) translateY(-190.31798519999998px) rotateY(0deg);
+  transform: rotateY(0deg) translateZ(231.90313590000002px) translateY(-190.31798519999998px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(338) {
+  border: 1px solid rgba(164,77,234,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(15deg) translateZ(231.90313590000002px) translateY(-190.31798519999998px) rotateY(0deg);
+  transform: rotateY(15deg) translateZ(231.90313590000002px) translateY(-190.31798519999998px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(339) {
+  border: 1px solid rgba(78,46,146,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(30deg) translateZ(231.90313590000002px) translateY(-190.31798519999998px) rotateY(0deg);
+  transform: rotateY(30deg) translateZ(231.90313590000002px) translateY(-190.31798519999998px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(340) {
+  border: 1px solid rgba(235,249,115,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(45deg) translateZ(231.90313590000002px) translateY(-190.31798519999998px) rotateY(0deg);
+  transform: rotateY(45deg) translateZ(231.90313590000002px) translateY(-190.31798519999998px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(341) {
+  border: 1px solid rgba(226,235,139,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(60deg) translateZ(231.90313590000002px) translateY(-190.31798519999998px) rotateY(0deg);
+  transform: rotateY(60deg) translateZ(231.90313590000002px) translateY(-190.31798519999998px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(342) {
+  border: 1px solid rgba(155,248,49,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(75deg) translateZ(231.90313590000002px) translateY(-190.31798519999998px) rotateY(0deg);
+  transform: rotateY(75deg) translateZ(231.90313590000002px) translateY(-190.31798519999998px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(343) {
+  border: 1px solid rgba(179,158,1,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(90deg) translateZ(231.90313590000002px) translateY(-190.31798519999998px) rotateY(0deg);
+  transform: rotateY(90deg) translateZ(231.90313590000002px) translateY(-190.31798519999998px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(344) {
+  border: 1px solid rgba(233,49,228,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(105deg) translateZ(231.90313590000002px) translateY(-190.31798519999998px) rotateY(0deg);
+  transform: rotateY(105deg) translateZ(231.90313590000002px) translateY(-190.31798519999998px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(345) {
+  border: 1px solid rgba(49,68,116,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(120deg) translateZ(231.90313590000002px) translateY(-190.31798519999998px) rotateY(0deg);
+  transform: rotateY(120deg) translateZ(231.90313590000002px) translateY(-190.31798519999998px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(346) {
+  border: 1px solid rgba(179,47,97,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(135deg) translateZ(231.90313590000002px) translateY(-190.31798519999998px) rotateY(0deg);
+  transform: rotateY(135deg) translateZ(231.90313590000002px) translateY(-190.31798519999998px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(347) {
+  border: 1px solid rgba(38,16,137,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(150deg) translateZ(231.90313590000002px) translateY(-190.31798519999998px) rotateY(0deg);
+  transform: rotateY(150deg) translateZ(231.90313590000002px) translateY(-190.31798519999998px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(348) {
+  border: 1px solid rgba(35,96,116,0.22);
+  width: 37.5px;
+  height: 37.5px;
+  -webkit-transform: rotateY(165deg) translateZ(231.90313590000002px) translateY(-190.31798519999998px) rotateY(0deg);
+  transform: rotateY(165deg) translateZ(231.90313590000002px) translateY(-190.31798519999998px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(349) {
+  border: 1px solid rgba(33,159,115,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(0deg) translateZ(264.5763792px) translateY(-141.4190211px) rotateY(0deg);
+  transform: rotateY(0deg) translateZ(264.5763792px) translateY(-141.4190211px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(350) {
+  border: 1px solid rgba(34,216,154,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(15deg) translateZ(264.5763792px) translateY(-141.4190211px) rotateY(0deg);
+  transform: rotateY(15deg) translateZ(264.5763792px) translateY(-141.4190211px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(351) {
+  border: 1px solid rgba(16,136,255,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(30deg) translateZ(264.5763792px) translateY(-141.4190211px) rotateY(0deg);
+  transform: rotateY(30deg) translateZ(264.5763792px) translateY(-141.4190211px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(352) {
+  border: 1px solid rgba(94,8,2,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(45deg) translateZ(264.5763792px) translateY(-141.4190211px) rotateY(0deg);
+  transform: rotateY(45deg) translateZ(264.5763792px) translateY(-141.4190211px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(353) {
+  border: 1px solid rgba(22,70,90,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(60deg) translateZ(264.5763792px) translateY(-141.4190211px) rotateY(0deg);
+  transform: rotateY(60deg) translateZ(264.5763792px) translateY(-141.4190211px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(354) {
+  border: 1px solid rgba(123,180,218,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(75deg) translateZ(264.5763792px) translateY(-141.4190211px) rotateY(0deg);
+  transform: rotateY(75deg) translateZ(264.5763792px) translateY(-141.4190211px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(355) {
+  border: 1px solid rgba(245,118,28,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(90deg) translateZ(264.5763792px) translateY(-141.4190211px) rotateY(0deg);
+  transform: rotateY(90deg) translateZ(264.5763792px) translateY(-141.4190211px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(356) {
+  border: 1px solid rgba(15,232,6,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(105deg) translateZ(264.5763792px) translateY(-141.4190211px) rotateY(0deg);
+  transform: rotateY(105deg) translateZ(264.5763792px) translateY(-141.4190211px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(357) {
+  border: 1px solid rgba(37,133,12,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(120deg) translateZ(264.5763792px) translateY(-141.4190211px) rotateY(0deg);
+  transform: rotateY(120deg) translateZ(264.5763792px) translateY(-141.4190211px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(358) {
+  border: 1px solid rgba(96,255,177,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(135deg) translateZ(264.5763792px) translateY(-141.4190211px) rotateY(0deg);
+  transform: rotateY(135deg) translateZ(264.5763792px) translateY(-141.4190211px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(359) {
+  border: 1px solid rgba(183,35,84,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(150deg) translateZ(264.5763792px) translateY(-141.4190211px) rotateY(0deg);
+  transform: rotateY(150deg) translateZ(264.5763792px) translateY(-141.4190211px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(360) {
+  border: 1px solid rgba(60,113,151,0.22);
+  width: 42.96875px;
+  height: 42.96875px;
+  -webkit-transform: rotateY(165deg) translateZ(264.5763792px) translateY(-141.4190211px) rotateY(0deg);
+  transform: rotateY(165deg) translateZ(264.5763792px) translateY(-141.4190211px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(361) {
+  border: 1px solid rgba(28,254,28,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(0deg) translateZ(287.0821008px) translateY(-87.0854031px) rotateY(0deg);
+  transform: rotateY(0deg) translateZ(287.0821008px) translateY(-87.0854031px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(362) {
+  border: 1px solid rgba(27,212,129,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(15deg) translateZ(287.0821008px) translateY(-87.0854031px) rotateY(0deg);
+  transform: rotateY(15deg) translateZ(287.0821008px) translateY(-87.0854031px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(363) {
+  border: 1px solid rgba(30,115,24,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(30deg) translateZ(287.0821008px) translateY(-87.0854031px) rotateY(0deg);
+  transform: rotateY(30deg) translateZ(287.0821008px) translateY(-87.0854031px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(364) {
+  border: 1px solid rgba(35,43,92,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(45deg) translateZ(287.0821008px) translateY(-87.0854031px) rotateY(0deg);
+  transform: rotateY(45deg) translateZ(287.0821008px) translateY(-87.0854031px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(365) {
+  border: 1px solid rgba(158,213,204,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(60deg) translateZ(287.0821008px) translateY(-87.0854031px) rotateY(0deg);
+  transform: rotateY(60deg) translateZ(287.0821008px) translateY(-87.0854031px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(366) {
+  border: 1px solid rgba(42,210,239,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(75deg) translateZ(287.0821008px) translateY(-87.0854031px) rotateY(0deg);
+  transform: rotateY(75deg) translateZ(287.0821008px) translateY(-87.0854031px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(367) {
+  border: 1px solid rgba(129,241,67,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(90deg) translateZ(287.0821008px) translateY(-87.0854031px) rotateY(0deg);
+  transform: rotateY(90deg) translateZ(287.0821008px) translateY(-87.0854031px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(368) {
+  border: 1px solid rgba(45,104,32,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(105deg) translateZ(287.0821008px) translateY(-87.0854031px) rotateY(0deg);
+  transform: rotateY(105deg) translateZ(287.0821008px) translateY(-87.0854031px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(369) {
+  border: 1px solid rgba(220,197,97,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(120deg) translateZ(287.0821008px) translateY(-87.0854031px) rotateY(0deg);
+  transform: rotateY(120deg) translateZ(287.0821008px) translateY(-87.0854031px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(370) {
+  border: 1px solid rgba(12,35,4,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(135deg) translateZ(287.0821008px) translateY(-87.0854031px) rotateY(0deg);
+  transform: rotateY(135deg) translateZ(287.0821008px) translateY(-87.0854031px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(371) {
+  border: 1px solid rgba(238,72,130,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(150deg) translateZ(287.0821008px) translateY(-87.0854031px) rotateY(0deg);
+  transform: rotateY(150deg) translateZ(287.0821008px) translateY(-87.0854031px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(372) {
+  border: 1px solid rgba(171,82,36,0.22);
+  width: 46.875px;
+  height: 46.875px;
+  -webkit-transform: rotateY(165deg) translateZ(287.0821008px) translateY(-87.0854031px) rotateY(0deg);
+  transform: rotateY(165deg) translateZ(287.0821008px) translateY(-87.0854031px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(373) {
+  border: 1px solid rgba(32,80,42,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(0deg) translateZ(298.5554181px) translateY(-29.405142px) rotateY(0deg);
+  transform: rotateY(0deg) translateZ(298.5554181px) translateY(-29.405142px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(374) {
+  border: 1px solid rgba(13,30,236,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(15deg) translateZ(298.5554181px) translateY(-29.405142px) rotateY(0deg);
+  transform: rotateY(15deg) translateZ(298.5554181px) translateY(-29.405142px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(375) {
+  border: 1px solid rgba(157,173,83,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(30deg) translateZ(298.5554181px) translateY(-29.405142px) rotateY(0deg);
+  transform: rotateY(30deg) translateZ(298.5554181px) translateY(-29.405142px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(376) {
+  border: 1px solid rgba(222,178,83,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(45deg) translateZ(298.5554181px) translateY(-29.405142px) rotateY(0deg);
+  transform: rotateY(45deg) translateZ(298.5554181px) translateY(-29.405142px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(377) {
+  border: 1px solid rgba(96,109,80,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(60deg) translateZ(298.5554181px) translateY(-29.405142px) rotateY(0deg);
+  transform: rotateY(60deg) translateZ(298.5554181px) translateY(-29.405142px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(378) {
+  border: 1px solid rgba(73,94,106,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(75deg) translateZ(298.5554181px) translateY(-29.405142px) rotateY(0deg);
+  transform: rotateY(75deg) translateZ(298.5554181px) translateY(-29.405142px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(379) {
+  border: 1px solid rgba(131,86,133,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(90deg) translateZ(298.5554181px) translateY(-29.405142px) rotateY(0deg);
+  transform: rotateY(90deg) translateZ(298.5554181px) translateY(-29.405142px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(380) {
+  border: 1px solid rgba(177,164,224,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(105deg) translateZ(298.5554181px) translateY(-29.405142px) rotateY(0deg);
+  transform: rotateY(105deg) translateZ(298.5554181px) translateY(-29.405142px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(381) {
+  border: 1px solid rgba(100,83,112,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(120deg) translateZ(298.5554181px) translateY(-29.405142px) rotateY(0deg);
+  transform: rotateY(120deg) translateZ(298.5554181px) translateY(-29.405142px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(382) {
+  border: 1px solid rgba(240,26,166,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(135deg) translateZ(298.5554181px) translateY(-29.405142px) rotateY(0deg);
+  transform: rotateY(135deg) translateZ(298.5554181px) translateY(-29.405142px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(383) {
+  border: 1px solid rgba(68,145,52,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(150deg) translateZ(298.5554181px) translateY(-29.405142px) rotateY(0deg);
+  transform: rotateY(150deg) translateZ(298.5554181px) translateY(-29.405142px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(384) {
+  border: 1px solid rgba(153,36,22,0.22);
+  width: 49.21875px;
+  height: 49.21875px;
+  -webkit-transform: rotateY(165deg) translateZ(298.5554181px) translateY(-29.405142px) rotateY(0deg);
+  transform: rotateY(165deg) translateZ(298.5554181px) translateY(-29.405142px) rotateY(0deg);
+}
+.sphere-list > .pic:nth-child(385) {
+  border: 1px solid rgba(86,9,207,0.22);
+  width: 50px;
+  height: 50px;
+  -webkit-transform: rotateY(0deg) translateZ(298.5554181px) translateY(29.405142px) rotateY(0deg);
+  transform: rotateY(0deg) translateZ(298.5554181px) translateY(29.405142px) rotateY(0deg);
+}
+.sphere-list > .pic.no-border {
+  border: none;
+}
+.sphere-list > .pic > .pic-front {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-position: 0 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.sphere-list > .pic > .pic-back {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-position: 0 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+@-moz-keyframes spin {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+@-o-keyframes spin {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+.letter-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-perspective: 1200;
+  perspective: 1200;
+  -webkit-perspective-origin: 50%;
+  perspective-origin: 50%;
+}
+.letter-container > .letter {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  pointer-events: none;
+  background-position: 0 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.grid-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  -webkit-perspective: 800;
+  perspective: 800;
+  -webkit-perspective-origin: 50%;
+  perspective-origin: 50%;
+}
+.grid-container > .cell {
+  float: left;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(255,0,0,0.6);
+}
+.grid-container > .cell.selected {
+  background: #00f;
+}

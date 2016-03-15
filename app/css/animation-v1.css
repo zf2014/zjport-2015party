@@ -1,0 +1,1471 @@
+/**
+ * 文件: .css 
+ * 公司: 浙江电子口岸
+ * 作者: qzzf1987@gmail.com
+ * 时间: 2016-01-05 17:06:48
+ */
+/* normalize.css v3.0.2 | MIT License | git.io/normalize */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background-color: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-size: 62.5%;
+  font-family: arial, "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+form {
+  margin: 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+}
+a {
+  color: #012fdd;
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover {
+  color: #ff6567;
+  text-decoration: underline;
+}
+:-ms-input-placeholder {
+  color: #ccc;
+}
+:-moz-placeholder,
+::-moz-placeholder {
+  color: #ccc;
+}
+::-webkit-input-placeholder {
+  color: #ccc;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#main {
+  height: 728px;
+  width: 1352px;
+  margin: 0 auto;
+  position: relative;
+  background: url("../images/all/bg.jpg") 50% 50% no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+.sphere,
+.dot,
+.dot:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.dot:before {
+  margin: -10px;
+  width: 20px;
+  height: 20px;
+  background: rgba(0,255,125,0.8);
+  -webkit-animation-direction: alternate-reverse;
+  animation-direction: alternate-reverse;
+  content: '';
+}
+.dot:nth-child(1) {
+  -webkit-transform: rotateX(45deg) rotateY(48.94460577517752deg) rotateX(123.14790224656453deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-123.14790224656453deg) rotateY(-48.94460577517752deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(48.94460577517752deg) rotateX(123.14790224656453deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-123.14790224656453deg) rotateY(-48.94460577517752deg) rotateX(-45deg);
+}
+.dot:nth-child(2) {
+  -webkit-transform: rotateX(45deg) rotateY(255.97336993552727deg) rotateX(262.53437899053097deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-262.53437899053097deg) rotateY(-255.97336993552727deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(255.97336993552727deg) rotateX(262.53437899053097deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-262.53437899053097deg) rotateY(-255.97336993552727deg) rotateX(-45deg);
+}
+.dot:nth-child(3) {
+  -webkit-transform: rotateX(45deg) rotateY(269.2141581885516deg) rotateX(288.9695028215646deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-288.9695028215646deg) rotateY(-269.2141581885516deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(269.2141581885516deg) rotateX(288.9695028215646deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-288.9695028215646deg) rotateY(-269.2141581885516deg) rotateX(-45deg);
+}
+.dot:nth-child(4) {
+  -webkit-transform: rotateX(45deg) rotateY(265.4173530265687deg) rotateX(56.11896445043376deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-56.11896445043376deg) rotateY(-265.4173530265687deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(265.4173530265687deg) rotateX(56.11896445043376deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-56.11896445043376deg) rotateY(-265.4173530265687deg) rotateX(-45deg);
+}
+.dot:nth-child(5) {
+  -webkit-transform: rotateX(45deg) rotateY(241.21602525003263deg) rotateX(272.33081549406035deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-272.33081549406035deg) rotateY(-241.21602525003263deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(241.21602525003263deg) rotateX(272.33081549406035deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-272.33081549406035deg) rotateY(-241.21602525003263deg) rotateX(-45deg);
+}
+.dot:nth-child(6) {
+  -webkit-transform: rotateX(45deg) rotateY(56.92995632998656deg) rotateX(238.50220874883226deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-238.50220874883226deg) rotateY(-56.92995632998656deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(56.92995632998656deg) rotateX(238.50220874883226deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-238.50220874883226deg) rotateY(-56.92995632998656deg) rotateX(-45deg);
+}
+.dot:nth-child(7) {
+  -webkit-transform: rotateX(45deg) rotateY(6.52435884810972deg) rotateX(53.50895656272756deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-53.50895656272756deg) rotateY(-6.52435884810972deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(6.52435884810972deg) rotateX(53.50895656272756deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-53.50895656272756deg) rotateY(-6.52435884810972deg) rotateX(-45deg);
+}
+.dot:nth-child(8) {
+  -webkit-transform: rotateX(45deg) rotateY(10.15219875611376deg) rotateX(110.85459041409193deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-110.85459041409193deg) rotateY(-10.15219875611376deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(10.15219875611376deg) rotateX(110.85459041409193deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-110.85459041409193deg) rotateY(-10.15219875611376deg) rotateX(-45deg);
+}
+.dot:nth-child(9) {
+  -webkit-transform: rotateX(45deg) rotateY(242.35739386640498deg) rotateX(185.54532850161178deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-185.54532850161178deg) rotateY(-242.35739386640498deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(242.35739386640498deg) rotateX(185.54532850161178deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-185.54532850161178deg) rotateY(-242.35739386640498deg) rotateX(-45deg);
+}
+.dot:nth-child(10) {
+  -webkit-transform: rotateX(45deg) rotateY(7.54866102710376deg) rotateX(89.16528213769213deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-89.16528213769213deg) rotateY(-7.54866102710376deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(7.54866102710376deg) rotateX(89.16528213769213deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-89.16528213769213deg) rotateY(-7.54866102710376deg) rotateX(-45deg);
+}
+.dot:nth-child(11) {
+  -webkit-transform: rotateX(45deg) rotateY(314.86269562505174deg) rotateX(350.4442846309394deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-350.4442846309394deg) rotateY(-314.86269562505174deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(314.86269562505174deg) rotateX(350.4442846309394deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-350.4442846309394deg) rotateY(-314.86269562505174deg) rotateX(-45deg);
+}
+.dot:nth-child(12) {
+  -webkit-transform: rotateX(45deg) rotateY(32.52708979882308deg) rotateX(67.48509747907512deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-67.48509747907512deg) rotateY(-32.52708979882308deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(32.52708979882308deg) rotateX(67.48509747907512deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-67.48509747907512deg) rotateY(-32.52708979882308deg) rotateX(-45deg);
+}
+.dot:nth-child(13) {
+  -webkit-transform: rotateX(45deg) rotateY(135.44071862474087deg) rotateX(263.94640437327337deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-263.94640437327337deg) rotateY(-135.44071862474087deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(135.44071862474087deg) rotateX(263.94640437327337deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-263.94640437327337deg) rotateY(-135.44071862474087deg) rotateX(-45deg);
+}
+.dot:nth-child(14) {
+  -webkit-transform: rotateX(45deg) rotateY(112.38521981053069deg) rotateX(238.18773181177693deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-238.18773181177693deg) rotateY(-112.38521981053069deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(112.38521981053069deg) rotateX(238.18773181177693deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-238.18773181177693deg) rotateY(-112.38521981053069deg) rotateX(-45deg);
+}
+.dot:nth-child(15) {
+  -webkit-transform: rotateX(45deg) rotateY(320.1428064610811deg) rotateX(13.894374445080839deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-13.894374445080839deg) rotateY(-320.1428064610811deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(320.1428064610811deg) rotateX(13.894374445080839deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-13.894374445080839deg) rotateY(-320.1428064610811deg) rotateX(-45deg);
+}
+.dot:nth-child(16) {
+  -webkit-transform: rotateX(45deg) rotateY(141.65749398060146deg) rotateX(14.92389863356932deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-14.92389863356932deg) rotateY(-141.65749398060146deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(141.65749398060146deg) rotateX(14.92389863356932deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-14.92389863356932deg) rotateY(-141.65749398060146deg) rotateX(-45deg);
+}
+.dot:nth-child(17) {
+  -webkit-transform: rotateX(45deg) rotateY(142.30735927820209deg) rotateX(80.01999394968168deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-80.01999394968168deg) rotateY(-142.30735927820209deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(142.30735927820209deg) rotateX(80.01999394968168deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-80.01999394968168deg) rotateY(-142.30735927820209deg) rotateX(-45deg);
+}
+.dot:nth-child(18) {
+  -webkit-transform: rotateX(45deg) rotateY(265.4230134934188deg) rotateX(98.23446591384709deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-98.23446591384709deg) rotateY(-265.4230134934188deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(265.4230134934188deg) rotateX(98.23446591384709deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-98.23446591384709deg) rotateY(-265.4230134934188deg) rotateX(-45deg);
+}
+.dot:nth-child(19) {
+  -webkit-transform: rotateX(45deg) rotateY(148.51223031990241deg) rotateX(28.41881755739436deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-28.41881755739436deg) rotateY(-148.51223031990241deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(148.51223031990241deg) rotateX(28.41881755739436deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-28.41881755739436deg) rotateY(-148.51223031990241deg) rotateX(-45deg);
+}
+.dot:nth-child(20) {
+  -webkit-transform: rotateX(45deg) rotateY(169.49674551375216deg) rotateX(47.51245938241476deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-47.51245938241476deg) rotateY(-169.49674551375216deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(169.49674551375216deg) rotateX(47.51245938241476deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-47.51245938241476deg) rotateY(-169.49674551375216deg) rotateX(-45deg);
+}
+.dot:nth-child(21) {
+  -webkit-transform: rotateX(45deg) rotateY(244.36260326765486deg) rotateX(85.3410207107664deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-85.3410207107664deg) rotateY(-244.36260326765486deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(244.36260326765486deg) rotateX(85.3410207107664deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-85.3410207107664deg) rotateY(-244.36260326765486deg) rotateX(-45deg);
+}
+.dot:nth-child(22) {
+  -webkit-transform: rotateX(45deg) rotateY(258.41434467583906deg) rotateX(179.1968705970793deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-179.1968705970793deg) rotateY(-258.41434467583906deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(258.41434467583906deg) rotateX(179.1968705970793deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-179.1968705970793deg) rotateY(-258.41434467583906deg) rotateX(-45deg);
+}
+.dot:nth-child(23) {
+  -webkit-transform: rotateX(45deg) rotateY(256.69427672401054deg) rotateX(107.49357498250907deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-107.49357498250907deg) rotateY(-256.69427672401054deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(256.69427672401054deg) rotateX(107.49357498250907deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-107.49357498250907deg) rotateY(-256.69427672401054deg) rotateX(-45deg);
+}
+.dot:nth-child(24) {
+  -webkit-transform: rotateX(45deg) rotateY(80.627150181681deg) rotateX(137.13721465319387deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-137.13721465319387deg) rotateY(-80.627150181681deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(80.627150181681deg) rotateX(137.13721465319387deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-137.13721465319387deg) rotateY(-80.627150181681deg) rotateX(-45deg);
+}
+.dot:nth-child(25) {
+  -webkit-transform: rotateX(45deg) rotateY(323.97200977429765deg) rotateX(108.2009924389422deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-108.2009924389422deg) rotateY(-323.97200977429765deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(323.97200977429765deg) rotateX(108.2009924389422deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-108.2009924389422deg) rotateY(-323.97200977429765deg) rotateX(-45deg);
+}
+.dot:nth-child(26) {
+  -webkit-transform: rotateX(45deg) rotateY(87.96588275581597deg) rotateX(320.46018672175705deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-320.46018672175705deg) rotateY(-87.96588275581597deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(87.96588275581597deg) rotateX(320.46018672175705deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-320.46018672175705deg) rotateY(-87.96588275581597deg) rotateX(-45deg);
+}
+.dot:nth-child(27) {
+  -webkit-transform: rotateX(45deg) rotateY(293.47699563950295deg) rotateX(148.50361556746054deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-148.50361556746054deg) rotateY(-293.47699563950295deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(293.47699563950295deg) rotateX(148.50361556746054deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-148.50361556746054deg) rotateY(-293.47699563950295deg) rotateX(-45deg);
+}
+.dot:nth-child(28) {
+  -webkit-transform: rotateX(45deg) rotateY(342.48041069135076deg) rotateX(240.09197867475442deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-240.09197867475442deg) rotateY(-342.48041069135076deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(342.48041069135076deg) rotateX(240.09197867475442deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-240.09197867475442deg) rotateY(-342.48041069135076deg) rotateX(-45deg);
+}
+.dot:nth-child(29) {
+  -webkit-transform: rotateX(45deg) rotateY(294.977138545364deg) rotateX(168.90537056140585deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-168.90537056140585deg) rotateY(-294.977138545364deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(294.977138545364deg) rotateX(168.90537056140585deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-168.90537056140585deg) rotateY(-294.977138545364deg) rotateX(-45deg);
+}
+.dot:nth-child(30) {
+  -webkit-transform: rotateX(45deg) rotateY(181.5412692166866deg) rotateX(252.54070708528153deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-252.54070708528153deg) rotateY(-181.5412692166866deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(181.5412692166866deg) rotateX(252.54070708528153deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-252.54070708528153deg) rotateY(-181.5412692166866deg) rotateX(-45deg);
+}
+.dot:nth-child(31) {
+  -webkit-transform: rotateX(45deg) rotateY(183.4463429544121deg) rotateX(186.53201043605821deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-186.53201043605821deg) rotateY(-183.4463429544121deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(183.4463429544121deg) rotateX(186.53201043605821deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-186.53201043605821deg) rotateY(-183.4463429544121deg) rotateX(-45deg);
+}
+.dot:nth-child(32) {
+  -webkit-transform: rotateX(45deg) rotateY(58.911002883687594deg) rotateX(90.52905307151376deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-90.52905307151376deg) rotateY(-58.911002883687594deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(58.911002883687594deg) rotateX(90.52905307151376deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-90.52905307151376deg) rotateY(-58.911002883687594deg) rotateX(-45deg);
+}
+.dot:nth-child(33) {
+  -webkit-transform: rotateX(45deg) rotateY(22.58224901743248deg) rotateX(13.01413279026744deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-13.01413279026744deg) rotateY(-22.58224901743248deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(22.58224901743248deg) rotateX(13.01413279026744deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-13.01413279026744deg) rotateY(-22.58224901743248deg) rotateX(-45deg);
+}
+.dot:nth-child(34) {
+  -webkit-transform: rotateX(45deg) rotateY(198.43016473576438deg) rotateX(347.07686726935225deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-347.07686726935225deg) rotateY(-198.43016473576438deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(198.43016473576438deg) rotateX(347.07686726935225deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-347.07686726935225deg) rotateY(-198.43016473576438deg) rotateX(-45deg);
+}
+.dot:nth-child(35) {
+  -webkit-transform: rotateX(45deg) rotateY(29.21813746914276deg) rotateX(19.465398760512603deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-19.465398760512603deg) rotateY(-29.21813746914276deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(29.21813746914276deg) rotateX(19.465398760512603deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-19.465398760512603deg) rotateY(-29.21813746914276deg) rotateX(-45deg);
+}
+.dot:nth-child(36) {
+  -webkit-transform: rotateX(45deg) rotateY(322.3992107715458deg) rotateX(67.31161320582036deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-67.31161320582036deg) rotateY(-322.3992107715458deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(322.3992107715458deg) rotateX(67.31161320582036deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-67.31161320582036deg) rotateY(-322.3992107715458deg) rotateX(-45deg);
+}
+.dot:nth-child(37) {
+  -webkit-transform: rotateX(45deg) rotateY(244.21085804700863deg) rotateX(260.692084953189deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-260.692084953189deg) rotateY(-244.21085804700863deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(244.21085804700863deg) rotateX(260.692084953189deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-260.692084953189deg) rotateY(-244.21085804700863deg) rotateX(-45deg);
+}
+.dot:nth-child(38) {
+  -webkit-transform: rotateX(45deg) rotateY(119.77809218689788deg) rotateX(243.78930715844052deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-243.78930715844052deg) rotateY(-119.77809218689788deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(119.77809218689788deg) rotateX(243.78930715844052deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-243.78930715844052deg) rotateY(-119.77809218689788deg) rotateX(-45deg);
+}
+.dot:nth-child(39) {
+  -webkit-transform: rotateX(45deg) rotateY(106.32429035380477deg) rotateX(296.8163608666511deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-296.8163608666511deg) rotateY(-106.32429035380477deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(106.32429035380477deg) rotateX(296.8163608666511deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-296.8163608666511deg) rotateY(-106.32429035380477deg) rotateX(-45deg);
+}
+.dot:nth-child(40) {
+  -webkit-transform: rotateX(45deg) rotateY(277.7654536720366deg) rotateX(344.87693502567697deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-344.87693502567697deg) rotateY(-277.7654536720366deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(277.7654536720366deg) rotateX(344.87693502567697deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-344.87693502567697deg) rotateY(-277.7654536720366deg) rotateX(-45deg);
+}
+.dot:nth-child(41) {
+  -webkit-transform: rotateX(45deg) rotateY(120.32755301333953deg) rotateX(224.92119393311438deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-224.92119393311438deg) rotateY(-120.32755301333953deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(120.32755301333953deg) rotateX(224.92119393311438deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-224.92119393311438deg) rotateY(-120.32755301333953deg) rotateX(-45deg);
+}
+.dot:nth-child(42) {
+  -webkit-transform: rotateX(45deg) rotateY(192.9014031495899deg) rotateX(126.9378316495566deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-126.9378316495566deg) rotateY(-192.9014031495899deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(192.9014031495899deg) rotateX(126.9378316495566deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-126.9378316495566deg) rotateY(-192.9014031495899deg) rotateX(-45deg);
+}
+.dot:nth-child(43) {
+  -webkit-transform: rotateX(45deg) rotateY(75.95813540741796deg) rotateX(142.46245466172684deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-142.46245466172684deg) rotateY(-75.95813540741796deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(75.95813540741796deg) rotateX(142.46245466172684deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-142.46245466172684deg) rotateY(-75.95813540741796deg) rotateX(-45deg);
+}
+.dot:nth-child(44) {
+  -webkit-transform: rotateX(45deg) rotateY(27.582605788484162deg) rotateX(30.56758540682508deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-30.56758540682508deg) rotateY(-27.582605788484162deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(27.582605788484162deg) rotateX(30.56758540682508deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-30.56758540682508deg) rotateY(-27.582605788484162deg) rotateX(-45deg);
+}
+.dot:nth-child(45) {
+  -webkit-transform: rotateX(45deg) rotateY(143.02298638969668deg) rotateX(173.3386174030602deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-173.3386174030602deg) rotateY(-143.02298638969668deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(143.02298638969668deg) rotateX(173.3386174030602deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-173.3386174030602deg) rotateY(-143.02298638969668deg) rotateX(-45deg);
+}
+.dot:nth-child(46) {
+  -webkit-transform: rotateX(45deg) rotateY(143.07671883143485deg) rotateX(136.91457739099872deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-136.91457739099872deg) rotateY(-143.07671883143485deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(143.07671883143485deg) rotateX(136.91457739099872deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-136.91457739099872deg) rotateY(-143.07671883143485deg) rotateX(-45deg);
+}
+.dot:nth-child(47) {
+  -webkit-transform: rotateX(45deg) rotateY(185.94396142289025deg) rotateX(105.63914721831695deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-105.63914721831695deg) rotateY(-185.94396142289025deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(185.94396142289025deg) rotateX(105.63914721831695deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-105.63914721831695deg) rotateY(-185.94396142289025deg) rotateX(-45deg);
+}
+.dot:nth-child(48) {
+  -webkit-transform: rotateX(45deg) rotateY(73.990161186084deg) rotateX(201.70742643065734deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-201.70742643065734deg) rotateY(-73.990161186084deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(73.990161186084deg) rotateX(201.70742643065734deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-201.70742643065734deg) rotateY(-73.990161186084deg) rotateX(-45deg);
+}
+.dot:nth-child(49) {
+  -webkit-transform: rotateX(45deg) rotateY(68.52345175109808deg) rotateX(73.78846812061957deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-73.78846812061957deg) rotateY(-68.52345175109808deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(68.52345175109808deg) rotateX(73.78846812061957deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-73.78846812061957deg) rotateY(-68.52345175109808deg) rotateX(-45deg);
+}
+.dot:nth-child(50) {
+  -webkit-transform: rotateX(45deg) rotateY(77.42250233888616deg) rotateX(288.19206898100674deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-288.19206898100674deg) rotateY(-77.42250233888616deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(77.42250233888616deg) rotateX(288.19206898100674deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-288.19206898100674deg) rotateY(-77.42250233888616deg) rotateX(-45deg);
+}
+.dot:nth-child(51) {
+  -webkit-transform: rotateX(45deg) rotateY(358.4665108658373deg) rotateX(54.909244682639994deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-54.909244682639994deg) rotateY(-358.4665108658373deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(358.4665108658373deg) rotateX(54.909244682639994deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-54.909244682639994deg) rotateY(-358.4665108658373deg) rotateX(-45deg);
+}
+.dot:nth-child(52) {
+  -webkit-transform: rotateX(45deg) rotateY(43.938479404896476deg) rotateX(27.25588968023664deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-27.25588968023664deg) rotateY(-43.938479404896476deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(43.938479404896476deg) rotateX(27.25588968023664deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-27.25588968023664deg) rotateY(-43.938479404896476deg) rotateX(-45deg);
+}
+.dot:nth-child(53) {
+  -webkit-transform: rotateX(45deg) rotateY(100.49769711680725deg) rotateX(37.255932418629605deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-37.255932418629605deg) rotateY(-100.49769711680725deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(100.49769711680725deg) rotateX(37.255932418629605deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-37.255932418629605deg) rotateY(-100.49769711680725deg) rotateX(-45deg);
+}
+.dot:nth-child(54) {
+  -webkit-transform: rotateX(45deg) rotateY(22.03826551325604deg) rotateX(140.8806767966598deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-140.8806767966598deg) rotateY(-22.03826551325604deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(22.03826551325604deg) rotateX(140.8806767966598deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-140.8806767966598deg) rotateY(-22.03826551325604deg) rotateX(-45deg);
+}
+.dot:nth-child(55) {
+  -webkit-transform: rotateX(45deg) rotateY(264.0929075516761deg) rotateX(304.0731576550753deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-304.0731576550753deg) rotateY(-264.0929075516761deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(264.0929075516761deg) rotateX(304.0731576550753deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-304.0731576550753deg) rotateY(-264.0929075516761deg) rotateX(-45deg);
+}
+.dot:nth-child(56) {
+  -webkit-transform: rotateX(45deg) rotateY(79.22641178593044deg) rotateX(155.91959006153039deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-155.91959006153039deg) rotateY(-79.22641178593044deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(79.22641178593044deg) rotateX(155.91959006153039deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-155.91959006153039deg) rotateY(-79.22641178593044deg) rotateX(-45deg);
+}
+.dot:nth-child(57) {
+  -webkit-transform: rotateX(45deg) rotateY(71.13559057004736deg) rotateX(219.9000414088368deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-219.9000414088368deg) rotateY(-71.13559057004736deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(71.13559057004736deg) rotateX(219.9000414088368deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-219.9000414088368deg) rotateY(-71.13559057004736deg) rotateX(-45deg);
+}
+.dot:nth-child(58) {
+  -webkit-transform: rotateX(45deg) rotateY(234.98500577174136deg) rotateX(150.57214320637297deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-150.57214320637297deg) rotateY(-234.98500577174136deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(234.98500577174136deg) rotateX(150.57214320637297deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-150.57214320637297deg) rotateY(-234.98500577174136deg) rotateX(-45deg);
+}
+.dot:nth-child(59) {
+  -webkit-transform: rotateX(45deg) rotateY(267.76863503269846deg) rotateX(138.71257533319283deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-138.71257533319283deg) rotateY(-267.76863503269846deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(267.76863503269846deg) rotateX(138.71257533319283deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-138.71257533319283deg) rotateY(-267.76863503269846deg) rotateX(-45deg);
+}
+.dot:nth-child(60) {
+  -webkit-transform: rotateX(45deg) rotateY(283.8559540640562deg) rotateX(18.4246895089746deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-18.4246895089746deg) rotateY(-283.8559540640562deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(283.8559540640562deg) rotateX(18.4246895089746deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-18.4246895089746deg) rotateY(-283.8559540640562deg) rotateX(-45deg);
+}
+.dot:nth-child(61) {
+  -webkit-transform: rotateX(45deg) rotateY(142.21952129155392deg) rotateX(274.9716231040656deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-274.9716231040656deg) rotateY(-142.21952129155392deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(142.21952129155392deg) rotateX(274.9716231040656deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-274.9716231040656deg) rotateY(-142.21952129155392deg) rotateX(-45deg);
+}
+.dot:nth-child(62) {
+  -webkit-transform: rotateX(45deg) rotateY(70.4660221002996deg) rotateX(247.15354920364908deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-247.15354920364908deg) rotateY(-70.4660221002996deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(70.4660221002996deg) rotateX(247.15354920364908deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-247.15354920364908deg) rotateY(-70.4660221002996deg) rotateX(-45deg);
+}
+.dot:nth-child(63) {
+  -webkit-transform: rotateX(45deg) rotateY(323.04367133416224deg) rotateX(95.23050162009913deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-95.23050162009913deg) rotateY(-323.04367133416224deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(323.04367133416224deg) rotateX(95.23050162009913deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-95.23050162009913deg) rotateY(-323.04367133416224deg) rotateX(-45deg);
+}
+.dot:nth-child(64) {
+  -webkit-transform: rotateX(45deg) rotateY(338.58575083315367deg) rotateX(338.2381104771049deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-338.2381104771049deg) rotateY(-338.58575083315367deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(338.58575083315367deg) rotateX(338.2381104771049deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-338.2381104771049deg) rotateY(-338.58575083315367deg) rotateX(-45deg);
+}
+.dot:nth-child(65) {
+  -webkit-transform: rotateX(45deg) rotateY(202.36633848398915deg) rotateX(307.3923126049338deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-307.3923126049338deg) rotateY(-202.36633848398915deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(202.36633848398915deg) rotateX(307.3923126049338deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-307.3923126049338deg) rotateY(-202.36633848398915deg) rotateX(-45deg);
+}
+.dot:nth-child(66) {
+  -webkit-transform: rotateX(45deg) rotateY(309.8479228187353deg) rotateX(207.46642431244246deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-207.46642431244246deg) rotateY(-309.8479228187353deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(309.8479228187353deg) rotateX(207.46642431244246deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-207.46642431244246deg) rotateY(-309.8479228187353deg) rotateX(-45deg);
+}
+.dot:nth-child(67) {
+  -webkit-transform: rotateX(45deg) rotateY(309.33090473525243deg) rotateX(3.83358704857524deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-3.83358704857524deg) rotateY(-309.33090473525243deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(309.33090473525243deg) rotateX(3.83358704857524deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-3.83358704857524deg) rotateY(-309.33090473525243deg) rotateX(-45deg);
+}
+.dot:nth-child(68) {
+  -webkit-transform: rotateX(45deg) rotateY(208.7318559922279deg) rotateX(270.62058052048104deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-270.62058052048104deg) rotateY(-208.7318559922279deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(208.7318559922279deg) rotateX(270.62058052048104deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-270.62058052048104deg) rotateY(-208.7318559922279deg) rotateX(-45deg);
+}
+.dot:nth-child(69) {
+  -webkit-transform: rotateX(45deg) rotateY(50.37688803859056deg) rotateX(8.76041047275084deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-8.76041047275084deg) rotateY(-50.37688803859056deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(50.37688803859056deg) rotateX(8.76041047275084deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-8.76041047275084deg) rotateY(-50.37688803859056deg) rotateX(-45deg);
+}
+.dot:nth-child(70) {
+  -webkit-transform: rotateX(45deg) rotateY(174.32718593627231deg) rotateX(173.42876074835664deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-173.42876074835664deg) rotateY(-174.32718593627231deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(174.32718593627231deg) rotateX(173.42876074835664deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-173.42876074835664deg) rotateY(-174.32718593627231deg) rotateX(-45deg);
+}
+.dot:nth-child(71) {
+  -webkit-transform: rotateX(45deg) rotateY(317.83443929627543deg) rotateX(217.29806824587303deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-217.29806824587303deg) rotateY(-317.83443929627543deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(317.83443929627543deg) rotateX(217.29806824587303deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-217.29806824587303deg) rotateY(-317.83443929627543deg) rotateX(-45deg);
+}
+.dot:nth-child(72) {
+  -webkit-transform: rotateX(45deg) rotateY(245.26779784820965deg) rotateX(134.81679514981823deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-134.81679514981823deg) rotateY(-245.26779784820965deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(245.26779784820965deg) rotateX(134.81679514981823deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-134.81679514981823deg) rotateY(-245.26779784820965deg) rotateX(-45deg);
+}
+.dot:nth-child(73) {
+  -webkit-transform: rotateX(45deg) rotateY(30.58332209475336deg) rotateX(114.05283926054831deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-114.05283926054831deg) rotateY(-30.58332209475336deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(30.58332209475336deg) rotateX(114.05283926054831deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-114.05283926054831deg) rotateY(-30.58332209475336deg) rotateX(-45deg);
+}
+.dot:nth-child(74) {
+  -webkit-transform: rotateX(45deg) rotateY(347.2238637227567deg) rotateX(195.85663941688847deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-195.85663941688847deg) rotateY(-347.2238637227567deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(347.2238637227567deg) rotateX(195.85663941688847deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-195.85663941688847deg) rotateY(-347.2238637227567deg) rotateX(-45deg);
+}
+.dot:nth-child(75) {
+  -webkit-transform: rotateX(45deg) rotateY(163.64294126629812deg) rotateX(113.13512245193112deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-113.13512245193112deg) rotateY(-163.64294126629812deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(163.64294126629812deg) rotateX(113.13512245193112deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-113.13512245193112deg) rotateY(-163.64294126629812deg) rotateX(-45deg);
+}
+.dot:nth-child(76) {
+  -webkit-transform: rotateX(45deg) rotateY(181.4388882089407deg) rotateX(129.8338495194913deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-129.8338495194913deg) rotateY(-181.4388882089407deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(181.4388882089407deg) rotateX(129.8338495194913deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-129.8338495194913deg) rotateY(-181.4388882089407deg) rotateX(-45deg);
+}
+.dot:nth-child(77) {
+  -webkit-transform: rotateX(45deg) rotateY(51.219837013632116deg) rotateX(307.49653444625426deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-307.49653444625426deg) rotateY(-51.219837013632116deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(51.219837013632116deg) rotateX(307.49653444625426deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-307.49653444625426deg) rotateY(-51.219837013632116deg) rotateX(-45deg);
+}
+.dot:nth-child(78) {
+  -webkit-transform: rotateX(45deg) rotateY(14.86439961008724deg) rotateX(164.40628831274807deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-164.40628831274807deg) rotateY(-14.86439961008724deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(14.86439961008724deg) rotateX(164.40628831274807deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-164.40628831274807deg) rotateY(-14.86439961008724deg) rotateX(-45deg);
+}
+.dot:nth-child(79) {
+  -webkit-transform: rotateX(45deg) rotateY(335.0130528677256deg) rotateX(272.7426757290959deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-272.7426757290959deg) rotateY(-335.0130528677256deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(335.0130528677256deg) rotateX(272.7426757290959deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-272.7426757290959deg) rotateY(-335.0130528677256deg) rotateX(-45deg);
+}
+.dot:nth-child(80) {
+  -webkit-transform: rotateX(45deg) rotateY(51.3266521319748deg) rotateX(94.50307379476727deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-94.50307379476727deg) rotateY(-51.3266521319748deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(51.3266521319748deg) rotateX(94.50307379476727deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-94.50307379476727deg) rotateY(-51.3266521319748deg) rotateX(-45deg);
+}
+.dot:nth-child(81) {
+  -webkit-transform: rotateX(45deg) rotateY(232.73907112888992deg) rotateX(101.58168221823887deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-101.58168221823887deg) rotateY(-232.73907112888992deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(232.73907112888992deg) rotateX(101.58168221823887deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-101.58168221823887deg) rotateY(-232.73907112888992deg) rotateX(-45deg);
+}
+.dot:nth-child(82) {
+  -webkit-transform: rotateX(45deg) rotateY(68.73686715960504deg) rotateX(0.55765690281972deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-0.55765690281972deg) rotateY(-68.73686715960504deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(68.73686715960504deg) rotateX(0.55765690281972deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-0.55765690281972deg) rotateY(-68.73686715960504deg) rotateX(-45deg);
+}
+.dot:nth-child(83) {
+  -webkit-transform: rotateX(45deg) rotateY(77.20446405932316deg) rotateX(212.71049045026305deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-212.71049045026305deg) rotateY(-77.20446405932316deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(77.20446405932316deg) rotateX(212.71049045026305deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-212.71049045026305deg) rotateY(-77.20446405932316deg) rotateX(-45deg);
+}
+.dot:nth-child(84) {
+  -webkit-transform: rotateX(45deg) rotateY(243.7261117156595deg) rotateX(7.71378301084032deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-7.71378301084032deg) rotateY(-243.7261117156595deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(243.7261117156595deg) rotateX(7.71378301084032deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-7.71378301084032deg) rotateY(-243.7261117156595deg) rotateX(-45deg);
+}
+.dot:nth-child(85) {
+  -webkit-transform: rotateX(45deg) rotateY(236.68641217052928deg) rotateX(248.15102208405733deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-248.15102208405733deg) rotateY(-236.68641217052928deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(236.68641217052928deg) rotateX(248.15102208405733deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-248.15102208405733deg) rotateY(-236.68641217052928deg) rotateX(-45deg);
+}
+.dot:nth-child(86) {
+  -webkit-transform: rotateX(45deg) rotateY(277.92977753095346deg) rotateX(102.60424196720135deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-102.60424196720135deg) rotateY(-277.92977753095346deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(277.92977753095346deg) rotateX(102.60424196720135deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-102.60424196720135deg) rotateY(-277.92977753095346deg) rotateX(-45deg);
+}
+.dot:nth-child(87) {
+  -webkit-transform: rotateX(45deg) rotateY(31.3835801929236deg) rotateX(0.0520445778966deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-0.0520445778966deg) rotateY(-31.3835801929236deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(31.3835801929236deg) rotateX(0.0520445778966deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-0.0520445778966deg) rotateY(-31.3835801929236deg) rotateX(-45deg);
+}
+.dot:nth-child(88) {
+  -webkit-transform: rotateX(45deg) rotateY(192.14088792912645deg) rotateX(252.27345479652288deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-252.27345479652288deg) rotateY(-192.14088792912645deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(192.14088792912645deg) rotateX(252.27345479652288deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-252.27345479652288deg) rotateY(-192.14088792912645deg) rotateX(-45deg);
+}
+.dot:nth-child(89) {
+  -webkit-transform: rotateX(45deg) rotateY(307.95213036239136deg) rotateX(21.79893217049532deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-21.79893217049532deg) rotateY(-307.95213036239136deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(307.95213036239136deg) rotateX(21.79893217049532deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-21.79893217049532deg) rotateY(-307.95213036239136deg) rotateX(-45deg);
+}
+.dot:nth-child(90) {
+  -webkit-transform: rotateX(45deg) rotateY(220.16222172416735deg) rotateX(359.3037667684259deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-359.3037667684259deg) rotateY(-220.16222172416735deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(220.16222172416735deg) rotateX(359.3037667684259deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-359.3037667684259deg) rotateY(-220.16222172416735deg) rotateX(-45deg);
+}
+.dot:nth-child(91) {
+  -webkit-transform: rotateX(45deg) rotateY(273.55838024988753deg) rotateX(153.83068157359943deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-153.83068157359943deg) rotateY(-273.55838024988753deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(273.55838024988753deg) rotateX(153.83068157359943deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-153.83068157359943deg) rotateY(-273.55838024988753deg) rotateX(-45deg);
+}
+.dot:nth-child(92) {
+  -webkit-transform: rotateX(45deg) rotateY(142.2153714112938deg) rotateX(212.35092532821deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-212.35092532821deg) rotateY(-142.2153714112938deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(142.2153714112938deg) rotateX(212.35092532821deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-212.35092532821deg) rotateY(-142.2153714112938deg) rotateX(-45deg);
+}
+.dot:nth-child(93) {
+  -webkit-transform: rotateX(45deg) rotateY(217.37141710706052deg) rotateX(181.12701108679164deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-181.12701108679164deg) rotateY(-217.37141710706052deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(217.37141710706052deg) rotateX(181.12701108679164deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-181.12701108679164deg) rotateY(-217.37141710706052deg) rotateX(-45deg);
+}
+.dot:nth-child(94) {
+  -webkit-transform: rotateX(45deg) rotateY(297.811682447791deg) rotateX(106.78509403020144deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-106.78509403020144deg) rotateY(-297.811682447791deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(297.811682447791deg) rotateX(106.78509403020144deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-106.78509403020144deg) rotateY(-297.811682447791deg) rotateX(-45deg);
+}
+.dot:nth-child(95) {
+  -webkit-transform: rotateX(45deg) rotateY(103.50917452946304deg) rotateX(345.80209471285355deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-345.80209471285355deg) rotateY(-103.50917452946304deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(103.50917452946304deg) rotateX(345.80209471285355deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-345.80209471285355deg) rotateY(-103.50917452946304deg) rotateX(-45deg);
+}
+.dot:nth-child(96) {
+  -webkit-transform: rotateX(45deg) rotateY(115.38075517863047deg) rotateX(246.2509783264248deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-246.2509783264248deg) rotateY(-115.38075517863047deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(115.38075517863047deg) rotateX(246.2509783264248deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-246.2509783264248deg) rotateY(-115.38075517863047deg) rotateX(-45deg);
+}
+.dot:nth-child(97) {
+  -webkit-transform: rotateX(45deg) rotateY(73.80639709532244deg) rotateX(168.48374373279503deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-168.48374373279503deg) rotateY(-73.80639709532244deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(73.80639709532244deg) rotateX(168.48374373279503deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-168.48374373279503deg) rotateY(-73.80639709532244deg) rotateX(-45deg);
+}
+.dot:nth-child(98) {
+  -webkit-transform: rotateX(45deg) rotateY(310.87497895583505deg) rotateX(219.1567645780744deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-219.1567645780744deg) rotateY(-310.87497895583505deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(310.87497895583505deg) rotateX(219.1567645780744deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-219.1567645780744deg) rotateY(-310.87497895583505deg) rotateX(-45deg);
+}
+.dot:nth-child(99) {
+  -webkit-transform: rotateX(45deg) rotateY(70.99042841233307deg) rotateX(147.73914869874733deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-147.73914869874733deg) rotateY(-70.99042841233307deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(70.99042841233307deg) rotateX(147.73914869874733deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-147.73914869874733deg) rotateY(-70.99042841233307deg) rotateX(-45deg);
+}
+.dot:nth-child(100) {
+  -webkit-transform: rotateX(45deg) rotateY(8.10002211481332deg) rotateX(36.28522806800904deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-36.28522806800904deg) rotateY(-8.10002211481332deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(8.10002211481332deg) rotateX(36.28522806800904deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-36.28522806800904deg) rotateY(-8.10002211481332deg) rotateX(-45deg);
+}
+.dot:nth-child(101) {
+  -webkit-transform: rotateX(45deg) rotateY(229.61931210011232deg) rotateX(311.4495302550494deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-311.4495302550494deg) rotateY(-229.61931210011232deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(229.61931210011232deg) rotateX(311.4495302550494deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-311.4495302550494deg) rotateY(-229.61931210011232deg) rotateX(-45deg);
+}
+.dot:nth-child(102) {
+  -webkit-transform: rotateX(45deg) rotateY(235.36751409061236deg) rotateX(2.45686682872476deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-2.45686682872476deg) rotateY(-235.36751409061236deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(235.36751409061236deg) rotateX(2.45686682872476deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-2.45686682872476deg) rotateY(-235.36751409061236deg) rotateX(-45deg);
+}
+.dot:nth-child(103) {
+  -webkit-transform: rotateX(45deg) rotateY(293.9643373433501deg) rotateX(353.3534295670689deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-353.3534295670689deg) rotateY(-293.9643373433501deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(293.9643373433501deg) rotateX(353.3534295670689deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-353.3534295670689deg) rotateY(-293.9643373433501deg) rotateX(-45deg);
+}
+.dot:nth-child(104) {
+  -webkit-transform: rotateX(45deg) rotateY(306.28905449062574deg) rotateX(336.25550430268055deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-336.25550430268055deg) rotateY(-306.28905449062574deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(306.28905449062574deg) rotateX(336.25550430268055deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-336.25550430268055deg) rotateY(-306.28905449062574deg) rotateX(-45deg);
+}
+.dot:nth-child(105) {
+  -webkit-transform: rotateX(45deg) rotateY(317.4156414438041deg) rotateX(194.0775805525482deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-194.0775805525482deg) rotateY(-317.4156414438041deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(317.4156414438041deg) rotateX(194.0775805525482deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-194.0775805525482deg) rotateY(-317.4156414438041deg) rotateX(-45deg);
+}
+.dot:nth-child(106) {
+  -webkit-transform: rotateX(45deg) rotateY(33.3191168680788deg) rotateX(78.11544617637983deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-78.11544617637983deg) rotateY(-33.3191168680788deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(33.3191168680788deg) rotateX(78.11544617637983deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-78.11544617637983deg) rotateY(-33.3191168680788deg) rotateX(-45deg);
+}
+.dot:nth-child(107) {
+  -webkit-transform: rotateX(45deg) rotateY(324.3570894096048deg) rotateX(278.10780026949936deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-278.10780026949936deg) rotateY(-324.3570894096048deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(324.3570894096048deg) rotateX(278.10780026949936deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-278.10780026949936deg) rotateY(-324.3570894096048deg) rotateX(-45deg);
+}
+.dot:nth-child(108) {
+  -webkit-transform: rotateX(45deg) rotateY(95.90345478616645deg) rotateX(331.9989297911525deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-331.9989297911525deg) rotateY(-95.90345478616645deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(95.90345478616645deg) rotateX(331.9989297911525deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-331.9989297911525deg) rotateY(-95.90345478616645deg) rotateX(-45deg);
+}
+.dot:nth-child(109) {
+  -webkit-transform: rotateX(45deg) rotateY(226.89523237757402deg) rotateX(27.4891056586056deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-27.4891056586056deg) rotateY(-226.89523237757402deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(226.89523237757402deg) rotateX(27.4891056586056deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-27.4891056586056deg) rotateY(-226.89523237757402deg) rotateX(-45deg);
+}
+.dot:nth-child(110) {
+  -webkit-transform: rotateX(45deg) rotateY(147.7079596370459deg) rotateX(113.70875576511024deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-113.70875576511024deg) rotateY(-147.7079596370459deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(147.7079596370459deg) rotateX(113.70875576511024deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-113.70875576511024deg) rotateY(-147.7079596370459deg) rotateX(-45deg);
+}
+.dot:nth-child(111) {
+  -webkit-transform: rotateX(45deg) rotateY(276.53588614426536deg) rotateX(129.46700597181913deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-129.46700597181913deg) rotateY(-276.53588614426536deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(276.53588614426536deg) rotateX(129.46700597181913deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-129.46700597181913deg) rotateY(-276.53588614426536deg) rotateX(-45deg);
+}
+.dot:nth-child(112) {
+  -webkit-transform: rotateX(45deg) rotateY(192.50657242722792deg) rotateX(73.20848618634048deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-73.20848618634048deg) rotateY(-192.50657242722792deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(192.50657242722792deg) rotateX(73.20848618634048deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-73.20848618634048deg) rotateY(-192.50657242722792deg) rotateX(-45deg);
+}
+.dot:nth-child(113) {
+  -webkit-transform: rotateX(45deg) rotateY(12.45051643811184deg) rotateX(313.75865941867227deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-313.75865941867227deg) rotateY(-12.45051643811184deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(12.45051643811184deg) rotateX(313.75865941867227deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-313.75865941867227deg) rotateY(-12.45051643811184deg) rotateX(-45deg);
+}
+.dot:nth-child(114) {
+  -webkit-transform: rotateX(45deg) rotateY(313.3623357955368deg) rotateX(269.8800780158489deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-269.8800780158489deg) rotateY(-313.3623357955368deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(313.3623357955368deg) rotateX(269.8800780158489deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-269.8800780158489deg) rotateY(-313.3623357955368deg) rotateX(-45deg);
+}
+.dot:nth-child(115) {
+  -webkit-transform: rotateX(45deg) rotateY(309.08611904829735deg) rotateX(284.6666500624271deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-284.6666500624271deg) rotateY(-309.08611904829735deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(309.08611904829735deg) rotateX(284.6666500624271deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-284.6666500624271deg) rotateY(-309.08611904829735deg) rotateX(-45deg);
+}
+.dot:nth-child(116) {
+  -webkit-transform: rotateX(45deg) rotateY(61.29160562530152deg) rotateX(20.955267464742deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-20.955267464742deg) rotateY(-61.29160562530152deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(61.29160562530152deg) rotateX(20.955267464742deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-20.955267464742deg) rotateY(-61.29160562530152deg) rotateX(-45deg);
+}
+.dot:nth-child(117) {
+  -webkit-transform: rotateX(45deg) rotateY(173.39633342809992deg) rotateX(32.80722389929008deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-32.80722389929008deg) rotateY(-173.39633342809992deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(173.39633342809992deg) rotateX(32.80722389929008deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-32.80722389929008deg) rotateY(-173.39633342809992deg) rotateX(-45deg);
+}
+.dot:nth-child(118) {
+  -webkit-transform: rotateX(45deg) rotateY(97.32409047894168deg) rotateX(341.1416709702461deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-341.1416709702461deg) rotateY(-97.32409047894168deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(97.32409047894168deg) rotateX(341.1416709702461deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-341.1416709702461deg) rotateY(-97.32409047894168deg) rotateX(-45deg);
+}
+.dot:nth-child(119) {
+  -webkit-transform: rotateX(45deg) rotateY(213.93505951389682deg) rotateX(21.29292958416048deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-21.29292958416048deg) rotateY(-213.93505951389682deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(213.93505951389682deg) rotateX(21.29292958416048deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-21.29292958416048deg) rotateY(-213.93505951389682deg) rotateX(-45deg);
+}
+.dot:nth-child(120) {
+  -webkit-transform: rotateX(45deg) rotateY(319.3022601585835deg) rotateX(75.80348191782828deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-75.80348191782828deg) rotateY(-319.3022601585835deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(319.3022601585835deg) rotateX(75.80348191782828deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-75.80348191782828deg) rotateY(-319.3022601585835deg) rotateX(-45deg);
+}
+.dot:nth-child(121) {
+  -webkit-transform: rotateX(45deg) rotateY(265.5520658008754deg) rotateX(346.0991937015204deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-346.0991937015204deg) rotateY(-265.5520658008754deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(265.5520658008754deg) rotateX(346.0991937015204deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-346.0991937015204deg) rotateY(-265.5520658008754deg) rotateX(-45deg);
+}
+.dot:nth-child(122) {
+  -webkit-transform: rotateX(45deg) rotateY(180.9005531016737deg) rotateX(77.88526872172956deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-77.88526872172956deg) rotateY(-180.9005531016737deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(180.9005531016737deg) rotateX(77.88526872172956deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-77.88526872172956deg) rotateY(-180.9005531016737deg) rotateX(-45deg);
+}
+.dot:nth-child(123) {
+  -webkit-transform: rotateX(45deg) rotateY(109.6880795247852deg) rotateX(221.40488823875785deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-221.40488823875785deg) rotateY(-109.6880795247852deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(109.6880795247852deg) rotateX(221.40488823875785deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-221.40488823875785deg) rotateY(-109.6880795247852deg) rotateX(-45deg);
+}
+.dot:nth-child(124) {
+  -webkit-transform: rotateX(45deg) rotateY(28.91640873625884deg) rotateX(324.0908464696258deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-324.0908464696258deg) rotateY(-28.91640873625884deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(28.91640873625884deg) rotateX(324.0908464696258deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-324.0908464696258deg) rotateY(-28.91640873625884deg) rotateX(-45deg);
+}
+.dot:nth-child(125) {
+  -webkit-transform: rotateX(45deg) rotateY(25.93585241585964deg) rotateX(208.23460411280402deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-208.23460411280402deg) rotateY(-25.93585241585964deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(25.93585241585964deg) rotateX(208.23460411280402deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-208.23460411280402deg) rotateY(-25.93585241585964deg) rotateX(-45deg);
+}
+.dot:nth-child(126) {
+  -webkit-transform: rotateX(45deg) rotateY(142.50951577909296deg) rotateX(247.8556325845422deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-247.8556325845422deg) rotateY(-142.50951577909296deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(142.50951577909296deg) rotateX(247.8556325845422deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-247.8556325845422deg) rotateY(-142.50951577909296deg) rotateX(-45deg);
+}
+.dot:nth-child(127) {
+  -webkit-transform: rotateX(45deg) rotateY(231.33752010762694deg) rotateX(108.31147505901755deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-108.31147505901755deg) rotateY(-231.33752010762694deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(231.33752010762694deg) rotateX(108.31147505901755deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-108.31147505901755deg) rotateY(-231.33752010762694deg) rotateX(-45deg);
+}
+.dot:nth-child(128) {
+  -webkit-transform: rotateX(45deg) rotateY(269.6653571259229deg) rotateX(297.2262297291307deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-297.2262297291307deg) rotateY(-269.6653571259229deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(269.6653571259229deg) rotateX(297.2262297291307deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-297.2262297291307deg) rotateY(-269.6653571259229deg) rotateX(-45deg);
+}
+.dot:nth-child(129) {
+  -webkit-transform: rotateX(45deg) rotateY(291.5505810733885deg) rotateX(290.2248837612569deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-290.2248837612569deg) rotateY(-291.5505810733885deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(291.5505810733885deg) rotateX(290.2248837612569deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-290.2248837612569deg) rotateY(-291.5505810733885deg) rotateX(-45deg);
+}
+.dot:nth-child(130) {
+  -webkit-transform: rotateX(45deg) rotateY(117.50635284930468deg) rotateX(196.4931308850647deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-196.4931308850647deg) rotateY(-117.50635284930468deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(117.50635284930468deg) rotateX(196.4931308850647deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-196.4931308850647deg) rotateY(-117.50635284930468deg) rotateX(-45deg);
+}
+.dot:nth-child(131) {
+  -webkit-transform: rotateX(45deg) rotateY(223.27878733165545deg) rotateX(81.5360144432634deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-81.5360144432634deg) rotateY(-223.27878733165545deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(223.27878733165545deg) rotateX(81.5360144432634deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-81.5360144432634deg) rotateY(-223.27878733165545deg) rotateX(-45deg);
+}
+.dot:nth-child(132) {
+  -webkit-transform: rotateX(45deg) rotateY(271.9366083852948deg) rotateX(345.292599303648deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-345.292599303648deg) rotateY(-271.9366083852948deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(271.9366083852948deg) rotateX(345.292599303648deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-345.292599303648deg) rotateY(-271.9366083852948deg) rotateX(-45deg);
+}
+.dot:nth-child(133) {
+  -webkit-transform: rotateX(45deg) rotateY(187.32203188352278deg) rotateX(57.89094211533671deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-57.89094211533671deg) rotateY(-187.32203188352278deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(187.32203188352278deg) rotateX(57.89094211533671deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-57.89094211533671deg) rotateY(-187.32203188352278deg) rotateX(-45deg);
+}
+.dot:nth-child(134) {
+  -webkit-transform: rotateX(45deg) rotateY(140.70582702755928deg) rotateX(302.0382769033314deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-302.0382769033314deg) rotateY(-140.70582702755928deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(140.70582702755928deg) rotateX(302.0382769033314deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-302.0382769033314deg) rotateY(-140.70582702755928deg) rotateX(-45deg);
+}
+.dot:nth-child(135) {
+  -webkit-transform: rotateX(45deg) rotateY(345.4823167249561deg) rotateX(108.89260405674588deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-108.89260405674588deg) rotateY(-345.4823167249561deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(345.4823167249561deg) rotateX(108.89260405674588deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-108.89260405674588deg) rotateY(-345.4823167249561deg) rotateX(-45deg);
+}
+.dot:nth-child(136) {
+  -webkit-transform: rotateX(45deg) rotateY(141.41343911178421deg) rotateX(304.8389040213079deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-304.8389040213079deg) rotateY(-141.41343911178421deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(141.41343911178421deg) rotateX(304.8389040213079deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-304.8389040213079deg) rotateY(-141.41343911178421deg) rotateX(-45deg);
+}
+.dot:nth-child(137) {
+  -webkit-transform: rotateX(45deg) rotateY(57.741528153419644deg) rotateX(343.3018392976374deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-343.3018392976374deg) rotateY(-57.741528153419644deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(57.741528153419644deg) rotateX(343.3018392976374deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-343.3018392976374deg) rotateY(-57.741528153419644deg) rotateX(-45deg);
+}
+.dot:nth-child(138) {
+  -webkit-transform: rotateX(45deg) rotateY(151.27601193264132deg) rotateX(186.17308812215927deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-186.17308812215927deg) rotateY(-151.27601193264132deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(151.27601193264132deg) rotateX(186.17308812215927deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-186.17308812215927deg) rotateY(-151.27601193264132deg) rotateX(-45deg);
+}
+.dot:nth-child(139) {
+  -webkit-transform: rotateX(45deg) rotateY(265.0846448633821deg) rotateX(124.86030846834169deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-124.86030846834169deg) rotateY(-265.0846448633821deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(265.0846448633821deg) rotateX(124.86030846834169deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-124.86030846834169deg) rotateY(-265.0846448633821deg) rotateX(-45deg);
+}
+.dot:nth-child(140) {
+  -webkit-transform: rotateX(45deg) rotateY(313.73262656852614deg) rotateX(202.8214879799634deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-202.8214879799634deg) rotateY(-313.73262656852614deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(313.73262656852614deg) rotateX(202.8214879799634deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-202.8214879799634deg) rotateY(-313.73262656852614deg) rotateX(-45deg);
+}
+.dot:nth-child(141) {
+  -webkit-transform: rotateX(45deg) rotateY(351.81851978413766deg) rotateX(255.4360649641602deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-255.4360649641602deg) rotateY(-351.81851978413766deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(351.81851978413766deg) rotateX(255.4360649641602deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-255.4360649641602deg) rotateY(-351.81851978413766deg) rotateX(-45deg);
+}
+.dot:nth-child(142) {
+  -webkit-transform: rotateX(45deg) rotateY(209.38302425667635deg) rotateX(45.5877330154182deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-45.5877330154182deg) rotateY(-209.38302425667635deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(209.38302425667635deg) rotateX(45.5877330154182deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-45.5877330154182deg) rotateY(-209.38302425667635deg) rotateX(-45deg);
+}
+.dot:nth-child(143) {
+  -webkit-transform: rotateX(45deg) rotateY(303.30411921255273deg) rotateX(5.57767812162636deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-5.57767812162636deg) rotateY(-303.30411921255273deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(303.30411921255273deg) rotateX(5.57767812162636deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-5.57767812162636deg) rotateY(-303.30411921255273deg) rotateX(-45deg);
+}
+.dot:nth-child(144) {
+  -webkit-transform: rotateX(45deg) rotateY(86.80394645780328deg) rotateX(352.3835591319949deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-352.3835591319949deg) rotateY(-86.80394645780328deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(86.80394645780328deg) rotateX(352.3835591319949deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-352.3835591319949deg) rotateY(-86.80394645780328deg) rotateX(-45deg);
+}
+.dot:nth-child(145) {
+  -webkit-transform: rotateX(45deg) rotateY(121.87646585516627deg) rotateX(93.21059798821801deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-93.21059798821801deg) rotateY(-121.87646585516627deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(121.87646585516627deg) rotateX(93.21059798821801deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-93.21059798821801deg) rotateY(-121.87646585516627deg) rotateX(-45deg);
+}
+.dot:nth-child(146) {
+  -webkit-transform: rotateX(45deg) rotateY(63.90973356552432deg) rotateX(327.20214304514235deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-327.20214304514235deg) rotateY(-63.90973356552432deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(63.90973356552432deg) rotateX(327.20214304514235deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-327.20214304514235deg) rotateY(-63.90973356552432deg) rotateX(-45deg);
+}
+.dot:nth-child(147) {
+  -webkit-transform: rotateX(45deg) rotateY(69.21904066577568deg) rotateX(156.22944094240668deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-156.22944094240668deg) rotateY(-69.21904066577568deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(69.21904066577568deg) rotateX(156.22944094240668deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-156.22944094240668deg) rotateY(-69.21904066577568deg) rotateX(-45deg);
+}
+.dot:nth-child(148) {
+  -webkit-transform: rotateX(45deg) rotateY(289.4332675728946deg) rotateX(25.548103312030438deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-25.548103312030438deg) rotateY(-289.4332675728946deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(289.4332675728946deg) rotateX(25.548103312030438deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-25.548103312030438deg) rotateY(-289.4332675728946deg) rotateX(-45deg);
+}
+.dot:nth-child(149) {
+  -webkit-transform: rotateX(45deg) rotateY(271.83442301116884deg) rotateX(222.52436324022707deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-222.52436324022707deg) rotateY(-271.83442301116884deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(271.83442301116884deg) rotateX(222.52436324022707deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-222.52436324022707deg) rotateY(-271.83442301116884deg) rotateX(-45deg);
+}
+.dot:nth-child(150) {
+  -webkit-transform: rotateX(45deg) rotateY(30.951232826337357deg) rotateX(23.7366140261292deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-23.7366140261292deg) rotateY(-30.951232826337357deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(30.951232826337357deg) rotateX(23.7366140261292deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-23.7366140261292deg) rotateY(-30.951232826337357deg) rotateX(-45deg);
+}
+.dot:nth-child(151) {
+  -webkit-transform: rotateX(45deg) rotateY(295.8672928065062deg) rotateX(169.58631511777642deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-169.58631511777642deg) rotateY(-295.8672928065062deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(295.8672928065062deg) rotateX(169.58631511777642deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-169.58631511777642deg) rotateY(-295.8672928065062deg) rotateX(-45deg);
+}
+.dot:nth-child(152) {
+  -webkit-transform: rotateX(45deg) rotateY(28.48313827067616deg) rotateX(299.8887601308523deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-299.8887601308523deg) rotateY(-28.48313827067616deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(28.48313827067616deg) rotateX(299.8887601308523deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-299.8887601308523deg) rotateY(-28.48313827067616deg) rotateX(-45deg);
+}
+.dot:nth-child(153) {
+  -webkit-transform: rotateX(45deg) rotateY(306.950719244778deg) rotateX(126.54040714725852deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-126.54040714725852deg) rotateY(-306.950719244778deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(306.950719244778deg) rotateX(126.54040714725852deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-126.54040714725852deg) rotateY(-306.950719244778deg) rotateX(-45deg);
+}
+.dot:nth-child(154) {
+  -webkit-transform: rotateX(45deg) rotateY(340.2655729930847deg) rotateX(102.20441068522621deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-102.20441068522621deg) rotateY(-340.2655729930847deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(340.2655729930847deg) rotateX(102.20441068522621deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-102.20441068522621deg) rotateY(-340.2655729930847deg) rotateX(-45deg);
+}
+.dot:nth-child(155) {
+  -webkit-transform: rotateX(45deg) rotateY(281.2730027083308deg) rotateX(351.2530807871371deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-351.2530807871371deg) rotateY(-281.2730027083308deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(281.2730027083308deg) rotateX(351.2530807871371deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-351.2530807871371deg) rotateY(-281.2730027083308deg) rotateX(-45deg);
+}
+.dot:nth-child(156) {
+  -webkit-transform: rotateX(45deg) rotateY(18.52005519904212deg) rotateX(67.41553338244549deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-67.41553338244549deg) rotateY(-18.52005519904212deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(18.52005519904212deg) rotateX(67.41553338244549deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-67.41553338244549deg) rotateY(-18.52005519904212deg) rotateX(-45deg);
+}
+.dot:nth-child(157) {
+  -webkit-transform: rotateX(45deg) rotateY(266.64280151948316deg) rotateX(58.32639799453332deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-58.32639799453332deg) rotateY(-266.64280151948316deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(266.64280151948316deg) rotateX(58.32639799453332deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-58.32639799453332deg) rotateY(-266.64280151948316deg) rotateX(-45deg);
+}
+.dot:nth-child(158) {
+  -webkit-transform: rotateX(45deg) rotateY(172.5688050594181deg) rotateX(106.74143663607539deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-106.74143663607539deg) rotateY(-172.5688050594181deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(172.5688050594181deg) rotateX(106.74143663607539deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-106.74143663607539deg) rotateY(-172.5688050594181deg) rotateX(-45deg);
+}
+.dot:nth-child(159) {
+  -webkit-transform: rotateX(45deg) rotateY(345.5778447724878deg) rotateX(320.8410017285497deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-320.8410017285497deg) rotateY(-345.5778447724878deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(345.5778447724878deg) rotateX(320.8410017285497deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-320.8410017285497deg) rotateY(-345.5778447724878deg) rotateX(-45deg);
+}
+.dot:nth-child(160) {
+  -webkit-transform: rotateX(45deg) rotateY(191.66287000291058deg) rotateX(248.95426891744154deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-248.95426891744154deg) rotateY(-191.66287000291058deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(191.66287000291058deg) rotateX(248.95426891744154deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-248.95426891744154deg) rotateY(-191.66287000291058deg) rotateX(-45deg);
+}
+.dot:nth-child(161) {
+  -webkit-transform: rotateX(45deg) rotateY(160.35895150154818deg) rotateX(222.73721898905916deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-222.73721898905916deg) rotateY(-160.35895150154818deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(160.35895150154818deg) rotateX(222.73721898905916deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-222.73721898905916deg) rotateY(-160.35895150154818deg) rotateX(-45deg);
+}
+.dot:nth-child(162) {
+  -webkit-transform: rotateX(45deg) rotateY(314.558569919318deg) rotateX(166.5973799955101deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-166.5973799955101deg) rotateY(-314.558569919318deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(314.558569919318deg) rotateX(166.5973799955101deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-166.5973799955101deg) rotateY(-314.558569919318deg) rotateX(-45deg);
+}
+.dot:nth-child(163) {
+  -webkit-transform: rotateX(45deg) rotateY(148.8341751974075deg) rotateX(209.70102678984395deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-209.70102678984395deg) rotateY(-148.8341751974075deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(148.8341751974075deg) rotateX(209.70102678984395deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-209.70102678984395deg) rotateY(-148.8341751974075deg) rotateX(-45deg);
+}
+.dot:nth-child(164) {
+  -webkit-transform: rotateX(45deg) rotateY(337.3254380654543deg) rotateX(63.91574288718408deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-63.91574288718408deg) rotateY(-337.3254380654543deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(337.3254380654543deg) rotateX(63.91574288718408deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-63.91574288718408deg) rotateY(-337.3254380654543deg) rotateX(-45deg);
+}
+.dot:nth-child(165) {
+  -webkit-transform: rotateX(45deg) rotateY(135.64782396890206deg) rotateX(16.88207021914428deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-16.88207021914428deg) rotateY(-135.64782396890206deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(135.64782396890206deg) rotateX(16.88207021914428deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-16.88207021914428deg) rotateY(-135.64782396890206deg) rotateX(-45deg);
+}
+.dot:nth-child(166) {
+  -webkit-transform: rotateX(45deg) rotateY(335.0726177729666deg) rotateX(255.75174763798717deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-255.75174763798717deg) rotateY(-335.0726177729666deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(335.0726177729666deg) rotateX(255.75174763798717deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-255.75174763798717deg) rotateY(-335.0726177729666deg) rotateX(-45deg);
+}
+.dot:nth-child(167) {
+  -webkit-transform: rotateX(45deg) rotateY(266.5583500731736deg) rotateX(45.18910554237648deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-45.18910554237648deg) rotateY(-266.5583500731736deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(266.5583500731736deg) rotateX(45.18910554237648deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-45.18910554237648deg) rotateY(-266.5583500731736deg) rotateX(-45deg);
+}
+.dot:nth-child(168) {
+  -webkit-transform: rotateX(45deg) rotateY(292.13066820055246deg) rotateX(319.492506477982deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-319.492506477982deg) rotateY(-292.13066820055246deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(292.13066820055246deg) rotateX(319.492506477982deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-319.492506477982deg) rotateY(-292.13066820055246deg) rotateX(-45deg);
+}
+.dot:nth-child(169) {
+  -webkit-transform: rotateX(45deg) rotateY(324.1231592930853deg) rotateX(349.21277342364203deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-349.21277342364203deg) rotateY(-324.1231592930853deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(324.1231592930853deg) rotateX(349.21277342364203deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-349.21277342364203deg) rotateY(-324.1231592930853deg) rotateX(-45deg);
+}
+.dot:nth-child(170) {
+  -webkit-transform: rotateX(45deg) rotateY(230.7518787123263deg) rotateX(296.6528742760418deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-296.6528742760418deg) rotateY(-230.7518787123263deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(230.7518787123263deg) rotateX(296.6528742760418deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-296.6528742760418deg) rotateY(-230.7518787123263deg) rotateX(-45deg);
+}
+.dot:nth-child(171) {
+  -webkit-transform: rotateX(45deg) rotateY(281.5376359876247deg) rotateX(183.545880569145deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-183.545880569145deg) rotateY(-281.5376359876247deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(281.5376359876247deg) rotateX(183.545880569145deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-183.545880569145deg) rotateY(-281.5376359876247deg) rotateX(-45deg);
+}
+.dot:nth-child(172) {
+  -webkit-transform: rotateX(45deg) rotateY(201.39706668443978deg) rotateX(237.98527020961055deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-237.98527020961055deg) rotateY(-201.39706668443978deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(201.39706668443978deg) rotateX(237.98527020961055deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-237.98527020961055deg) rotateY(-201.39706668443978deg) rotateX(-45deg);
+}
+.dot:nth-child(173) {
+  -webkit-transform: rotateX(45deg) rotateY(231.02866021916267deg) rotateX(244.46893324144176deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-244.46893324144176deg) rotateY(-231.02866021916267deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(231.02866021916267deg) rotateX(244.46893324144176deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-244.46893324144176deg) rotateY(-231.02866021916267deg) rotateX(-45deg);
+}
+.dot:nth-child(174) {
+  -webkit-transform: rotateX(45deg) rotateY(344.04101176187413deg) rotateX(333.79900041036313deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-333.79900041036313deg) rotateY(-344.04101176187413deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(344.04101176187413deg) rotateX(333.79900041036313deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-333.79900041036313deg) rotateY(-344.04101176187413deg) rotateX(-45deg);
+}
+.dot:nth-child(175) {
+  -webkit-transform: rotateX(45deg) rotateY(99.60336816497136deg) rotateX(321.34535651653994deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-321.34535651653994deg) rotateY(-99.60336816497136deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(99.60336816497136deg) rotateX(321.34535651653994deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-321.34535651653994deg) rotateY(-99.60336816497136deg) rotateX(-45deg);
+}
+.dot:nth-child(176) {
+  -webkit-transform: rotateX(45deg) rotateY(357.72725818678754deg) rotateX(293.6878969799729deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-293.6878969799729deg) rotateY(-357.72725818678754deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(357.72725818678754deg) rotateX(293.6878969799729deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-293.6878969799729deg) rotateY(-357.72725818678754deg) rotateX(-45deg);
+}
+.dot:nth-child(177) {
+  -webkit-transform: rotateX(45deg) rotateY(113.5826419852674deg) rotateX(168.57892485335483deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-168.57892485335483deg) rotateY(-113.5826419852674deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(113.5826419852674deg) rotateX(168.57892485335483deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-168.57892485335483deg) rotateY(-113.5826419852674deg) rotateX(-45deg);
+}
+.dot:nth-child(178) {
+  -webkit-transform: rotateX(45deg) rotateY(228.36802789941441deg) rotateX(242.85189824178804deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-242.85189824178804deg) rotateY(-228.36802789941441deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(228.36802789941441deg) rotateX(242.85189824178804deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-242.85189824178804deg) rotateY(-228.36802789941441deg) rotateX(-45deg);
+}
+.dot:nth-child(179) {
+  -webkit-transform: rotateX(45deg) rotateY(252.2037031129001deg) rotateX(197.56955743767324deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-197.56955743767324deg) rotateY(-252.2037031129001deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(252.2037031129001deg) rotateX(197.56955743767324deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-197.56955743767324deg) rotateY(-252.2037031129001deg) rotateX(-45deg);
+}
+.dot:nth-child(180) {
+  -webkit-transform: rotateX(45deg) rotateY(134.6454495191574deg) rotateX(145.6080365739762deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-145.6080365739762deg) rotateY(-134.6454495191574deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(134.6454495191574deg) rotateX(145.6080365739762deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-145.6080365739762deg) rotateY(-134.6454495191574deg) rotateX(-45deg);
+}
+.dot:nth-child(181) {
+  -webkit-transform: rotateX(45deg) rotateY(319.73354386165727deg) rotateX(19.83753874897956deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-19.83753874897956deg) rotateY(-319.73354386165727deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(319.73354386165727deg) rotateX(19.83753874897956deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-19.83753874897956deg) rotateY(-319.73354386165727deg) rotateX(-45deg);
+}
+.dot:nth-child(182) {
+  -webkit-transform: rotateX(45deg) rotateY(29.0057970397176deg) rotateX(73.91158696264031deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-73.91158696264031deg) rotateY(-29.0057970397176deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(29.0057970397176deg) rotateX(73.91158696264031deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-73.91158696264031deg) rotateY(-29.0057970397176deg) rotateX(-45deg);
+}
+.dot:nth-child(183) {
+  -webkit-transform: rotateX(45deg) rotateY(215.06446891464302deg) rotateX(104.36081704683588deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-104.36081704683588deg) rotateY(-215.06446891464302deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(215.06446891464302deg) rotateX(104.36081704683588deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-104.36081704683588deg) rotateY(-215.06446891464302deg) rotateX(-45deg);
+}
+.dot:nth-child(184) {
+  -webkit-transform: rotateX(45deg) rotateY(94.36271480284643deg) rotateX(258.10977104119945deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-258.10977104119945deg) rotateY(-94.36271480284643deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(94.36271480284643deg) rotateX(258.10977104119945deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-258.10977104119945deg) rotateY(-94.36271480284643deg) rotateX(-45deg);
+}
+.dot:nth-child(185) {
+  -webkit-transform: rotateX(45deg) rotateY(60.999069325625996deg) rotateX(93.59187508933236deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-93.59187508933236deg) rotateY(-60.999069325625996deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(60.999069325625996deg) rotateX(93.59187508933236deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-93.59187508933236deg) rotateY(-60.999069325625996deg) rotateX(-45deg);
+}
+.dot:nth-child(186) {
+  -webkit-transform: rotateX(45deg) rotateY(132.92077202349913deg) rotateX(278.3715667761863deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-278.3715667761863deg) rotateY(-132.92077202349913deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(132.92077202349913deg) rotateX(278.3715667761863deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-278.3715667761863deg) rotateY(-132.92077202349913deg) rotateX(-45deg);
+}
+.dot:nth-child(187) {
+  -webkit-transform: rotateX(45deg) rotateY(180.60209875926358deg) rotateX(38.6655832082034deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-38.6655832082034deg) rotateY(-180.60209875926358deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(180.60209875926358deg) rotateX(38.6655832082034deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-38.6655832082034deg) rotateY(-180.60209875926358deg) rotateX(-45deg);
+}
+.dot:nth-child(188) {
+  -webkit-transform: rotateX(45deg) rotateY(180.77771052718163deg) rotateX(303.87721935287124deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-303.87721935287124deg) rotateY(-180.77771052718163deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(180.77771052718163deg) rotateX(303.87721935287124deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-303.87721935287124deg) rotateY(-180.77771052718163deg) rotateX(-45deg);
+}
+.dot:nth-child(189) {
+  -webkit-transform: rotateX(45deg) rotateY(142.81516028568132deg) rotateX(35.23397178389148deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-35.23397178389148deg) rotateY(-142.81516028568132deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(142.81516028568132deg) rotateX(35.23397178389148deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-35.23397178389148deg) rotateY(-142.81516028568132deg) rotateX(-45deg);
+}
+.dot:nth-child(190) {
+  -webkit-transform: rotateX(45deg) rotateY(175.24889118969443deg) rotateX(124.07806685194379deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-124.07806685194379deg) rotateY(-175.24889118969443deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(175.24889118969443deg) rotateX(124.07806685194379deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-124.07806685194379deg) rotateY(-175.24889118969443deg) rotateX(-45deg);
+}
+.dot:nth-child(191) {
+  -webkit-transform: rotateX(45deg) rotateY(334.8320394661279deg) rotateX(189.07014174386867deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-189.07014174386867deg) rotateY(-334.8320394661279deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(334.8320394661279deg) rotateX(189.07014174386867deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-189.07014174386867deg) rotateY(-334.8320394661279deg) rotateX(-45deg);
+}
+.dot:nth-child(192) {
+  -webkit-transform: rotateX(45deg) rotateY(35.10564367286844deg) rotateX(299.11080158315605deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-299.11080158315605deg) rotateY(-35.10564367286844deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(35.10564367286844deg) rotateX(299.11080158315605deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-299.11080158315605deg) rotateY(-35.10564367286844deg) rotateX(-45deg);
+}
+.dot:nth-child(193) {
+  -webkit-transform: rotateX(45deg) rotateY(95.31820859760036deg) rotateX(137.9377107974142deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-137.9377107974142deg) rotateY(-95.31820859760036deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(95.31820859760036deg) rotateX(137.9377107974142deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-137.9377107974142deg) rotateY(-95.31820859760036deg) rotateX(-45deg);
+}
+.dot:nth-child(194) {
+  -webkit-transform: rotateX(45deg) rotateY(122.67820101231325deg) rotateX(288.39725168421853deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-288.39725168421853deg) rotateY(-122.67820101231325deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(122.67820101231325deg) rotateX(288.39725168421853deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-288.39725168421853deg) rotateY(-122.67820101231325deg) rotateX(-45deg);
+}
+.dot:nth-child(195) {
+  -webkit-transform: rotateX(45deg) rotateY(225.39527563378212deg) rotateX(232.1493707969784deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-232.1493707969784deg) rotateY(-225.39527563378212deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(225.39527563378212deg) rotateX(232.1493707969784deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-232.1493707969784deg) rotateY(-225.39527563378212deg) rotateX(-45deg);
+}
+.dot:nth-child(196) {
+  -webkit-transform: rotateX(45deg) rotateY(197.78483228757986deg) rotateX(83.74081296846276deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-83.74081296846276deg) rotateY(-197.78483228757986deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(197.78483228757986deg) rotateX(83.74081296846276deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-83.74081296846276deg) rotateY(-197.78483228757986deg) rotateX(-45deg);
+}
+.dot:nth-child(197) {
+  -webkit-transform: rotateX(45deg) rotateY(195.8420468587428deg) rotateX(149.04913865961132deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-149.04913865961132deg) rotateY(-195.8420468587428deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(195.8420468587428deg) rotateX(149.04913865961132deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-149.04913865961132deg) rotateY(-195.8420468587428deg) rotateX(-45deg);
+}
+.dot:nth-child(198) {
+  -webkit-transform: rotateX(45deg) rotateY(172.5386602990331deg) rotateX(249.77512537501752deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-249.77512537501752deg) rotateY(-172.5386602990331deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(172.5386602990331deg) rotateX(249.77512537501752deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-249.77512537501752deg) rotateY(-172.5386602990331deg) rotateX(-45deg);
+}
+.dot:nth-child(199) {
+  -webkit-transform: rotateX(45deg) rotateY(91.51390565559252deg) rotateX(43.20799302309768deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-43.20799302309768deg) rotateY(-91.51390565559252deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(91.51390565559252deg) rotateX(43.20799302309768deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-43.20799302309768deg) rotateY(-91.51390565559252deg) rotateX(-45deg);
+}
+.dot:nth-child(200) {
+  -webkit-transform: rotateX(45deg) rotateY(7.37441542558368deg) rotateX(77.42679261602473deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-77.42679261602473deg) rotateY(-7.37441542558368deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(7.37441542558368deg) rotateX(77.42679261602473deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-77.42679261602473deg) rotateY(-7.37441542558368deg) rotateX(-45deg);
+}
+.dot:nth-child(201) {
+  -webkit-transform: rotateX(45deg) rotateY(10.0478777568786deg) rotateX(10.3660827968268deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-10.3660827968268deg) rotateY(-10.0478777568786deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(10.0478777568786deg) rotateX(10.3660827968268deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-10.3660827968268deg) rotateY(-10.0478777568786deg) rotateX(-45deg);
+}
+.dot:nth-child(202) {
+  -webkit-transform: rotateX(45deg) rotateY(53.423054292798deg) rotateX(205.1994761545212deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-205.1994761545212deg) rotateY(-53.423054292798deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(53.423054292798deg) rotateX(205.1994761545212deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-205.1994761545212deg) rotateY(-53.423054292798deg) rotateX(-45deg);
+}
+.dot:nth-child(203) {
+  -webkit-transform: rotateX(45deg) rotateY(182.29948360472918deg) rotateX(74.62656816467651deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-74.62656816467651deg) rotateY(-182.29948360472918deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(182.29948360472918deg) rotateX(74.62656816467651deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-74.62656816467651deg) rotateY(-182.29948360472918deg) rotateX(-45deg);
+}
+.dot:nth-child(204) {
+  -webkit-transform: rotateX(45deg) rotateY(346.7652815859764deg) rotateX(33.229002105072deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-33.229002105072deg) rotateY(-346.7652815859764deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(346.7652815859764deg) rotateX(33.229002105072deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-33.229002105072deg) rotateY(-346.7652815859764deg) rotateX(-45deg);
+}
+.dot:nth-child(205) {
+  -webkit-transform: rotateX(45deg) rotateY(314.6594367362558deg) rotateX(220.91835555620494deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-220.91835555620494deg) rotateY(-314.6594367362558deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(314.6594367362558deg) rotateX(220.91835555620494deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-220.91835555620494deg) rotateY(-314.6594367362558deg) rotateX(-45deg);
+}
+.dot:nth-child(206) {
+  -webkit-transform: rotateX(45deg) rotateY(152.55362997762876deg) rotateX(139.7901184391232deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-139.7901184391232deg) rotateY(-152.55362997762876deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(152.55362997762876deg) rotateX(139.7901184391232deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-139.7901184391232deg) rotateY(-152.55362997762876deg) rotateX(-45deg);
+}
+.dot:nth-child(207) {
+  -webkit-transform: rotateX(45deg) rotateY(225.92015904374423deg) rotateX(106.86595852486799deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-106.86595852486799deg) rotateY(-225.92015904374423deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(225.92015904374423deg) rotateX(106.86595852486799deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-106.86595852486799deg) rotateY(-225.92015904374423deg) rotateX(-45deg);
+}
+.dot:nth-child(208) {
+  -webkit-transform: rotateX(45deg) rotateY(149.1127641778439deg) rotateX(272.24763918668026deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-272.24763918668026deg) rotateY(-149.1127641778439deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(149.1127641778439deg) rotateX(272.24763918668026deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-272.24763918668026deg) rotateY(-149.1127641778439deg) rotateX(-45deg);
+}
+.dot:nth-child(209) {
+  -webkit-transform: rotateX(45deg) rotateY(325.5974595341831deg) rotateX(337.3410554789007deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-337.3410554789007deg) rotateY(-325.5974595341831deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(325.5974595341831deg) rotateX(337.3410554789007deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-337.3410554789007deg) rotateY(-325.5974595341831deg) rotateX(-45deg);
+}
+.dot:nth-child(210) {
+  -webkit-transform: rotateX(45deg) rotateY(37.360772928222836deg) rotateX(195.2308691572399deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-195.2308691572399deg) rotateY(-37.360772928222836deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(37.360772928222836deg) rotateX(195.2308691572399deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-195.2308691572399deg) rotateY(-37.360772928222836deg) rotateX(-45deg);
+}
+.dot:nth-child(211) {
+  -webkit-transform: rotateX(45deg) rotateY(154.31866499595347deg) rotateX(313.5136676207184deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-313.5136676207184deg) rotateY(-154.31866499595347deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(154.31866499595347deg) rotateX(313.5136676207184deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-313.5136676207184deg) rotateY(-154.31866499595347deg) rotateX(-45deg);
+}
+.dot:nth-child(212) {
+  -webkit-transform: rotateX(45deg) rotateY(155.97281623631724deg) rotateX(319.84980002045637deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-319.84980002045637deg) rotateY(-155.97281623631724deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(155.97281623631724deg) rotateX(319.84980002045637deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-319.84980002045637deg) rotateY(-155.97281623631724deg) rotateX(-45deg);
+}
+.dot:nth-child(213) {
+  -webkit-transform: rotateX(45deg) rotateY(330.6383033283054deg) rotateX(235.94554840587082deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-235.94554840587082deg) rotateY(-330.6383033283054deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(330.6383033283054deg) rotateX(235.94554840587082deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-235.94554840587082deg) rotateY(-330.6383033283054deg) rotateX(-45deg);
+}
+.dot:nth-child(214) {
+  -webkit-transform: rotateX(45deg) rotateY(107.35255046747629deg) rotateX(345.05024730227893deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-345.05024730227893deg) rotateY(-107.35255046747629deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(107.35255046747629deg) rotateX(345.05024730227893deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-345.05024730227893deg) rotateY(-107.35255046747629deg) rotateX(-45deg);
+}
+.dot:nth-child(215) {
+  -webkit-transform: rotateX(45deg) rotateY(44.86226219683884deg) rotateX(51.41990968957548deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-51.41990968957548deg) rotateY(-44.86226219683884deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(44.86226219683884deg) rotateX(51.41990968957548deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-51.41990968957548deg) rotateY(-44.86226219683884deg) rotateX(-45deg);
+}
+.dot:nth-child(216) {
+  -webkit-transform: rotateX(45deg) rotateY(297.3646410182118deg) rotateX(220.11460731737316deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-220.11460731737316deg) rotateY(-297.3646410182118deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(297.3646410182118deg) rotateX(220.11460731737316deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-220.11460731737316deg) rotateY(-297.3646410182118deg) rotateX(-45deg);
+}
+.dot:nth-child(217) {
+  -webkit-transform: rotateX(45deg) rotateY(252.74796296842405deg) rotateX(48.51418104954072deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-48.51418104954072deg) rotateY(-252.74796296842405deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(252.74796296842405deg) rotateX(48.51418104954072deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-48.51418104954072deg) rotateY(-252.74796296842405deg) rotateX(-45deg);
+}
+.dot:nth-child(218) {
+  -webkit-transform: rotateX(45deg) rotateY(176.1131269298495deg) rotateX(46.90342367626716deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-46.90342367626716deg) rotateY(-176.1131269298495deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(176.1131269298495deg) rotateX(46.90342367626716deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-46.90342367626716deg) rotateY(-176.1131269298495deg) rotateX(-45deg);
+}
+.dot:nth-child(219) {
+  -webkit-transform: rotateX(45deg) rotateY(264.4057972077282deg) rotateX(239.33456132188428deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-239.33456132188428deg) rotateY(-264.4057972077282deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(264.4057972077282deg) rotateX(239.33456132188428deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-239.33456132188428deg) rotateY(-264.4057972077282deg) rotateX(-45deg);
+}
+.dot:nth-child(220) {
+  -webkit-transform: rotateX(45deg) rotateY(101.23532546684147deg) rotateX(226.85489656403652deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-226.85489656403652deg) rotateY(-101.23532546684147deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(101.23532546684147deg) rotateX(226.85489656403652deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-226.85489656403652deg) rotateY(-101.23532546684147deg) rotateX(-45deg);
+}
+.dot:nth-child(221) {
+  -webkit-transform: rotateX(45deg) rotateY(240.13388601131726deg) rotateX(345.74732098728407deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-345.74732098728407deg) rotateY(-240.13388601131726deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(240.13388601131726deg) rotateX(345.74732098728407deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-345.74732098728407deg) rotateY(-240.13388601131726deg) rotateX(-45deg);
+}
+.dot:nth-child(222) {
+  -webkit-transform: rotateX(45deg) rotateY(229.7079934738578deg) rotateX(304.1362501680852deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-304.1362501680852deg) rotateY(-229.7079934738578deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(229.7079934738578deg) rotateX(304.1362501680852deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-304.1362501680852deg) rotateY(-229.7079934738578deg) rotateX(-45deg);
+}
+.dot:nth-child(223) {
+  -webkit-transform: rotateX(45deg) rotateY(194.15631964802762deg) rotateX(95.26524620130648deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-95.26524620130648deg) rotateY(-194.15631964802762deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(194.15631964802762deg) rotateX(95.26524620130648deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-95.26524620130648deg) rotateY(-194.15631964802762deg) rotateX(-45deg);
+}
+.dot:nth-child(224) {
+  -webkit-transform: rotateX(45deg) rotateY(184.9086683895438deg) rotateX(202.8558722231538deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-202.8558722231538deg) rotateY(-184.9086683895438deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(184.9086683895438deg) rotateX(202.8558722231538deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-202.8558722231538deg) rotateY(-184.9086683895438deg) rotateX(-45deg);
+}
+.dot:nth-child(225) {
+  -webkit-transform: rotateX(45deg) rotateY(198.1591782253236deg) rotateX(61.178844636305996deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-61.178844636305996deg) rotateY(-198.1591782253236deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(198.1591782253236deg) rotateX(61.178844636305996deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-61.178844636305996deg) rotateY(-198.1591782253236deg) rotateX(-45deg);
+}
+.dot:nth-child(226) {
+  -webkit-transform: rotateX(45deg) rotateY(149.29924643598494deg) rotateX(72.31705628335487deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-72.31705628335487deg) rotateY(-149.29924643598494deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(149.29924643598494deg) rotateX(72.31705628335487deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-72.31705628335487deg) rotateY(-149.29924643598494deg) rotateX(-45deg);
+}
+.dot:nth-child(227) {
+  -webkit-transform: rotateX(45deg) rotateY(199.02272086590517deg) rotateX(303.9051075372846deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-303.9051075372846deg) rotateY(-199.02272086590517deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(199.02272086590517deg) rotateX(303.9051075372846deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-303.9051075372846deg) rotateY(-199.02272086590517deg) rotateX(-45deg);
+}
+.dot:nth-child(228) {
+  -webkit-transform: rotateX(45deg) rotateY(289.7833258565514deg) rotateX(10.82290758378804deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-10.82290758378804deg) rotateY(-289.7833258565514deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(289.7833258565514deg) rotateX(10.82290758378804deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-10.82290758378804deg) rotateY(-289.7833258565514deg) rotateX(-45deg);
+}
+.dot:nth-child(229) {
+  -webkit-transform: rotateX(45deg) rotateY(182.6797527819871deg) rotateX(106.41479537822292deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-106.41479537822292deg) rotateY(-182.6797527819871deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(182.6797527819871deg) rotateX(106.41479537822292deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-106.41479537822292deg) rotateY(-182.6797527819871deg) rotateX(-45deg);
+}
+.dot:nth-child(230) {
+  -webkit-transform: rotateX(45deg) rotateY(186.17912334389987deg) rotateX(352.9567798878996deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-352.9567798878996deg) rotateY(-186.17912334389987deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(186.17912334389987deg) rotateX(352.9567798878996deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-352.9567798878996deg) rotateY(-186.17912334389987deg) rotateX(-45deg);
+}
+.dot:nth-child(231) {
+  -webkit-transform: rotateX(45deg) rotateY(148.74733750708404deg) rotateX(95.6335120741278deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-95.6335120741278deg) rotateY(-148.74733750708404deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(148.74733750708404deg) rotateX(95.6335120741278deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-95.6335120741278deg) rotateY(-148.74733750708404deg) rotateX(-45deg);
+}
+.dot:nth-child(232) {
+  -webkit-transform: rotateX(45deg) rotateY(57.47838861308976deg) rotateX(146.89811859279877deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-146.89811859279877deg) rotateY(-57.47838861308976deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(57.47838861308976deg) rotateX(146.89811859279877deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-146.89811859279877deg) rotateY(-57.47838861308976deg) rotateX(-45deg);
+}
+.dot:nth-child(233) {
+  -webkit-transform: rotateX(45deg) rotateY(26.33516971953228deg) rotateX(286.31941988132877deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-286.31941988132877deg) rotateY(-26.33516971953228deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(26.33516971953228deg) rotateX(286.31941988132877deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-286.31941988132877deg) rotateY(-26.33516971953228deg) rotateX(-45deg);
+}
+.dot:nth-child(234) {
+  -webkit-transform: rotateX(45deg) rotateY(315.80367942340655deg) rotateX(289.81308337301016deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-289.81308337301016deg) rotateY(-315.80367942340655deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(315.80367942340655deg) rotateX(289.81308337301016deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-289.81308337301016deg) rotateY(-315.80367942340655deg) rotateX(-45deg);
+}
+.dot:nth-child(235) {
+  -webkit-transform: rotateX(45deg) rotateY(156.02457222528767deg) rotateX(237.007993524894deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-237.007993524894deg) rotateY(-156.02457222528767deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(156.02457222528767deg) rotateX(237.007993524894deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-237.007993524894deg) rotateY(-156.02457222528767deg) rotateX(-45deg);
+}
+.dot:nth-child(236) {
+  -webkit-transform: rotateX(45deg) rotateY(351.34530250914395deg) rotateX(272.577461125329deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-272.577461125329deg) rotateY(-351.34530250914395deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(351.34530250914395deg) rotateX(272.577461125329deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-272.577461125329deg) rotateY(-351.34530250914395deg) rotateX(-45deg);
+}
+.dot:nth-child(237) {
+  -webkit-transform: rotateX(45deg) rotateY(284.58095842972403deg) rotateX(345.4645656142382deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-345.4645656142382deg) rotateY(-284.58095842972403deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(284.58095842972403deg) rotateX(345.4645656142382deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-345.4645656142382deg) rotateY(-284.58095842972403deg) rotateX(-45deg);
+}
+.dot:nth-child(238) {
+  -webkit-transform: rotateX(45deg) rotateY(62.519321255385954deg) rotateX(202.2596547938885deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-202.2596547938885deg) rotateY(-62.519321255385954deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(62.519321255385954deg) rotateX(202.2596547938885deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-202.2596547938885deg) rotateY(-62.519321255385954deg) rotateX(-45deg);
+}
+.dot:nth-child(239) {
+  -webkit-transform: rotateX(45deg) rotateY(123.36368210613719deg) rotateX(253.40680629014977deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-253.40680629014977deg) rotateY(-123.36368210613719deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(123.36368210613719deg) rotateX(253.40680629014977deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-253.40680629014977deg) rotateY(-123.36368210613719deg) rotateX(-45deg);
+}
+.dot:nth-child(240) {
+  -webkit-transform: rotateX(45deg) rotateY(186.72370380721978deg) rotateX(351.6007571015508deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-351.6007571015508deg) rotateY(-186.72370380721978deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(186.72370380721978deg) rotateX(351.6007571015508deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-351.6007571015508deg) rotateY(-186.72370380721978deg) rotateX(-45deg);
+}
+.dot:nth-child(241) {
+  -webkit-transform: rotateX(45deg) rotateY(195.88261334225544deg) rotateX(306.74530645832414deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-306.74530645832414deg) rotateY(-195.88261334225544deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(195.88261334225544deg) rotateX(306.74530645832414deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-306.74530645832414deg) rotateY(-195.88261334225544deg) rotateX(-45deg);
+}
+.dot:nth-child(242) {
+  -webkit-transform: rotateX(45deg) rotateY(343.6075863987206deg) rotateX(341.41187695786346deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-341.41187695786346deg) rotateY(-343.6075863987206deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(343.6075863987206deg) rotateX(341.41187695786346deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-341.41187695786346deg) rotateY(-343.6075863987206deg) rotateX(-45deg);
+}
+.dot:nth-child(243) {
+  -webkit-transform: rotateX(45deg) rotateY(261.4338490180673deg) rotateX(17.72001771256332deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-17.72001771256332deg) rotateY(-261.4338490180673deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(261.4338490180673deg) rotateX(17.72001771256332deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-17.72001771256332deg) rotateY(-261.4338490180673deg) rotateX(-45deg);
+}
+.dot:nth-child(244) {
+  -webkit-transform: rotateX(45deg) rotateY(147.38946877419949deg) rotateX(49.14478146471084deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-49.14478146471084deg) rotateY(-147.38946877419949deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(147.38946877419949deg) rotateX(49.14478146471084deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-49.14478146471084deg) rotateY(-147.38946877419949deg) rotateX(-45deg);
+}
+.dot:nth-child(245) {
+  -webkit-transform: rotateX(45deg) rotateY(170.04596594721085deg) rotateX(10.9506695810706deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-10.9506695810706deg) rotateY(-170.04596594721085deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(170.04596594721085deg) rotateX(10.9506695810706deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-10.9506695810706deg) rotateY(-170.04596594721085deg) rotateX(-45deg);
+}
+.dot:nth-child(246) {
+  -webkit-transform: rotateX(45deg) rotateY(297.9518675990403deg) rotateX(149.12316511385148deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-149.12316511385148deg) rotateY(-297.9518675990403deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(297.9518675990403deg) rotateX(149.12316511385148deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-149.12316511385148deg) rotateY(-297.9518675990403deg) rotateX(-45deg);
+}
+.dot:nth-child(247) {
+  -webkit-transform: rotateX(45deg) rotateY(166.28111360594642deg) rotateX(40.8689165767284deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-40.8689165767284deg) rotateY(-166.28111360594642deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(166.28111360594642deg) rotateX(40.8689165767284deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-40.8689165767284deg) rotateY(-166.28111360594642deg) rotateX(-45deg);
+}
+.dot:nth-child(248) {
+  -webkit-transform: rotateX(45deg) rotateY(107.79492259025568deg) rotateX(141.16088432259863deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-141.16088432259863deg) rotateY(-107.79492259025568deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(107.79492259025568deg) rotateX(141.16088432259863deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-141.16088432259863deg) rotateY(-107.79492259025568deg) rotateX(-45deg);
+}
+.dot:nth-child(249) {
+  -webkit-transform: rotateX(45deg) rotateY(7.20882212743152deg) rotateX(333.44560529105365deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-333.44560529105365deg) rotateY(-7.20882212743152deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(7.20882212743152deg) rotateX(333.44560529105365deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-333.44560529105365deg) rotateY(-7.20882212743152deg) rotateX(-45deg);
+}
+.dot:nth-child(250) {
+  -webkit-transform: rotateX(45deg) rotateY(321.2098462041469deg) rotateX(73.51005264557904deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-73.51005264557904deg) rotateY(-321.2098462041469deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(321.2098462041469deg) rotateX(73.51005264557904deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-73.51005264557904deg) rotateY(-321.2098462041469deg) rotateX(-45deg);
+}
+.dot:nth-child(251) {
+  -webkit-transform: rotateX(45deg) rotateY(169.05201128683993deg) rotateX(209.58254029043027deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-209.58254029043027deg) rotateY(-169.05201128683993deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(169.05201128683993deg) rotateX(209.58254029043027deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-209.58254029043027deg) rotateY(-169.05201128683993deg) rotateX(-45deg);
+}
+.dot:nth-child(252) {
+  -webkit-transform: rotateX(45deg) rotateY(35.05331813357772deg) rotateX(121.44078014418469deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-121.44078014418469deg) rotateY(-35.05331813357772deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(35.05331813357772deg) rotateX(121.44078014418469deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-121.44078014418469deg) rotateY(-35.05331813357772deg) rotateX(-45deg);
+}
+.dot:nth-child(253) {
+  -webkit-transform: rotateX(45deg) rotateY(354.979549543932deg) rotateX(89.65626468881976deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-89.65626468881976deg) rotateY(-354.979549543932deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(354.979549543932deg) rotateX(89.65626468881976deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-89.65626468881976deg) rotateY(-354.979549543932deg) rotateX(-45deg);
+}
+.dot:nth-child(254) {
+  -webkit-transform: rotateX(45deg) rotateY(345.25096471421426deg) rotateX(153.8582192268221deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-153.8582192268221deg) rotateY(-345.25096471421426deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(345.25096471421426deg) rotateX(153.8582192268221deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-153.8582192268221deg) rotateY(-345.25096471421426deg) rotateX(-45deg);
+}
+.dot:nth-child(255) {
+  -webkit-transform: rotateX(45deg) rotateY(304.087957413867deg) rotateX(349.6221771743149deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-349.6221771743149deg) rotateY(-304.087957413867deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(304.087957413867deg) rotateX(349.6221771743149deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-349.6221771743149deg) rotateY(-304.087957413867deg) rotateX(-45deg);
+}
+.dot:nth-child(256) {
+  -webkit-transform: rotateX(45deg) rotateY(93.03556985221788deg) rotateX(155.3619536943732deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-155.3619536943732deg) rotateY(-93.03556985221788deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(93.03556985221788deg) rotateX(155.3619536943732deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-155.3619536943732deg) rotateY(-93.03556985221788deg) rotateX(-45deg);
+}
+.dot:nth-child(257) {
+  -webkit-transform: rotateX(45deg) rotateY(276.57216360792506deg) rotateX(123.71446995064632deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-123.71446995064632deg) rotateY(-276.57216360792506deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(276.57216360792506deg) rotateX(123.71446995064632deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-123.71446995064632deg) rotateY(-276.57216360792506deg) rotateX(-45deg);
+}
+.dot:nth-child(258) {
+  -webkit-transform: rotateX(45deg) rotateY(218.23225809261191deg) rotateX(335.16015610657644deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-335.16015610657644deg) rotateY(-218.23225809261191deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(218.23225809261191deg) rotateX(335.16015610657644deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-335.16015610657644deg) rotateY(-218.23225809261191deg) rotateX(-45deg);
+}
+.dot:nth-child(259) {
+  -webkit-transform: rotateX(45deg) rotateY(117.91982324793925deg) rotateX(177.26585905998934deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-177.26585905998934deg) rotateY(-117.91982324793925deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(117.91982324793925deg) rotateX(177.26585905998934deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-177.26585905998934deg) rotateY(-117.91982324793925deg) rotateX(-45deg);
+}
+.dot:nth-child(260) {
+  -webkit-transform: rotateX(45deg) rotateY(265.3413752652703deg) rotateX(59.7036371380092deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-59.7036371380092deg) rotateY(-265.3413752652703deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(265.3413752652703deg) rotateX(59.7036371380092deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-59.7036371380092deg) rotateY(-265.3413752652703deg) rotateX(-45deg);
+}
+.dot:nth-child(261) {
+  -webkit-transform: rotateX(45deg) rotateY(166.7293037753551deg) rotateX(326.813908042386deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-326.813908042386deg) rotateY(-166.7293037753551deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(166.7293037753551deg) rotateX(326.813908042386deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-326.813908042386deg) rotateY(-166.7293037753551deg) rotateX(-45deg);
+}
+.dot:nth-child(262) {
+  -webkit-transform: rotateX(45deg) rotateY(171.14945632405596deg) rotateX(104.06794119626268deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-104.06794119626268deg) rotateY(-171.14945632405596deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(171.14945632405596deg) rotateX(104.06794119626268deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-104.06794119626268deg) rotateY(-171.14945632405596deg) rotateX(-45deg);
+}
+.dot:nth-child(263) {
+  -webkit-transform: rotateX(45deg) rotateY(61.785528799519085deg) rotateX(4.48947558179496deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-4.48947558179496deg) rotateY(-61.785528799519085deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(61.785528799519085deg) rotateX(4.48947558179496deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-4.48947558179496deg) rotateY(-61.785528799519085deg) rotateX(-45deg);
+}
+.dot:nth-child(264) {
+  -webkit-transform: rotateX(45deg) rotateY(304.90277370437985deg) rotateX(43.70592232793556deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-43.70592232793556deg) rotateY(-304.90277370437985deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(304.90277370437985deg) rotateX(43.70592232793556deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-43.70592232793556deg) rotateY(-304.90277370437985deg) rotateX(-45deg);
+}
+.dot:nth-child(265) {
+  -webkit-transform: rotateX(45deg) rotateY(201.13972532562923deg) rotateX(161.29153369925928deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-161.29153369925928deg) rotateY(-201.13972532562923deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(201.13972532562923deg) rotateX(161.29153369925928deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-161.29153369925928deg) rotateY(-201.13972532562923deg) rotateX(-45deg);
+}
+.dot:nth-child(266) {
+  -webkit-transform: rotateX(45deg) rotateY(353.42495058663184deg) rotateX(134.19559788890186deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-134.19559788890186deg) rotateY(-353.42495058663184deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(353.42495058663184deg) rotateX(134.19559788890186deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-134.19559788890186deg) rotateY(-353.42495058663184deg) rotateX(-45deg);
+}
+.dot:nth-child(267) {
+  -webkit-transform: rotateX(45deg) rotateY(238.18887703120717deg) rotateX(326.22696041129535deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-326.22696041129535deg) rotateY(-238.18887703120717deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(238.18887703120717deg) rotateX(326.22696041129535deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-326.22696041129535deg) rotateY(-238.18887703120717deg) rotateX(-45deg);
+}
+.dot:nth-child(268) {
+  -webkit-transform: rotateX(45deg) rotateY(250.77439810149372deg) rotateX(42.90254674851888deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-42.90254674851888deg) rotateY(-250.77439810149372deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(250.77439810149372deg) rotateX(42.90254674851888deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-42.90254674851888deg) rotateY(-250.77439810149372deg) rotateX(-45deg);
+}
+.dot:nth-child(269) {
+  -webkit-transform: rotateX(45deg) rotateY(291.06863941065984deg) rotateX(26.17384465411308deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-26.17384465411308deg) rotateY(-291.06863941065984deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(291.06863941065984deg) rotateX(26.17384465411308deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-26.17384465411308deg) rotateY(-291.06863941065984deg) rotateX(-45deg);
+}
+.dot:nth-child(270) {
+  -webkit-transform: rotateX(45deg) rotateY(195.21981518715612deg) rotateX(310.4456012137235deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-310.4456012137235deg) rotateY(-195.21981518715612deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(195.21981518715612deg) rotateX(310.4456012137235deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-310.4456012137235deg) rotateY(-195.21981518715612deg) rotateX(-45deg);
+}
+.dot:nth-child(271) {
+  -webkit-transform: rotateX(45deg) rotateY(216.86295133084067deg) rotateX(233.4555342514069deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-233.4555342514069deg) rotateY(-216.86295133084067deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(216.86295133084067deg) rotateX(233.4555342514069deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-233.4555342514069deg) rotateY(-216.86295133084067deg) rotateX(-45deg);
+}
+.dot:nth-child(272) {
+  -webkit-transform: rotateX(45deg) rotateY(325.0355907250195deg) rotateX(67.73864317685351deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-67.73864317685351deg) rotateY(-325.0355907250195deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(325.0355907250195deg) rotateX(67.73864317685351deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-67.73864317685351deg) rotateY(-325.0355907250195deg) rotateX(-45deg);
+}
+.dot:nth-child(273) {
+  -webkit-transform: rotateX(45deg) rotateY(154.32141216471803deg) rotateX(18.3456756547092deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-18.3456756547092deg) rotateY(-154.32141216471803deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(154.32141216471803deg) rotateX(18.3456756547092deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-18.3456756547092deg) rotateY(-154.32141216471803deg) rotateX(-45deg);
+}
+.dot:nth-child(274) {
+  -webkit-transform: rotateX(45deg) rotateY(40.45674453489468deg) rotateX(98.30173395574081deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-98.30173395574081deg) rotateY(-40.45674453489468deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(40.45674453489468deg) rotateX(98.30173395574081deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-98.30173395574081deg) rotateY(-40.45674453489468deg) rotateX(-45deg);
+}
+.dot:nth-child(275) {
+  -webkit-transform: rotateX(45deg) rotateY(210.30523376539358deg) rotateX(204.66280804015693deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-204.66280804015693deg) rotateY(-210.30523376539358deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(210.30523376539358deg) rotateX(204.66280804015693deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-204.66280804015693deg) rotateY(-210.30523376539358deg) rotateX(-45deg);
+}
+.dot:nth-child(276) {
+  -webkit-transform: rotateX(45deg) rotateY(109.13776952773321deg) rotateX(198.71930493973187deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-198.71930493973187deg) rotateY(-109.13776952773321deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(109.13776952773321deg) rotateX(198.71930493973187deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-198.71930493973187deg) rotateY(-109.13776952773321deg) rotateX(-45deg);
+}
+.dot:nth-child(277) {
+  -webkit-transform: rotateX(45deg) rotateY(193.46227970905585deg) rotateX(278.04321292787785deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-278.04321292787785deg) rotateY(-193.46227970905585deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(193.46227970905585deg) rotateX(278.04321292787785deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-278.04321292787785deg) rotateY(-193.46227970905585deg) rotateX(-45deg);
+}
+.dot:nth-child(278) {
+  -webkit-transform: rotateX(45deg) rotateY(35.266100456938325deg) rotateX(354.84091764315946deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-354.84091764315946deg) rotateY(-35.266100456938325deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(35.266100456938325deg) rotateX(354.84091764315946deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-354.84091764315946deg) rotateY(-35.266100456938325deg) rotateX(-45deg);
+}
+.dot:nth-child(279) {
+  -webkit-transform: rotateX(45deg) rotateY(335.8399560302495deg) rotateX(262.33030227944266deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-262.33030227944266deg) rotateY(-335.8399560302495deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(335.8399560302495deg) rotateX(262.33030227944266deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-262.33030227944266deg) rotateY(-335.8399560302495deg) rotateX(-45deg);
+}
+.dot:nth-child(280) {
+  -webkit-transform: rotateX(45deg) rotateY(177.5479059945792deg) rotateX(24.8080333136022deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-24.8080333136022deg) rotateY(-177.5479059945792deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(177.5479059945792deg) rotateX(24.8080333136022deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-24.8080333136022deg) rotateY(-177.5479059945792deg) rotateX(-45deg);
+}
+.dot:nth-child(281) {
+  -webkit-transform: rotateX(45deg) rotateY(110.17093414440743deg) rotateX(39.74524148739888deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-39.74524148739888deg) rotateY(-110.17093414440743deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(110.17093414440743deg) rotateX(39.74524148739888deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-39.74524148739888deg) rotateY(-110.17093414440743deg) rotateX(-45deg);
+}
+.dot:nth-child(282) {
+  -webkit-transform: rotateX(45deg) rotateY(135.32744080759574deg) rotateX(308.29949478618806deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-308.29949478618806deg) rotateY(-135.32744080759574deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(135.32744080759574deg) rotateX(308.29949478618806deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-308.29949478618806deg) rotateY(-135.32744080759574deg) rotateX(-45deg);
+}
+.dot:nth-child(283) {
+  -webkit-transform: rotateX(45deg) rotateY(293.29160478897387deg) rotateX(72.68660584464672deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-72.68660584464672deg) rotateY(-293.29160478897387deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(293.29160478897387deg) rotateX(72.68660584464672deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-72.68660584464672deg) rotateY(-293.29160478897387deg) rotateX(-45deg);
+}
+.dot:nth-child(284) {
+  -webkit-transform: rotateX(45deg) rotateY(224.77987437509017deg) rotateX(89.82651648111624deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-89.82651648111624deg) rotateY(-224.77987437509017deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(224.77987437509017deg) rotateX(89.82651648111624deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-89.82651648111624deg) rotateY(-224.77987437509017deg) rotateX(-45deg);
+}
+.dot:nth-child(285) {
+  -webkit-transform: rotateX(45deg) rotateY(180.6221336871384deg) rotateX(27.601029127836362deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-27.601029127836362deg) rotateY(-180.6221336871384deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(180.6221336871384deg) rotateX(27.601029127836362deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-27.601029127836362deg) rotateY(-180.6221336871384deg) rotateX(-45deg);
+}
+.dot:nth-child(286) {
+  -webkit-transform: rotateX(45deg) rotateY(342.33736722730094deg) rotateX(116.59211033955228deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-116.59211033955228deg) rotateY(-342.33736722730094deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(342.33736722730094deg) rotateX(116.59211033955228deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-116.59211033955228deg) rotateY(-342.33736722730094deg) rotateX(-45deg);
+}
+.dot:nth-child(287) {
+  -webkit-transform: rotateX(45deg) rotateY(8.131516948342439deg) rotateX(269.85865856520815deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-269.85865856520815deg) rotateY(-8.131516948342439deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(8.131516948342439deg) rotateX(269.85865856520815deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-269.85865856520815deg) rotateY(-8.131516948342439deg) rotateX(-45deg);
+}
+.dot:nth-child(288) {
+  -webkit-transform: rotateX(45deg) rotateY(182.47280769981433deg) rotateX(64.70732747577132deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-64.70732747577132deg) rotateY(-182.47280769981433deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(182.47280769981433deg) rotateX(64.70732747577132deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-64.70732747577132deg) rotateY(-182.47280769981433deg) rotateX(-45deg);
+}
+.dot:nth-child(289) {
+  -webkit-transform: rotateX(45deg) rotateY(146.69507729820924deg) rotateX(14.793285867199199deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-14.793285867199199deg) rotateY(-146.69507729820924deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(146.69507729820924deg) rotateX(14.793285867199199deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-14.793285867199199deg) rotateY(-146.69507729820924deg) rotateX(-45deg);
+}
+.dot:nth-child(290) {
+  -webkit-transform: rotateX(45deg) rotateY(355.0543902162461deg) rotateX(284.82000754214806deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-284.82000754214806deg) rotateY(-355.0543902162461deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(355.0543902162461deg) rotateX(284.82000754214806deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-284.82000754214806deg) rotateY(-355.0543902162461deg) rotateX(-45deg);
+}
+.dot:nth-child(291) {
+  -webkit-transform: rotateX(45deg) rotateY(4.6524341963232deg) rotateX(38.0105615314098deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-38.0105615314098deg) rotateY(-4.6524341963232deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(4.6524341963232deg) rotateX(38.0105615314098deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-38.0105615314098deg) rotateY(-4.6524341963232deg) rotateX(-45deg);
+}
+.dot:nth-child(292) {
+  -webkit-transform: rotateX(45deg) rotateY(66.90227106213575deg) rotateX(297.05358901061123deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-297.05358901061123deg) rotateY(-66.90227106213575deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(66.90227106213575deg) rotateX(297.05358901061123deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-297.05358901061123deg) rotateY(-66.90227106213575deg) rotateX(-45deg);
+}
+.dot:nth-child(293) {
+  -webkit-transform: rotateX(45deg) rotateY(262.9632783774287deg) rotateX(290.4154173284771deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-290.4154173284771deg) rotateY(-262.9632783774287deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(262.9632783774287deg) rotateX(290.4154173284771deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-290.4154173284771deg) rotateY(-262.9632783774287deg) rotateX(-45deg);
+}
+.dot:nth-child(294) {
+  -webkit-transform: rotateX(45deg) rotateY(22.71642685867836deg) rotateX(58.16315540112552deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-58.16315540112552deg) rotateY(-22.71642685867836deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(22.71642685867836deg) rotateX(58.16315540112552deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-58.16315540112552deg) rotateY(-22.71642685867836deg) rotateX(-45deg);
+}
+.dot:nth-child(295) {
+  -webkit-transform: rotateX(45deg) rotateY(73.63649885170176deg) rotateX(244.3687597755342deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-244.3687597755342deg) rotateY(-73.63649885170176deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(73.63649885170176deg) rotateX(244.3687597755342deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-244.3687597755342deg) rotateY(-73.63649885170176deg) rotateX(-45deg);
+}
+.dot:nth-child(296) {
+  -webkit-transform: rotateX(45deg) rotateY(192.99690588377413deg) rotateX(139.13641422986976deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-139.13641422986976deg) rotateY(-192.99690588377413deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(192.99690588377413deg) rotateX(139.13641422986976deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-139.13641422986976deg) rotateY(-192.99690588377413deg) rotateX(-45deg);
+}
+.dot:nth-child(297) {
+  -webkit-transform: rotateX(45deg) rotateY(172.3820108268409deg) rotateX(316.47076785564406deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-316.47076785564406deg) rotateY(-172.3820108268409deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(172.3820108268409deg) rotateX(316.47076785564406deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-316.47076785564406deg) rotateY(-172.3820108268409deg) rotateX(-45deg);
+}
+.dot:nth-child(298) {
+  -webkit-transform: rotateX(45deg) rotateY(163.61028260551404deg) rotateX(264.506138646975deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-264.506138646975deg) rotateY(-163.61028260551404deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(163.61028260551404deg) rotateX(264.506138646975deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-264.506138646975deg) rotateY(-163.61028260551404deg) rotateX(-45deg);
+}
+.dot:nth-child(299) {
+  -webkit-transform: rotateX(45deg) rotateY(278.6540817562491deg) rotateX(36.87529762275516deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-36.87529762275516deg) rotateY(-278.6540817562491deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(278.6540817562491deg) rotateX(36.87529762275516deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-36.87529762275516deg) rotateY(-278.6540817562491deg) rotateX(-45deg);
+}
+.dot:nth-child(300) {
+  -webkit-transform: rotateX(45deg) rotateY(245.3498434368522deg) rotateX(150.1587624941021deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-150.1587624941021deg) rotateY(-245.3498434368522deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(245.3498434368522deg) rotateX(150.1587624941021deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-150.1587624941021deg) rotateY(-245.3498434368522deg) rotateX(-45deg);
+}
+.dot:nth-child(301) {
+  -webkit-transform: rotateX(45deg) rotateY(302.4101049173622deg) rotateX(333.73160881921655deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-333.73160881921655deg) rotateY(-302.4101049173622deg) rotateX(-45deg);
+  transform: rotateX(45deg) rotateY(302.4101049173622deg) rotateX(333.73160881921655deg) rotate(0deg) translate(0) translateZ(300px) rotate(0deg) rotateX(-333.73160881921655deg) rotateY(-302.4101049173622deg) rotateX(-45deg);
+}

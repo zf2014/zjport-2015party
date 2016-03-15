@@ -1,0 +1,140 @@
+
+.rw-show-pics
+	position: absolute;
+	left 0
+	top 0
+	width 100%
+	height 100%
+	overflow: hidden
+	padding-left 300px
+	padding-bottom: 45px
+	padding-top: 140px
+	/.pic-item
+		float: left
+		width 553px
+		height 220px
+		padding-top: 34px
+		padding-left 172px
+		margin-left: -291px
+		margin-bottom: -47px
+		background: url(../images/all/pic-frame.png) 0 0 no-repeat
+		/.pic-frame
+			position: relative;
+			width 220px
+			height 150px
+			perspective: 600
+			/.frame-card
+				position: absolute;
+				left 50%
+				top 50%
+				width 200px
+				height 134px
+				margin-left: -(@width/2)
+				margin-top: -(@height/2)
+				transform-style: preserve-3d
+				/.card-face
+					width: 100%
+					height 100%
+					backface-visibility hidden
+					&.front
+						position: absolute;
+						left 0
+						top 0
+						// background: red
+						transform rotateY(180deg)
+						background-repeat: no-repeat
+						background-position: 0 0
+						background-size: 100%
+					&.back
+						background-position: 0 0
+						background-repeat: no-repeat
+						
+			
+			/.frame-name
+				position: absolute;
+				left 0
+				bottom 0
+				width 100%
+				height 45px
+				text-align: center;
+				line-height @height
+				color #fff
+				font-size: 30px
+				background: rgba(0,54,126,.5)
+				border-bottom-right-radius: 7px
+				border-bottom-left-radius: 7px
+				opacity 0
+	
+
+		for $X in (0..12)
+			&:nth-child({$t = $X + 1})
+				.card-face
+					&.back
+						if $t > 8
+							background-image: url("../images/all/bk0.png")
+						else
+							background-image: url("../images/all/bk"+$t+".png")
+
+
+.rw-columns
+	padding-left: 158px
+	margin-top: 130px
+	overflow: hidden
+	/.column
+		position: relative;
+		float: left
+		width: 204px
+		height 555px
+		opacity 0
+		/.column-container
+			position: absolute;
+			left 0
+			bottom 0
+			width 100%
+
+			/.pillar
+				width 164px
+				margin: 0 auto;
+				/.pillar-hd
+					position: relative;
+					height 38px
+					background: url(../images/all/pillar-hd.png) 0 0 no-repeat
+					/.monkey
+						position: absolute;
+						bottom 13px
+						left 50%
+						width 85px
+						height 108px
+						margin-left: -(@width/2)
+						background: url(../images/all/monkey.png) 0 0 no-repeat
+				/.pillar-bd
+					position: relative;
+					min-height: 70px
+					background: url(../images/all/pillar-bd.png) 1px 0 repeat-y
+					/.pillar-num
+						position: absolute;
+						left 0
+						top 50%
+						
+						width 100%
+						height 70px
+						margin-top: -(@height/2)
+						text-align: center;
+						@extend $font1
+						font-size: 60px
+						color #9a6b04
+						
+				/.pillar-ft
+					height 27px
+					background: url(../images/all/pillar-ft.png) 1px 0 no-repeat
+			
+
+			/.show-name
+				height 38px
+				text-align: center;
+				font-size: 28px
+				color #0b58c1
+				font-weight: 700
+				line-height: @height				
+				text-shadow: 2px 2px 3px rgba(255,255,255,.8)
+

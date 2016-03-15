@@ -1,0 +1,12 @@
+extends ../../layout/common.jade
+block head-theme
+	link(rel = 'stylesheet' href = '#{cssRoot}/cup.css')
+
+
+block main-content
+	.cup-container(style="background-image: url('#{imgRoot}/all/bg-ceremony.jpg');")
+		.ceremony-title
+		.ceremony-light.left
+		.ceremony-light.right
+append floor-script
+	script(src = '#{jsRoot}/app/action.js')

@@ -1,0 +1,19 @@
+extends ../../layout/common.jade
+block head-theme
+	link(rel = 'stylesheet' href = '#{cssRoot}/cup.css')
+
+
+block main-content
+	.cup-container(style="background: url('#{imgRoot}/all/bg-prize.jpg') 0 0 no-repeat")
+
+		.prize-container
+			.prize-name.third-winner.J-prizeWinner 节目要在地
+			.prize-name.second-winner.J-prizeWinner 节目要在地
+			.prize-name.first-winner.J-prizeWinner 节目要在地
+
+		
+
+append floor-script
+	script(src = '#{jsRoot}/app/prize.js')
+	script(src = '#{jsRoot}/app/action.js')
+			

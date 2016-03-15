@@ -1,0 +1,35 @@
+support-for-ie = false
+vendor-prefixes = webkit official
+
+@import "nib/index"
+
+
+@import "../app/base/normalize.styl"
+@import "../app/base/reset.styl"
+
+
+$mx_font_ico_src(file)
+	src url( file + '.TTF') format('truetype')
+	// src url( file + '.eot?#iefix') format('embedded-opentype'), url( file + '.woff') format('woff'), url( file + '.ttf') format('truetype'), url( file + '.svg#iconfont') format('svg')
+
+@font-face
+	font-family: 'font1';
+	// $mx_font_ico_src('http://at.alicdn.com/t/font_1441094467_247908')
+	$mx_font_ico_src('./font/HYLXTJ')
+
+
+$font1
+	font-family: 'font1'
+	// font-size: 1.6em
+	-webkit-font-smoothing antialiased
+	// -webkit-text-stroke-width: 0.2px
+	font-style: normal
+
+
+@import "../app/cup/layoyt.styl"
+@import "../app/cup/light.styl"
+
+
+@import "../app/cup/ceremony.styl"
+@import "../app/cup/ruwei.styl"
+@import "../app/cup/prize.styl"

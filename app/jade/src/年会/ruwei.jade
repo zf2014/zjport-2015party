@@ -1,0 +1,74 @@
+extends ../../layout/common.jade
+block head-theme
+	link(rel = 'stylesheet' href = '#{cssRoot}/cup.css')
+
+
+block main-content
+	.cup-container(style="background: url('#{imgRoot}/all/bg-ruwei.jpg') 0 0 no-repeat")
+
+		//- .light.right
+		//- .light.left
+
+		.rw-show-pics
+			- var loop = 12
+			while loop-- > 0
+				.pic-item.J-showCardItem(data-show-id="#{12 - loop}")
+					.pic-frame
+						.frame-card.J-card
+							.card-face.front(style="background-image: url(#{imgRoot}/team/#{12 - loop}.jpg)")
+							.card-face.back
+						.frame-name 最多五个字
+
+
+		.rw-columns
+			.column.J-column
+				.column-container
+					.pillar
+						.pillar-hd
+							.monkey.J-doll
+						.pillar-bd
+							.pillar-num 0
+						.pillar-ft
+					.show-name 
+			.column.J-column
+				.column-container
+					.pillar
+						.pillar-hd
+							.monkey.J-doll
+						.pillar-bd
+							.pillar-num 0
+						.pillar-ft
+					.show-name 
+			.column.J-column
+				.column-container
+					.pillar
+						.pillar-hd
+							.monkey.J-doll
+						.pillar-bd
+							.pillar-num 0
+						.pillar-ft
+					.show-name 
+			.column.J-column
+				.column-container
+					.pillar
+						.pillar-hd
+							.monkey.J-doll
+						.pillar-bd
+							.pillar-num 0
+						.pillar-ft
+					.show-name 
+			.column.J-column
+				.column-container
+					.pillar
+						.pillar-hd
+							.monkey.J-doll
+						.pillar-bd
+							.pillar-num 0
+						.pillar-ft
+					.show-name 
+
+
+append floor-script
+	script(src = '#{jsRoot}/app/ruwei.js')
+	script(src = '#{jsRoot}/app/action.js')
+			

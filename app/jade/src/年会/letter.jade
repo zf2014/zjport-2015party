@@ -1,0 +1,10 @@
+extends ../../layout/common.jade
+block head-theme
+	link(rel = 'stylesheet' href = '#{cssRoot}/animation.css')
+
+block main-content
+	.letter-container#J-letterContainer
+
+
+append floor-script
+	script(src = '#{jsRoot}/app/letter.js')

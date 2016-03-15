@@ -1,0 +1,9 @@
+{
+	"name": "package",
+	"version": "0.0.0",
+	"dependencies": {
+		"require-css": "~0.1.8",
+		"nib": "~1.1.0"
+	}
+}
+

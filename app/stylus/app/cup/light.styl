@@ -1,0 +1,25 @@
+.light
+	position: absolute;
+	width: 579px
+	height: 555px
+	background-repeat: no-repeat
+	background-position: 0 0
+	// background-blend-mode: multiply
+	animation(light 1s infinite alternate linear 0.4s)
+	&.left
+		left 0
+		top 20px
+		background-image: url(../images/all/left-light.png)
+	&.right
+		right 0
+		top 20px
+		background-image: url(../images/all/right-light.png)
+
+
+
+@keyframes light
+	0%
+		opacity: 0
+	
+	100%
+		opacity: 1
